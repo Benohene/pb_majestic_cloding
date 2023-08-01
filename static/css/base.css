@@ -86,7 +86,17 @@ body {
 .welcomeMsg p {
   font-size: 1.5rem;
   padding-top: 0.5rem;
+  color: var(--dark-wine);
 }
+
+.welcomeMsg h1 {
+  font-weight: 700;
+}
+
+.bg-black {
+  background: var(--wine) !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
