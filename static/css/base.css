@@ -28,6 +28,12 @@ body {
   font-family: "Lato";
 }
 
+/* logo */
+/* #logo-brand img {
+  width: 200px;
+  height: 60px;
+} */
+
 /* from Bulma */
 .icon {
   align-items: center;
