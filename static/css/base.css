@@ -125,6 +125,28 @@ body {
   border-bottom: 2px solid var(--dark-wine);
 }
 
+#card-footer {
+  background: var(--dark-wine);
+  color: var(--secondary);
+}
+
+#cart_btn {
+  background: var(--dark-wine);
+  color: var(--secondary);
+}
+#cart_btn:hover {
+  background: #000000;
+  color: var(--secondary);
+}
+#view_btn {
+  background: var(--wine);
+  color: var(--secondary);
+}
+
+#view_btn:hover {
+  background: #9e6650;
+  color: var(--secondary);
+}
 /* -------------------------------- End Products */
 
 /* -------------------------------- Media Queries */
