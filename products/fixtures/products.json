@@ -1,0 +1,1367 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb1",
+            "name": "But God Shirt",
+            "description": "Wear this Christian T-Shirt to spread the good news of the ultimate symbol of God’s love for all to see. Look to the Cross and receive your salvation.",
+            "price": 23.99,
+            "category": 6,
+            "rating": 4.3,
+            "image": "but-god.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb2",
+            "name": "Chosen Generation",
+            "description": "Truly, my dear young friends, you are a chosen generation. I hope you will never forget it. I hope you will never take it for granted. I hope there will grow in your hearts an overpowering sense of gratitude to God, who has made it possible for you to come upon the earth in this marvelous season of the world's history.",
+            "price": 33.99,
+            "category": 6,
+            "rating": 4.6,
+            "image": "chosen.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb3",
+            "name": "Jesus and Faith",
+            "description": "This is inspired by our faith in Christ Jesus. We hope this shirt will be a reminder to you and those around you that faith comes by hearing, and hearing by the Word of God.",
+            "price": 43.59,
+            "category": 6,
+            "rating": 4.8,
+            "image": "jes-fai.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb4",
+            "name": "Light Shirt",
+            "description": "Jesus answered, “I am the way and the truth and the life. No one comes to the Father except through me.",
+            "price": 12.59,
+            "category": 6,
+            "rating": 4.6,
+            "image": "jhn.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb5",
+            "name": "Saved Black Shirt",
+            "description": "Saved by grace through faith in Jesus Christ. This shirt is a reminder of the grace of God that saves us from our sins.",
+            "price": 19.99,
+            "category": 6,
+            "rating": 4.4,
+            "image": "saved1.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb6",
+            "name": "Saved Biege Shirt",
+            "description": "Saved by grace through faith in Jesus Christ. This shirt is a reminder of the grace of God that saves us from our sins.",
+            "price": 19.99,
+            "category": 6,
+            "rating": 4.6,
+            "image": "saved2.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb7",
+            "name": "Spirit Led Hoodie",
+            "description": "This hoodie is inspired by the Holy Spirit. We hope this hoodie will be a reminder to you and those around you that the Holy Spirit is our helper.",
+            "price": 49.99,
+            "category": 6,
+            "rating": 4.6,
+            "image": "spirit-led-hoodies.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb8",
+            "name": "True Love Shirt",
+            "description": "This shirt is inspired by the love of God. We hope this shirt will be a reminder to you and those around you that God is love.",
+            "price": 19.99,
+            "category": 6,
+            "rating": 4.3,
+            "image": "true-love.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb9",
+            "name": "G.O.A.T",
+            "description": "God over Any Things. This Hoodies gives you the motivation to put God first in everything you do.",
+            "price": 59.99,
+            "category": 6,
+            "rating": 4.6,
+            "image": "unisex-crew-.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb10",
+            "name": "Saviour Hoodie",
+            "description": "SAVIOUR. This has the inspiration that Jesus is our saviour. We hope this hoodie will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 59.99,
+            "category": 6,
+            "rating": 4.6,
+            "image": "unisex-heavy-.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb11",
+            "name": "Love Never Fails",
+            "description": "Love Never Fails. This has the inspiration that God's love never fails. We hope this shirt will be a reminder to you and those around you that God's love never fails.",
+            "price": 19.99,
+            "category": 6,
+            "rating": 4.8,
+            "image": "unisex-staple-.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb12",
+            "name": "Waymaker Ladies",
+            "description": "Waymaker, Miracle Worker, Promise Keeper, Light in the Darkness. This has the inspiration that God is the waymaker. We hope this shirt will be a reminder to you and those around you that God is the waymaker.",
+            "price": 15.99,
+            "category": 6,
+            "rating": 4.6,
+            "image": "waymaker.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb13",
+            "name": "Blessed-Mom Ladies",
+            "description": "Blessed Mom is a shirt that is meant to inspire mothers. We hope this shirt will be a reminder to you and those around you that you are a blessed mom. It ia also a great gift for mothers.",
+            "price": 25.99,
+            "category": 5,
+            "rating": 4.2,
+            "image": "blessed-mom-women.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb14",
+            "name": "Crazy for God Ladies",
+            "description": "To be Crazy for God is the best thing that can happen to anyone. We hope this shirt will be a reminder to you and those around you that you are crazy for God.",
+            "price": 25.99,
+            "category": 5,
+            "rating": 4.7,
+            "image": "crazy-girl-women.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb15",
+            "name": "Elevate Tank Top",
+            "description": "Elevate Your Faith to another level of elevation with this Christian Tank Top from PB Majestics. Inspired by Deuteronomy 28:1, this Christian tank is designed to make Faith the center focal point in our lives and to encourage all in this world of darkness to never lose hope. Remember that even the darkest night will end and the sun will rise to see another day.",
+            "price": 18.99,
+            "category": 5,
+            "rating": 4.2,
+            "image": "elevate-tank-men.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb16",
+            "name": "Elevate your Faith Hoodie",
+            "description": "Elevate Your Faith to another level of elevation with this Christian Hoodie from PB Majestics. Inspired by Deuteronomy 28:1, this Christian tank is designed to make Faith the center focal point in our lives and to encourage all in this world of darkness to never lose hope. Remember that even the darkest night will end and the sun will rise to see another day",
+            "price": 25.99,
+            "category": 5,
+            "rating": 4.5,
+            "image": "elevate-wine-hoodies.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb17",
+            "name": "Faith Flower Ladies",
+            "description": "Keep a positive attitude in strengthening and feeding your faith in Christ, the overcomer of all things! Give worship and praise to our Lord in love and adoration. Allow faith to strengthen and manifest in your hearts to grow to the point where you can move mountains through Christ’s strength!",
+            "price": 19.99,
+            "category": 5,
+            "rating": 4.6,
+            "image": "faith-flower-women.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb18",
+            "name": "G.O.A.T Tank Top",
+            "description": "G.O.A.T is another nice concept of Tank top collections from PB Majestics. God over Any Things. This Hoodies gives you the motivation to put God first in everything you do.",
+            "price": 19.99,
+            "category": 6,
+            "rating": 4.6,
+            "image": "goat-tank-men.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb19",
+            "name": "He Came Tank Top",
+            "description": "He Came,He Saw and He concurred. This is a nice concept of Tank top collections from PB Majestics. Embrace God’s glory and honor our Master’s victory over death with this Christian Tank Top featuring “He Came He Saw He Conquered” . Christ is Risen!",
+            "price": 21.99,
+            "category": 6,
+            "rating": 4.6,
+            "image": "goat-tank-men.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb20",
+            "name": "Love Like Jesus Shirt",
+            "description": "Love Like Jesus is another master piece from PB Majestics. This shirt is inspired by the love of God. We hope this shirt will be a reminder to you and those around you that God is love.",
+            "price": 12.99,
+            "category": 6,
+            "rating": 4.7,
+            "image": "like-jesus-men.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb21",
+            "name": "Love Never Fails Tank Top",
+            "description": "Take the city by storm and make a bold statement with this Christian Tank Top that features one of the most popular Bible verses, “Love Never Fails” 1 Corinthians 13:8 front text graphic. Inspired by Bible Scripture 1 Corinthians 13:8, this Christian Fashion apparel is designed to remember the greatest gift given to us from Jesus himself, the power of love that never fails.",
+            "price": 18.99,
+            "category": 6,
+            "rating": 4.2,
+            "image": "love-tank-men.jpg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb22",
+            "name": "Trust Black Shirt",
+            "description": "Trust only in the Lord. Show your journey of Faith by Walking in Favor of God with this soft feel Christian Crewneck Sweatshirt featuring a beautiful front “Walk by Faith and Not by Sight” bible verse text graphic and Fabrics of Faith logo on the back.",
+            "price": 18.99,
+            "category": 6,
+            "rating": 4.2,
+            "image": "trust-men.jpg"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb23",
+            "name": "Walk on Water Shirt",
+            "description": "Walk on Water is another master piece from PB Majestics. This shirt is inspired by the Miracles of Jesus. We hope this shirt will be a reminder to you and those around you that God is love.",
+            "price": 18.99,
+            "category": 6,
+            "rating": 4.2,
+            "image": "walk-on-walk-mem.jpg"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb24",
+            "name": "Jesus is Backing Hoodie",
+            "description": "Jesus alway got your back. This Hoodies gives you the motivation to put God first in everything you do.",
+            "price": 48.99,
+            "category": 3,
+            "rating": 4.2,
+            "image": "backing-hoodies.jpg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb25",
+            "name": "Christian Love Hoodie",
+            "description": "The number one principle as followers of Christ is to love one another. This hoodie is inspired by the love of God. We hope this hoodie will be a reminder to you and those around you that God is love.",
+            "price": 48.99,
+            "category": 3,
+            "rating": 4.2,
+            "image": "c-love-unisex-hoodie.jpg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb26",
+            "name": "Created with Purpose Hoodie",
+            "description": "Everyone was created for a purpose and mission on this earth. This hoodie is to encourage you to walk in your purpose and mission. We hope this hoodie will be a reminder to you and those around you that you were created with a purpose.",
+            "price": 38.99,
+            "category": 3,
+            "rating": 4.7,
+            "image": "created-unisex-hoodie.jpg"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb27",
+            "name": "PB Faith Brand Hoodie",
+            "description": "Show your journey of Faith by Walking in Favor of God with this soft feel Christian Hoodie featuring a beautiful front “Walk by Faith and Not by Sight” bible verse text graphic and PB Majestic Cloding logo on the front chest area.",
+            "price": 38.99,
+            "category": 3,
+            "rating": 4.6,
+            "image": "faith-unisex-hoodie.jpg"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb28",
+            "name": "Faith Love Hope Hoodie",
+            "description": "Showcase your faith, hope and love to the world with this Christian Hoodie featuring a graphic text from Corinthians 13:13: 'Faith Hope Love'.",
+            "price": 48.99,
+            "category": 3,
+            "rating": 4.8,
+            "image": "flh-beige-unisex-hoodie.jpg"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb29",
+            "name": "Forgivess Hoodie",
+            "description": "Forgiveness. Matthew 18:22 Jesus answered, “I tell you, not seven times, but seventy-seven times. You must alway be inspired to forgive others. We hope this shirt will be a reminder to you and those around you that you must always forgive others.",
+            "price": 58.99,
+            "category": 3,
+            "rating": 4.7,
+            "image": "forgiveness-hoodies.jpg"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb30",
+            "name": "G.O.A.T Hoodie",
+            "description": "G.O.A.T is another nice concept of Tank top collections from PB Majestics. God over Any Things. This Sweatshirt gives you the motivation to put God first in everything you do.",
+            "price": 34.99,
+            "category": 4,
+            "rating": 4.2,
+            "image": "goat-sweat.jpg"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb31",
+            "name": "God is Greater Hoodie",
+            "description": "God is greater than the highs and lows. This Hoodies gives you the motivation to put God first in everything you do.",
+            "price": 45.99,
+            "category": 3,
+            "rating": 4.8,
+            "image": "god-great-hoodies.jpg"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb32",
+            "name": "In Jesus Name Hoodie",
+            "description": "In the name of jesus Christ, we are saved and delivered. We hope this shirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 56.99,
+            "category": 3,
+            "rating": 4.2,
+            "image": "ijn-white-unisex-hoodie.jpg"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb33",
+            "name": "Jesus Loves You Hoodie",
+            "description": "Jesus loves you no matter who you are. His love is unconditional. We hope this shirt will be a reminder to you and those around you that Jesus loves you. John 3:16",
+            "price": 42.99,
+            "category": 3,
+            "rating": 4.7,
+            "image": "jesus-love-unisex-hoodie.jpg"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb34",
+            "name": "Love Never Fails Hoodie-Grey",
+            "description": "Love Never Fails. This has the inspiration that God's love never fails. We hope this hoodie will be a reminder to you and those around you that God's love never fails.",
+            "price": 44.99,
+            "category": 3,
+            "rating": 4.2,
+            "image": "love-never-fails-hoodies.jpg"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb35",
+            "name": "PB Majestics Brand Hoodie",
+            "description": "PB Majestic Bands Hoodies. Our brand is to inspire people to walk in all manner of Love and Faith. We hope this hoodie will be a reminder to you and those around you that you are a PB Majestic.",
+            "price": 34.99,
+            "category": 3,
+            "rating": 4.5,
+            "image": "pb-brand-unisex-hoodie.jpg"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb36",
+            "name": "PB Majestic Saviour",
+            "description": "PB Majestic Saviour Bands Hoodies. Our brand is to inspire people to walk in all manner of Love and Faith. We hope this hoodie will be a reminder to you and those around you that you are a PB Majestic.",
+            "price": 56.99,
+            "category": 3,
+            "rating": 4.2,
+            "image": "red-jesus-saviour.jpg"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb37",
+            "name": "Our Lord Saviour Hoodie - Pink",
+            "description": "Our Lord saviour is King and He lives forever. We hope this Hoodie will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 34.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "saviour-pink.jpg"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb38",
+            "name": "Our Lord Saviour Hoodie - Black",
+            "description": "Our Lord saviour is King and He lives forever. We hope this Hoodie will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 44.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "saviour-unisex-hoodie.jpg"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb39",
+            "name": "Set Free Hoodie - Type 1",
+            "description": "We have been set free by the blood of Jesus Christ. We hope this Hoodie will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 40.99,
+            "category": 3,
+            "rating": 4.6,
+            "image": "set-free-1-hoodies.jpg"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb40",
+            "name": "Set Free Hoodie - Type 2",
+            "description": "We have been set free by the blood of Jesus Christ. We hope this Hoodie will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 45.99,
+            "category": 3,
+            "rating": 4.2,
+            "image": "set-free-2-hoodies.jpg"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb41",
+            "name": "Trinity Hoodie",
+            "description": "Trinity Hoodies is a nice concept of Hoodies collections from PB Majestics. God the Father, God the Son and God the Holy Spirit. This Hoodies gives you the motivation to put God first in everything you do.",
+            "price": 45.99,
+            "category": 3,
+            "rating": 4.7,
+            "image": "trinity-black-white.jpg"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb42",
+            "name": "True Love Hoodie",
+            "description": "This Hoodie is inspired by the love of God. We hope this shirt will be a reminder to you and those around you that God is love.",
+            "price": 37.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "true-love-hoodie.jpg"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb43",
+            "name": "YHWH - Red Hoodie",
+            "description": "Yahweh is His name. He is the one and only God. This is a hoodie that affirm your faith in the name of the only God. In Him all things work together Good.",
+            "price": 35.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "ywhw-red-unisex-hoodie.jpg"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb44",
+            "name": "YHWH - Green Hoodie",
+            "description": "Yahweh is His name. He is the one and only God. This is a hoodie that affirm your faith in the name of the only God. In Him all things work together Good.",
+            "price": 35.99,
+            "category": 3,
+            "rating": 4.4,
+            "image": "ywhw-unisex-hoodie.jpg"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb45",
+            "name": "The Blood Saves Sweatshirt",
+            "description": "The Blood of Jesus Christ saves us from our sins. We hope this shirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 25.99,
+            "category": 4,
+            "rating": 4.7,
+            "image": "blood-red-sweat.jpg"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb46",
+            "name": "Faith Love Hope Sweatshirt",
+            "description": "Showcase your faith, hope and love to the world with this Christian Hoodie featuring a graphic text from Corinthians 13:13: 'Faith Hope Love'.",
+            "price": 25.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "fhp-sweat.jpg"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb47",
+            "name": "Freedom Sweatshirt",
+            "description": "Freedom and Liberty comes from our Lord Jesus Christ. The world has nothing to offer. We hope this sweatshirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 28.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "freedom-sweat.jpg"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb48",
+            "name": "Good Friday Sweatshirt",
+            "description": "Good Friday is the day that Jesus Christ died for our sins. He sacrificed His life for us to be saved. Let this wonderful sweatshirt be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 35.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "gf-sweat.jpg"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb49",
+            "name": "Grace Sweatshirt",
+            "description": "Let the Grace of God be with you now and forever. His abundant grace is sufficient for us. No one deserved the grace but He made it available to us by offering His only begotten son Jesus Christ. We hope this sweatshirt will be a reminder to you and those around you that the grace of God is all that we need.",
+            "price": 35.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "grace-sweat.jpg"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb50",
+            "name": "MOG Sweatshirt",
+            "description": "This is a sweatshirt reminding us all the we are men and women of God",
+            "price": 32.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "man-of-god.jpg"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb51",
+            "name": "PB Majestic Sweatshirt",
+            "description": "PB Majestic Bands Hoodies. Our brand is to inspire people to walk in all manner of Love and Faith. We hope this hoodie will be a reminder to you and those around you that you are a PB Majestic.",
+            "price": 25.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "pb-sweat-green.jpg"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb52",
+            "name": "Saved Sweatshirt",
+            "description": "The Blood of Jesus Christ saves us from our sins. We hope this shirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 35.99,
+            "category": 3,
+            "rating": 4.6,
+            "image": "saved-sweat.jpg"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb53",
+            "name": "True Vine Sweatshirt",
+            "description": "John 14 Jesus is the true vine and we are the branches. Be connected to the true vine and you will bear much fruit. We hope this sweatshirt will be a reminder to you and those around you that one always has to be connected to God.",
+            "price": 35.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "true-vine-sweat.jpg"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb54",
+            "name": "Yeshua - Green Sweatshirt",
+            "description": "Yeshua Hamashiach is His name. He is the one and only God. This is a sweatshirt that affirm your faith in the name of the only God. In Him all things work together Good.",
+            "price": 35.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "yeshua-green-sweat.jpg"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb55",
+            "name": "Yeshua - Black Sweatshirt",
+            "description": "Yeshua Hamashiach is His name. He is the one and only God. This is a sweatshirt that affirm your faith in the name of the only God. In Him all things work together Good.",
+            "price": 38.99,
+            "category": 3,
+            "rating": 4.7,
+            "image": "yeshua1-black-sweat.jpg"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb56",
+            "name": "Call Upon the Lord Shirt",
+            "description": "Call upon the Lord and He will answer you. He is always there for us in good or bad times. This shirt is a vibe to remind us that men must always call upon the Lord.",
+            "price": 25.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "abundant-men.jpg"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb57",
+            "name": "The Blood Saves Shirt",
+            "description": "The Blood of Jesus Christ saves us from our sins. We hope this shirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 15.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "blood-men.jpg"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb58",
+            "name": "Cast your Burden Shirt",
+            "description": "Jesus remind us that we cast all our burdens unto Him and He will give us rest. This shirt is a reminder to you and those around you that Jesus is our saviour and we must cast all our burdens unto Him.",
+            "price": 25.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "burden-men.jpg"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb59",
+            "name": "Saved by Grace Shirt",
+            "description": "Let the Grace of God be with you now and forever. His abundant grace is sufficient for us. No one deserved the grace but He made it available to us by offering His only begotten son Jesus Christ. We hope this shirt will be a reminder to you and those around you that the grace of God is all that we need.",
+            "price": 35.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "by-grace-men.jpg"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb60",
+            "name": "Christian Love Shirt",
+            "description": "The number one principle as followers of Christ is to love one another. This Shirt is inspired by the love of God. We hope this hoodie will be a reminder to you and those around you that God is love.",
+            "price": 15.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "clove-men-blue.jpg"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb61",
+            "name": "Created with Purpose Shirt - Blue",
+            "description": "Everyone was created for a purpose and mission on this earth. This shirt is to encourage you to walk in your purpose and mission. We hope this shirt will be a reminder to you and those around you that you were created with a purpose.",
+            "price": 25.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "created-men-blue.jpg"
+        }
+    },
+    {
+        "pk": 62,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb62",
+            "name": "Faith Goals Shirt",
+            "description": "Faith Goals is another master piece from PB Majestics. This is inspired by our faith in Christ Jesus. We hope this shirt will be a reminder to you and those around you that faith comes by hearing, and hearing by the Word of God..",
+            "price": 19.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "faith-goals-men.jpg"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb63",
+            "name": "Created with Purpose Shirt - Violet",
+            "description": "Everyone was created for a purpose and mission on this earth. This shirt is to encourage you to walk in your purpose and mission. We hope this shirt will be a reminder to you and those around you that you were created with a purpose.",
+            "price": 25.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "created-men.jpg"
+        }
+    },
+    {
+        "pk": 64,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb64",
+            "name": "Faith Classic Shirt",
+            "description": "This is inspired by our faith in Christ Jesus. We hope this shirt will be a reminder to you and those around you that faith comes by hearing, and hearing by the Word of God..",
+            "price": 35.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "faith-red-men.jpg"
+        }
+    },
+    {
+        "pk": 65,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb65",
+            "name": "Footprint Deluxe Shirt",
+            "description": "His footprint is always our path to the greatness of Life. We must always follow His path. We hope this shirt will be a reminder to you and those around you that you must always follow His path.",
+            "price": 25.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "footprint-men.jpg"
+        }
+    },
+    {
+        "pk": 66,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb66",
+            "name": "Free Saved by Grace Cclassic",
+            "description": "Saved by grace through faith in Jesus Christ. This shirt is a reminder of the grace of God that saves us from our sins",
+            "price": 27.99,
+            "category": 1,
+            "rating": 4.6,
+            "image": "free-men.jpg"
+        }
+    },
+    {
+        "pk": 67,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb67",
+            "name": "Freedom Men",
+            "description": "Freedom and Liberty comes from our Lord Jesus Christ. The world has nothing to offer. We hope this sweatshirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 25.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "freedom-men.jpg"
+        }
+    },
+    {
+        "pk": 68,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb68",
+            "name": "Grace Classic Blue",
+            "description": "Let the Grace of God be with you now and forever. His abundant grace is sufficient for us. No one deserved the grace but He made it available to us by offering His only begotten son Jesus Christ. We hope this sweatshirt will be a reminder to you and those around you that the grace of God is all that we need.",
+            "price": 26.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "grace-2-men.jpg"
+        }
+    },
+    {
+        "pk": 69,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb69",
+            "name": "In Jesus Name Yellow Deluxe",
+            "description": "In the name of jesus Christ, we are saved and delivered. We hope this shirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 35.99,
+            "category": 1,
+            "rating": 4.8,
+            "image": "ijn-yellow-men.jpg"
+        }
+    },
+    {
+        "pk": 70,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb70",
+            "name": "Jesus Christ Premium",
+            "description": "Jesus Christ is the same yesterday, today and forever. He is the Alpha and Omega. We hope this shirt will be a reminder to you and those around you that Jesus is our saviour. He ia the author and finisher of our faith.",
+            "price": 25.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "jesus-dark-men.jpg"
+        }
+    },
+    {
+        "pk": 71,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb71",
+            "name": "John Edition",
+            "description": "1 John 2:2 He is the atoning sacrifice for our sins, and not only for ours but also for the sins of the whole world. We hope this shirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 18.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "john-2-men.jpg"
+        }
+    },
+    {
+        "pk": 72,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb72",
+            "name": "Liberty Premium",
+            "description": "Freedom and Liberty comes from our Lord Jesus Christ. The world has nothing to offer. We hope this sweatshirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 19.99,
+            "category": 1,
+            "rating": 4.7,
+            "image": "liberty.men.jpg"
+        }
+    },
+    {
+        "pk": 73,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb73",
+            "name": "MOG Basic Shirt - Green",
+            "description": "This is a sweatshirt reminding us all the we are men and women of God",
+            "price": 25.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "men-of.god.jpg"
+        }
+    },
+    {
+        "pk": 74,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb74",
+            "name": "PB Majestic Shirt",
+            "description": "PB Majestic Brands Shirts. Our brand is to inspire people to walk in all manner of Love and Faith. We hope this hoodie will be a reminder to you and those around you that you are a PB Majestic.",
+            "price": 25.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "pb-collection-men.jpg"
+        }
+    },
+    {
+        "pk": 75,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb75",
+            "name": "Our Lord Saviour classik",
+            "description": "Our Lord saviour is King and He lives forever. We hope this Shirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 35.99,
+            "category": 1,
+            "rating": 4.8,
+            "image": "saviour-men-orange.jpg"
+        }
+    },
+    {
+        "pk": 76,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb76",
+            "name": "Trinity Shirt",
+            "description": "Trinity Shirt is a nice concept of Shirt collections from PB Majestics. God the Father, God the Son and God the Holy Spirit. This Shirt gives you the motivation to put God first in everything you do.",
+            "price": 35.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "trinity-white-men.jpg"
+        }
+    },
+    {
+        "pk": 77,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb77",
+            "name": "True Vine Violet blend",
+            "description": "John 14 Jesus is the true vine and we are the branches. Be connected to the true vine and you will bear much fruit. We hope this sweatshirt will be a reminder to you and those around you that one always has to be connected to God.",
+            "price": 25.99,
+            "category": 1,
+            "rating": 4.7,
+            "image": "true-vine-men.jpg"
+        }
+    },
+    {
+        "pk": 78,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb78",
+            "name": "Yeshua Premium",
+            "description": "Yeshua Hamashiach is His name. He is the one and only God. This is a sweatshirt that affirm your faith in the name of the only God. In Him all things work together Good.",
+            "price": 25.99,
+            "category": 1,
+            "rating": 4.3,
+            "image": "yeshua-2-men-yellow.jpg"
+        }
+    },
+    {
+        "pk": 79,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb79",
+            "name": "Yeshua Premium Yellow",
+            "description": "Yeshua Hamashiach is His name. He is the one and only God. This is a sweatshirt that affirm your faith in the name of the only God. In Him all things work together Good.",
+            "price": 25.99,
+            "category": 1,
+            "rating": 4.7,
+            "image": "yeshua-men-yellow.jpg"
+        }
+    },
+    {
+        "pk": 80,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb80",
+            "name": "YHWH - Black Klassik",
+            "description": "Yahweh is His name. He is the one and only God. This is a hoodie that affirm your faith in the name of the only God. In Him all things work together Good.",
+            "price": 25.99,
+            "category": 1,
+            "rating": 4.5,
+            "image": "yhwh-black-men.jpg"
+        }
+    },
+    {
+        "pk": 81,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb81",
+            "name": "The Blood Saves ladies",
+            "description": "The Blood of Jesus Christ saves us from our sins. We hope this shirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "blood-mode-ladies.jpg"
+        }
+    },
+    {
+        "pk": 82,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb82",
+            "name": "Cast your Burden Shirt",
+            "description": "Jesus remind us that we cast all our burdens unto Him and He will give us rest. This shirt is a reminder to you and those around you that Jesus is our saviour and we must cast all our burdens unto Him.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "burden-ladies.jpg"
+        }
+    },
+    {
+        "pk": 83,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb83",
+            "name": "Christian Love Ladies",
+            "description": "The number one principle as followers of Christ is to love one another. This Shirt is inspired by the love of God. We hope this hoodie will be a reminder to you and those around you that God is love.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 4.5,
+            "image": "clove-ladies.jpg"
+        }
+    },
+    {
+        "pk": 84,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb84",
+            "name": "Created with Purpose Basic",
+            "description": "Everyone was created for a purpose and mission on this earth. This shirt is to encourage you to walk in your purpose and mission. We hope this shirt will be a reminder to you and those around you that you were created with a purpose.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.7,
+            "image": "created-ladies.jpg"
+        }
+    },
+    {
+        "pk": 85,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb85",
+            "name": "Faith Classic Ladies",
+            "description": "This is inspired by our faith in Christ Jesus. We hope this shirt will be a reminder to you and those around you that faith comes by hearing, and hearing by the Word of God..",
+            "price": 35.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "faith-ladies.jpg"
+        }
+    },
+    {
+        "pk": 86,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb86",
+            "name": "Faith Love Hope Ladies BLK",
+            "description": "Showcase your faith, hope and love to the world with this Christian Hoodie featuring a graphic text from Corinthians 13:13: 'Faith Hope Love'.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "faith-love-ladies.jpg"
+        }
+    },
+    {
+        "pk": 87,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb87",
+            "name": "Faith Love Hope PINK",
+            "description": "Showcase your faith, hope and love to the world with this Christian Hoodie featuring a graphic text from Corinthians 13:13: 'Faith Hope Love'.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 4.5,
+            "image": "faith-love-pink-ladies.jpg"
+        }
+    },
+    {
+        "pk": 88,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb88",
+            "name": "Good Friday shirt",
+            "description": "Good Friday is the day that Jesus Christ died for our sins. He sacrificed His life for us to be saved. Let this wonderful sweatshirt be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "good-friday-ladies.jpg"
+        }
+    },
+    {
+        "pk": 89,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb89",
+            "name": "In Jesus Name ladies",
+            "description": "In the name of jesus Christ, we are saved and delivered. We hope this shirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "ijn-ladies.jpg"
+        }
+    },
+    {
+        "pk": 90,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb90",
+            "name": "Jesus Girl Deluxe",
+            "description": "Jesus Christ is the same yesterday, today and forever. He is the Alpha and Omega. We hope this shirt will be a reminder to you and those around you that Jesus is our saviour. He ia the author and finisher of our faith.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": ""
+        }
+    },
+    {
+        "pk": 91,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb91",
+            "name": "Jesus Initials Ladies",
+            "description": "Jesus Initials is a nice concept of Shirt collections from PB Majestics. God the Father, God the Son and God the Holy Spirit. This Shirt gives you the motivation to put God first in everything you do.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "jesus-initials-ladies.jpg"
+        }
+    },
+    {
+        "pk": 92,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb92",
+            "name": "Liberty Premium Ladies",
+            "description": "Freedom and Liberty comes from our Lord Jesus Christ. The world has nothing to offer. We hope this sweatshirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "liberty-ladies.jpg"
+        }
+    },
+    {
+        "pk": 93,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb93",
+            "name": "Liberty Classic Ladies",
+            "description": "",
+            "price": 35.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "liberty-mode2-ladies.jpg"
+        }
+    },
+    {
+        "pk": 94,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb94",
+            "name": "Peace Oli Deluxe",
+            "description": "PB Majestic Brands Shirts. Our brand is to inspire people to walk in all manner of Love and Faith. We hope this hoodie will be a reminder to you and those around you that you are a PB Majestic.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "p-oli-blue.jpg"
+        }
+    },
+    {
+        "pk": 95,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb95",
+            "name": "PB Classik ladies",
+            "description": "PB Majestic Brands Shirts. Our brand is to inspire people to walk in all manner of Love and Faith. We hope this hoodie will be a reminder to you and those around you that you are a PB Majestic.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "pb-ladies.jpg"
+        }
+    },
+    {
+        "pk": 96,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb96",
+            "name": "Proverbs 31 Polo",
+            "description": "Proverbs 31 Woman is a concept of Shirt collections from PB Majestics. This Shirt gives you the motivation to women to be virtuous and God fearing.",
+            "price": 35.99,
+            "category": 2,
+            "rating": 4.7,
+            "image": "proverbs-mode2-ladies.jpg"
+        }
+    },
+    {
+        "pk": 97,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb97",
+            "name": "Proverbs 31 Deluxe",
+            "description": "Proverbs 31 Woman is a concept of Shirt collections from PB Majestics. This Shirt gives you the motivation to women to be virtuous and God fearing.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 4.6,
+            "image": "proverbs-woman.jpg"
+        }
+    },
+    {
+        "pk": 98,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb98",
+            "name": "His Rib Ladies",
+            "description": "She was taken from his rib and she is the bone of his bone. This shirt is a reminder to you and those around you that you are the rib of your husband.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "rib-ladies.jpg"
+        }
+    },
+    {
+        "pk": 99,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb99",
+            "name": "Saved by Blood Ladies",
+            "description": "The Blood of Jesus Christ saves us from our sins. We hope this shirt will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.6,
+            "image": "saved-ladies.jpg"
+        }
+    },
+    {
+        "pk": 100,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb100",
+            "name": "Our Lord Saviour classik pink",
+            "description": "Our Lord saviour is King and He lives forever. We hope this Hoodie will be a reminder to you and those around you that Jesus is our saviour.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "saviour-ladies.jpg"
+        }
+    },
+    {
+        "pk": 101,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb101",
+            "name": "Trinity Ladies Deluxe",
+            "description": "Trinity Shirt is a nice concept of Shirt collections from PB Majestics. God the Father, God the Son and God the Holy Spirit. This Shirt gives you the motivation to put God first in everything you do.",
+            "price": 25.99,
+            "category": 2,
+            "rating": 4.5,
+            "image": "trinity-ladies.jpg"
+        }
+    },
+    {
+        "pk": 102,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb102",
+            "name": "True Vine shirt",
+            "description": "John 14 Jesus is the true vine and we are the branches. Be connected to the true vine and you will bear much fruit. We hope this shirt will be a reminder to you and those around you that one always has to be connected to God.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "true-vine.ladies.jpg"
+        }
+    },
+    {
+        "pk": 103,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb103",
+            "name": "The Word Deluxe",
+            "description": "The word of God is the light unto the word. It will last forever and never fade away. We hope this shirt will be a reminder to you and those around you that the word of God is the light unto the world.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "words-ladies.jpg"
+        }
+    },
+    {
+        "pk": 104,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb104",
+            "name": "Yeshua Premium Ladies",
+            "description": "Yeshua Hamashiach is His name. He is the one and only God. This is a sweatshirt that affirm your faith in the name of the only God. In Him all things work together Good.",
+            "price": 15.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "yeshua-ladies.jpg"
+        }
+    },
+    {
+        "pk": 104,
+        "model": "products.product",
+        "fields": {
+            "sku": "pb104",
+            "name": "YHWH - Red Deluxe",
+            "description": "Yahweh is His name. He is the one and only God. This is a hoodie that affirm your faith in the name of the only God. In Him all things work together Good.",
+            "price": 19.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "yhwh-ladies.jpg"
+        }
+    }
+]
