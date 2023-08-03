@@ -28,12 +28,7 @@ body {
   font-family: "Lato";
 }
 
-/* logo */
-/* #logo-brand img {
-  width: 200px;
-  height: 60px;
-} */
-
+/* -----------------Nav with Search */
 /* from Bulma */
 .icon {
   align-items: center;
@@ -102,6 +97,35 @@ body {
 .bg-black {
   background: var(--wine) !important;
 }
+/* -------------------------------- End Navbar */
+
+/* -------------------------------- Products */
+.overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: var(--light-cream);
+  z-index: -1;
+}
+
+.product-head {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--dark-wine);
+}
+
+#product-card {
+  border: 2px solid var(--dark-wine);
+}
+
+.card-img-top {
+  border-bottom: 2px solid var(--dark-wine);
+}
+
+/* -------------------------------- End Products */
 
 /* -------------------------------- Media Queries */
 
@@ -126,3 +150,4 @@ body {
     padding-top: 164px;
   }
 }
+/* -------------------------------- End Media Queries */
