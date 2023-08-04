@@ -43,8 +43,25 @@ body {
   color: var(--secondary);
 }
 
-#searchBtn:hover {
+#SearchBox {
   background: var(--wine);
+  color: var(--secondary);
+  border: 1px solid var(--dark-wine);
+}
+
+#SearchBox::placeholder {
+  color: var(--secondary);
+  opacity: 50%;
+}
+
+#SearchBox:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+#searchBtn:hover {
+  background: var(--primary);
 }
 
 .logo-font {
@@ -227,6 +244,17 @@ body {
 
   .header-container {
     padding-top: 164px;
+  }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+  .header-container {
+    padding-top: 116px;
+  }
+
+  body {
+    height: calc(100vh - 116px);
   }
 }
 /* -------------------------------- End Media Queries */
