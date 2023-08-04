@@ -278,7 +278,7 @@
         "fields": {
             "sku": "pb22",
             "name": "Trust Black Shirt",
-            "description": "Trust only in the Lord. Show your journey of Faith by Walking in Favor of God with this soft feel Christian Crewneck Sweatshirt featuring a beautiful front “Walk by Faith and Not by Sight” bible verse text graphic and Fabrics of Faith logo on the back.",
+            "description": "Trust only in the Lord. Show your journey of Faith by Walking in Favor of God with this soft feel Christian Crewneck shirt featuring a beautiful front “Walk by Faith and Not by Sight” bible verse text graphic and Fabrics of Faith logo on the back.",
             "price": 18.99,
             "category": 6,
             "rating": 4.2,
@@ -381,7 +381,7 @@
         "model": "products.product",
         "fields": {
             "sku": "pb30",
-            "name": "G.O.A.T Hoodie",
+            "name": "G.O.A.T Sweatshirt",
             "description": "G.O.A.T is another nice concept of Tank top collections from PB Majestics. God over Any Things. This Sweatshirt gives you the motivation to put God first in everything you do.",
             "price": 34.99,
             "category": 4,
@@ -592,7 +592,7 @@
             "name": "Faith Love Hope Sweatshirt",
             "description": "Showcase your faith, hope and love to the world with this Christian Hoodie featuring a graphic text from Corinthians 13:13: 'Faith Hope Love'.",
             "price": 25.99,
-            "category": 3,
+            "category": 4,
             "rating": 4.3,
             "image": "fhp-sweat.jpg"
         }
@@ -605,7 +605,7 @@
             "name": "Freedom Sweatshirt",
             "description": "Freedom and Liberty comes from our Lord Jesus Christ. The world has nothing to offer. We hope this sweatshirt will be a reminder to you and those around you that Jesus is our saviour.",
             "price": 28.99,
-            "category": 3,
+            "category": 4,
             "rating": 4.3,
             "image": "freedom-sweat.jpg"
         }
@@ -618,7 +618,7 @@
             "name": "Good Friday Sweatshirt",
             "description": "Good Friday is the day that Jesus Christ died for our sins. He sacrificed His life for us to be saved. Let this wonderful sweatshirt be a reminder to you and those around you that Jesus is our saviour.",
             "price": 35.99,
-            "category": 3,
+            "category": 4,
             "rating": 4.3,
             "image": "gf-sweat.jpg"
         }
@@ -631,7 +631,7 @@
             "name": "Grace Sweatshirt",
             "description": "Let the Grace of God be with you now and forever. His abundant grace is sufficient for us. No one deserved the grace but He made it available to us by offering His only begotten son Jesus Christ. We hope this sweatshirt will be a reminder to you and those around you that the grace of God is all that we need.",
             "price": 35.99,
-            "category": 3,
+            "category": 4,
             "rating": 4.3,
             "image": "grace-sweat.jpg"
         }
@@ -644,7 +644,7 @@
             "name": "MOG Sweatshirt",
             "description": "This is a sweatshirt reminding us all the we are men and women of God",
             "price": 32.99,
-            "category": 3,
+            "category": 4,
             "rating": 4.3,
             "image": "man-of-god.jpg"
         }
@@ -657,7 +657,7 @@
             "name": "PB Majestic Sweatshirt",
             "description": "PB Majestic Bands Hoodies. Our brand is to inspire people to walk in all manner of Love and Faith. We hope this hoodie will be a reminder to you and those around you that you are a PB Majestic.",
             "price": 25.99,
-            "category": 3,
+            "category": 4,
             "rating": 4.3,
             "image": "pb-sweat-green.jpg"
         }
@@ -670,7 +670,7 @@
             "name": "Saved Sweatshirt",
             "description": "The Blood of Jesus Christ saves us from our sins. We hope this shirt will be a reminder to you and those around you that Jesus is our saviour.",
             "price": 35.99,
-            "category": 3,
+            "category": 4,
             "rating": 4.6,
             "image": "saved-sweat.jpg"
         }
@@ -683,7 +683,7 @@
             "name": "True Vine Sweatshirt",
             "description": "John 14 Jesus is the true vine and we are the branches. Be connected to the true vine and you will bear much fruit. We hope this sweatshirt will be a reminder to you and those around you that one always has to be connected to God.",
             "price": 35.99,
-            "category": 3,
+            "category": 4,
             "rating": 4.3,
             "image": "true-vine-sweat.jpg"
         }
@@ -696,7 +696,7 @@
             "name": "Yeshua - Green Sweatshirt",
             "description": "Yeshua Hamashiach is His name. He is the one and only God. This is a sweatshirt that affirm your faith in the name of the only God. In Him all things work together Good.",
             "price": 35.99,
-            "category": 3,
+            "category": 4,
             "rating": 4.3,
             "image": "yeshua-green-sweat.jpg"
         }
@@ -709,7 +709,7 @@
             "name": "Yeshua - Black Sweatshirt",
             "description": "Yeshua Hamashiach is His name. He is the one and only God. This is a sweatshirt that affirm your faith in the name of the only God. In Him all things work together Good.",
             "price": 38.99,
-            "category": 3,
+            "category": 4,
             "rating": 4.7,
             "image": "yeshua1-black-sweat.jpg"
         }
