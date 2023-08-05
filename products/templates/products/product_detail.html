@@ -16,6 +16,8 @@
     <!--  -->
     <div class="container mt-5 mb-4 " id="bg-product-details">
         <div class="row">
+
+            <!-- Display product image -->
             <div class="col-12 col-md-6 col-lg-4 ">
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank"><img src="{{ product.image.url }}"
@@ -25,21 +27,52 @@
                         alt="{{ product.name }}" class="img-fluid"></a>
                 {% endif %}
             </div>
+
             <div class="col-md-6">
-                <h2>{{ product.name }}</h2>
+                <!-- Display prduct name -->
+                <h2 class="bg-white text-black pl-2">{{ product.name }}</h2>
+
+                    <!-- Display product description -->
                     <p>{{ product.description }}</p>
-                        <h4 class="mb-1 text-left font-weight-bold ">€{{ product.price }}</h4>
-                            <p><strong>Category: {{ product.category.friendly_name }}</strong></p>
-                            <h4><span class="badge badge-pill badge-warning mb-1">{{ product.stock }} in stock</span>
+
+                        <!-- Display product price -->
+                        <h4 class="mb-1 text-left font-weight-bold pl-2">€{{ product.price }}</h4>
+
+                            <!-- category -->
+
+                            <p>
+                                <a class="text-white pl-2"
+                                    href="{% url 'products' %}?category={{ product.category.name }}">
+                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                </a>
+                            </p>
+
+                            <!-- Stock here -->
+                            <h4>
+                                <span
+                                    class="badge badge-pill badge-warning mt-0 pl-2">{{ product.stock }} in stock</span>
                             </h4>
+
+                            <!-- Rating -->
                             {% if product.rating %}
-                            <p><small class="text-white"><i
+                            <p>
+                                <small class="text-white pl-2"><i
                                         class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                             </p>
                             {% else %}
-                            <p><small class="text-muted">No Rating</small></p>
+                            <p>
+                                <small class="text-white pl-2">No Rating</small>
+                            </p>
                             {% endif %}
-                            <a href="#" class="btn btn-success border-0" id="p_view_btn">Add to cart</a>
+
+                            <!-- Quantity -->
+                            <p>Quantity</p>
+
+                            <!-- Sizes -->
+                            <p>Sizes</p>
+
+                            <!-- Add to cart button -->
+                            <a href="#" class="btn btn-success border-0 pl-2" id="p_view_btn">Add to cart</a>
             </div>
         </div>
     </div>

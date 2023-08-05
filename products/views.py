@@ -10,14 +10,36 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
+    sort = None
+    direction = None
     
-    # Search functionality
+
     if request.GET:
+        # Sorting functionality
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))# This will sort the products by name in ascending order
+            if sortkey == 'category':
+                sortkey = 'category__name'
+            if sortkey == 'price':
+                sortkey = 'price'
+            if sortkey == 'rating':
+                sortkey = 'rating'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}' # This will sort the products by name in descending order
+            products = products.order_by(sortkey)
+            
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
-            
+        
+        # Search functionality
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -25,11 +47,15 @@ def all_products(request):
                 return redirect(reverse('products'))
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
+    
+    current_sorting = f'{sort}_{direction}'
 
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
+        'current_sorting': current_sorting,
+        'current_direction': direction,      
     }
     
     return render(request, 'products/products.html', context)

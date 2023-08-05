@@ -97,6 +97,10 @@ body {
   color: var(--dark-wine) !important;
 }
 
+.text-cream {
+  color: var(--cream) !important;
+}
+
 .border-black {
   border: 1px solid black !important;
 }
@@ -163,6 +167,25 @@ body {
 #view_btn:hover {
   background: #9e6650;
   color: var(--secondary);
+}
+
+#category-badge:hover {
+  background: #212529 !important;
+  color: #fff !important;
+}
+
+#product-link {
+  background-color: var(--dark-wine);
+  color: var(--secondary);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+#product-link:hover {
+  background-color: #000000;
+  color: var(--secondary);
+  text-decoration: none;
 }
 /* -------------------------------- End Products */
 
