@@ -187,6 +187,35 @@ body {
   color: var(--secondary);
   text-decoration: none;
 }
+
+#sort-selector {
+  background-color: var(--cream);
+  color: var(--dark-wine);
+  border: 2px solid var(--dark-wine);
+}
+
+#sort-selector:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.border-info {
+  border-color: var(--dark-wine) !important;
+}
+
+.btt-button {
+  height: 52px;
+  width: 52px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.btt-link {
+  cursor: pointer;
+}
+
 /* -------------------------------- End Products */
 
 /* -------------------------------- Product View */
