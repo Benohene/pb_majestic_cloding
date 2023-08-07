@@ -273,6 +273,18 @@ body {
   color: var(--dark-wine);
   cursor: pointer;
 }
+
+.btn-outline-black {
+  background: white;
+  color: black !important;
+  border: 1px solid black;
+}
+
+.btn-outline-black:hover {
+  background: rgb(65, 65, 65);
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid black;
+}
 /* --------------------------------- End Product view */
 
 /* -------------------------------- Media Queries */
