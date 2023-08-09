@@ -41,7 +41,7 @@
                                     class="text-black">{{ item.product.name }}</a>
                             </h3>
                             <div class="font-size-sm text-muted"><span
-                                    class="text-muted mr-2"><strong>Size:</strong></span>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}
+                                    class="text-muted mr-2"><strong>Size:</strong></span>{% if item.product.has_size %}{{ item.size|upper }}{% else %}N/A{% endif %}
                             </div>
                                 <div class="font-size-sm text-muted"><span
                                         class="text-muted mr-2"><strong>SKU:</strong></span>{{ item.product.sku|upper }}</div>
@@ -53,11 +53,43 @@
                                 style="max-width: 10rem;">
                                 <div class="form-group mb-2 text-black">
                                     <label for="quantity">Quantity</label>
-                                    <p class="my-0">{{ item.quantity }}</p>
+                                    <!-- Quantity form -->
+                                    <form class="form update-form" method="POST" action="">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="decrement-qty btn btn-sm btn-black rounded-0"
+                                                        data-item_id="{{ item.item_id }}"
+                                                        id="decrement-qty_{{ item.item_id }}">
+                                                        <span>
+                                                            <i class="fas fa-minus fa-sm"></i>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <input class="form-control form-control-sm qty_input" type="number"
+                                                    name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                                    data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+                                                <div class="input-group-append">
+                                                    <button class="increment-qty btn btn-sm btn-black rounded-0"
+                                                        data-item_id="{{ item.item_id }}"
+                                                        id="increment-qty_{{ item.item_id }}">
+                                                        <span>
+                                                            <i class="fas fa-plus fa-sm"></i>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                {% if item.product.has_size %}
+                                                <input type="hidden" name="product_size" value="{{ item.size }}">
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                                 <button class="btn btn-outline-secondary btn-sm btn-block mb-2" type="button">
                                     Update <i class="fa-solid fa-rotate"></i></button>
-                                <button class="btn btn-outline-danger btn-sm btn-block mb-2" type="button">
+                                <button class="btn btn-outline-danger btn-sm btn-block mb-2" type="button"
+                                    id="remove_{{ item.item_id }}" data-size="{{ item.size }}">
                                     Remove <i class="fa-solid fa-trash"></i></button>
                             </div>
                         </div>
@@ -107,4 +139,35 @@
                 {% endif %}
             </div>
         </div>
+        {% endblock %}
+
+        {% block postloadjs %}
+        {{ block.super }}
+        {% include 'products/includes/quantity_js_html.html' %}
+
+        <!-- Update and Remove Script -->
+        <script type="text/javascript">
+            // Update quantity on click
+            $('.update-link').click(function (e) {
+                var form = $(this).prev('.update-form');
+                form.submit();
+            })
+
+            // Remove item and reload on click
+            $('.remove-item').click(function (e) {
+                var csrfToken = "{{ csrf_token }}";
+                var itemId = $(this).attr('id').split('remove_')[1];
+                var size = $(this).data('size');
+                var url = `/bag/remove/${itemId}`;
+                var data = {
+                    'csrfmiddlewaretoken': csrfToken,
+                    'size': size
+                };
+
+                $.post(url, data)
+                    .done(function () {
+                        location.reload();
+                    });
+            })
+        </script>
         {% endblock %}
