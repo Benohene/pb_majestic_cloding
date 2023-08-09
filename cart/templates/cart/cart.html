@@ -40,69 +40,71 @@
                                     href="{% url 'product_detail' item.product.id %}"
                                     class="text-black">{{ item.product.name }}</a>
                             </h3>
-                            <div class="font-size-sm text-muted"><span class="text-muted mr-2"><strong>Size:</strong></span>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}
-                            </div>
                             <div class="font-size-sm text-muted"><span
-                                    class="text-muted mr-2"><strong>SKU:</strong></span>{{ item.product.sku|upper }}</div>
-                                <div class="font-size-lg text-primary pt-2 text-black ">
-                                    <strong>Price: €{{ item.product.price }}</strong></div>
+                                    class="text-muted mr-2"><strong>Size:</strong></span>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}
+                            </div>
+                                <div class="font-size-sm text-muted"><span
+                                        class="text-muted mr-2"><strong>SKU:</strong></span>{{ item.product.sku|upper }}</div>
+                                    <div class="font-size-lg text-primary pt-2 text-black ">
+                                        <strong>Price: €{{ item.product.price }}</strong></div>
+                                </div>
+                            </div>
+                            <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left"
+                                style="max-width: 10rem;">
+                                <div class="form-group mb-2 text-black">
+                                    <label for="quantity">Quantity</label>
+                                    <p class="my-0">{{ item.quantity }}</p>
+                                </div>
+                                <button class="btn btn-outline-secondary btn-sm btn-block mb-2" type="button">
+                                    Update <i class="fa-solid fa-rotate"></i></button>
+                                <button class="btn btn-outline-danger btn-sm btn-block mb-2" type="button">
+                                    Remove <i class="fa-solid fa-trash"></i></button>
                             </div>
                         </div>
-                        <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left"
-                            style="max-width: 10rem;">
-                            <div class="form-group mb-2 text-black">
-                                <label for="quantity">Quantity</label>
-                                <p class="my-0">{{ item.quantity }}</p>
-                            </div>
-                            <button class="btn btn-outline-secondary btn-sm btn-block mb-2" type="button">
-                                Update <i class="fa-solid fa-rotate"></i></button>
-                            <button class="btn btn-outline-danger btn-sm btn-block mb-2" type="button">
-                                Remove <i class="fa-solid fa-trash"></i></button>
+                        {% endfor %}
+                    </div>
+                    <!-- Sidebar-->
+                    <div class="col-xl-3 col-md-4 pt-3 pt-md-0 ">
+                        <h2 class="h6 px-4 py-3 " id="smr-header">Summary</h2>
+                        <div class="text-black">
+                            <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
+                            <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
+                                <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+                                {% if free_delivery_delta > 0 %}
+                                <p class="mb-1 text-danger">
+                                    You could get free delivery by spending just
+                                    <strong>€{{ free_delivery_delta }}</strong>
+                                        more!
+                                </p>
+                                {% endif %}
+                        </div>
+                        <div>
+                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg" id="backbtn">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Back to Shop</span>
+                            </a>
+                            <a href="" class="btn btn-black rounded-0 btn-lg" id="checkoutBtn">
+                                <span class="text-uppercase">Secure Checkout</span>
+                                <span class="icon">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
-                    {% endfor %}
                 </div>
-                <!-- Sidebar-->
-                <div class="col-xl-3 col-md-4 pt-3 pt-md-0 ">
-                    <h2 class="h6 px-4 py-3 " id="smr-header">Summary</h2>
-                    <div class="text-black">
-                        <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
-                        <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
-                            <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
-                            {% if free_delivery_delta > 0 %}
-                            <p class="mb-1 text-danger">
-                                You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong>
-                                    more!
-                            </p>
-                            {% endif %}
-                    </div>
-                    <div>
-                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg" id="backbtn">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="text-uppercase">Back to Shop</span>
-                        </a>
-                        <a href="" class="btn btn-black rounded-0 btn-lg" id="checkoutBtn">
-                            <span class="text-uppercase">Secure Checkout</span>
-                            <span class="icon">
-                                <i class="fas fa-lock"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- If no items in cart -->
-            {% else %}
-            <p class="lead mb-5 text-black">Your Shopping Cart is empty.</p>
-            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                <span class="icon">
-                    <i class="fas fa-chevron-left"></i>
-                </span>
-                <span class="text-uppercase">Back to Shop</span>
-            </a>
-            {% endif %}
+                <!-- If no items in cart -->
+                {% else %}
+                <p class="lead mb-5 text-black">Your Shopping Cart is empty.</p>
+                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">Back to Shop</span>
+                </a>
+                {% endif %}
+            </div>
         </div>
-    </div>
-    {% endblock %}
+        {% endblock %}
