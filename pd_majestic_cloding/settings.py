@@ -49,6 +49,9 @@ INSTALLED_APPS = [
     'home',
     'products',
     'cart',
+    
+    # Other
+    'crispy_forms',
 
 ]
 
@@ -63,6 +66,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'pd_majestic_cloding.urls'
+
+# Crispy forms settings
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -80,6 +86,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'cart.contexts.cart_contents' # This will make the cart contents available to all templates
             ],
+            'builtins': ['crispy_forms.templatetags.crispy_forms_tags', 'crispy_forms.templatetags.crispy_forms_field',]  # required
         },
     },
 ]

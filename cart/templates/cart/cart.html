@@ -40,12 +40,12 @@
                                     href="{% url 'product_detail' item.product.id %}"
                                     class="text-black">{{ item.product.name }}</a>
                             </h3>
-                            <div class="font-size-sm text-muted"><span class="text-muted mr-2">Size:</span>Size Here
+                            <div class="font-size-sm text-muted"><span class="text-muted mr-2"><strong>Size:</strong></span>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}
                             </div>
                             <div class="font-size-sm text-muted"><span
-                                    class="text-muted mr-2">SKU:</span>{{ item.product.sku|upper }}</div>
+                                    class="text-muted mr-2"><strong>SKU:</strong></span>{{ item.product.sku|upper }}</div>
                                 <div class="font-size-lg text-primary pt-2 text-black ">
-                                    <strong>€{{ item.product.price }}</strong></div>
+                                    <strong>Price: €{{ item.product.price }}</strong></div>
                             </div>
                         </div>
                         <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left"

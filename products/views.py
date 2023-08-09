@@ -59,6 +59,7 @@ def all_products(request):
         'current_direction': direction,      
     }
     
+    
     return render(request, 'products/products.html', context)
 
 
@@ -66,7 +67,9 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
     ''' This function will render the product_detail.html template '''
     product = get_object_or_404(Product, pk=product_id)
+    
 
+         
     context = {
         'product': product,
     }
