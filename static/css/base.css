@@ -271,6 +271,22 @@ body {
   background: white;
   border: 2px solid var(--dark-wine);
 }
+
+.updateBtn {
+  background: var(--dark-wine);
+}
+
+.updateBtn:hover {
+  background: #000000;
+}
+
+.removeBtn {
+  background: red;
+}
+
+.removeBtn:hover {
+  background: #8d0101;
+}
 /* -------------------------------- End Products Cart */
 
 /* -------------------------------- Product View */

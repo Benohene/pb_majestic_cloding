@@ -1,47 +1,69 @@
 <script type="text/javascript">
+    // ----------------Increase and Decrease button----------------
 
-// ----------------Increase and Decrease button----------------
+    // Enable/disable increment and decrement buttons
 
-// Enable/disable increment and decrement buttons
+    function handleEnableDisable(itemId) {
+        var value = parseInt($(`#id_qty_${itemId}`).val());
+        var minusDisabled = value < 2;
+        var plusDisabled = value > 98;
+        $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
+        $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
+    }
 
-function handleEnableDisable(itemId) {
-    var value = parseInt($(`#id_qty_${itemId}`).val());
-    var minusDisabled = value < 2;
-    var plusDisabled = value > 98;
-    $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
-    $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
-}
+    // Ensure proper enabling/disabling of all inputs on page load
+    var allQtyInputs = $('.qty_input');
+    for (var i = 0; i < allQtyInputs.length; i++) {
+        var itemId = $(allQtyInputs[i]).data('item_id');
+        handleEnableDisable(itemId);
+    }
 
-// Ensure proper enabling/disabling of all inputs on page load
-var allQtyInputs = $('.qty_input');
-for (var i = 0; i < allQtyInputs.length; i++) {
-    var itemId = $(allQtyInputs[i]).data('item_id');
-    handleEnableDisable(itemId);
-}
+    // Check enable/disable every time the input is changed
+    $('.qty_input').change(function () {
+        var itemId = $(this).data('item_id');
+        handleEnableDisable(itemId);
+    });
 
-// Check enable/disable every time the input is changed
-$('.qty_input').change(function () {
-    var itemId = $(this).data('item_id');
-    handleEnableDisable(itemId);
-});
+    // Increment quantity
+    $('.increment-qty').click(function (e) {
+        e.preventDefault();
+        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        var value = parseInt($(closestInput).val());
+        $(closestInput).val(value + 1);
+        var itemId = $(this).data('item_id');
+        handleEnableDisable(itemId);
+    });
 
-// Increment quantity
-$('.increment-qty').click(function (e) {
-    e.preventDefault();
-    var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-    var value = parseInt($(closestInput).val());
-    $(closestInput).val(value + 1);
-    var itemId = $(this).data('item_id');
-    handleEnableDisable(itemId);
-});
+    // Decrement quantity
+    $('.decrement-qty').click(function (e) {
+        e.preventDefault();
+        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        var value = parseInt($(closestInput).val());
+        $(closestInput).val(value - 1);
+        var itemId = $(this).data('item_id');
+        handleEnableDisable(itemId);
+    });
 
-// Decrement quantity
-$('.decrement-qty').click(function (e) {
-    e.preventDefault();
-    var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-    var value = parseInt($(closestInput).val());
-    $(closestInput).val(value - 1);
-    var itemId = $(this).data('item_id');
-    handleEnableDisable(itemId);
-});
+    // Update and Remove Script
+    // Update quantity
+    $('.update-link').click(function (e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    });
+
+    // Remove item
+    $('.remove-item').click(function (e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).attr('id').split('remove_')[2];
+        var url = `/cart/remove/${itemId}/`;
+        var data = {
+            'csrfmiddlewaretoken': csrfToken,
+            'size': size
+        };
+        $.post(url, data)
+            .done(function () {
+                location.reload();
+            });
+    });
 </script>
