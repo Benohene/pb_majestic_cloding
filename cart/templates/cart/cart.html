@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load cart_tools %}
 
 {% block page_header %}
 <div class="container header-container">
@@ -41,12 +42,13 @@
                                     class="text-black">{{ item.product.name }}</a>
                             </h3>
                             <div class="font-size-sm text-muted"><span
-                                    class="text-muted mr-2"><strong>Size:</strong></span>{% if item.product.has_size %}{{ item.size|upper }}{% else %}N/A{% endif %}
+                                    class="text-muted mr-2"><strong>Size:</strong></span>{% if item.product.has_size %}{{ item.size | upper }}{% else %}N/A{% endif %}
                             </div>
                                 <div class="font-size-sm text-muted"><span
                                         class="text-muted mr-2"><strong>SKU:</strong></span>{{ item.product.sku|upper }}</div>
                                     <div class="font-size-lg text-primary pt-2 text-black ">
-                                        <strong>Price: €{{ item.product.price }}</strong></div>
+                                        <strong>Sub Total:
+                                            €{{ item.product.price | calc_subtotal:item.quantity }}</strong></div>
                                 </div>
                             </div>
                             <div class="pt-2 pt-sm-0 pl-sm-3 mx-auto mx-sm-0 text-center text-sm-left"
@@ -80,7 +82,7 @@
                                                         </span>
                                                     </button>
                                                 </div>
-                                                {% if item.product.has_sizes %}
+                                                {% if item.product.has_size %}
                                                 <input type="hidden" name="product_size" value="{{ item.size }}">
                                                 {% endif %}
                                             </div>
