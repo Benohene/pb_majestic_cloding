@@ -91,6 +91,10 @@ TEMPLATES = [
     },
 ]
 
+# Messages
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
+
 # Allauth settings
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
@@ -98,6 +102,8 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
+
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
@@ -110,6 +116,7 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'pd_majestic_cloding.wsgi.application'
+
 
 
 # Database
