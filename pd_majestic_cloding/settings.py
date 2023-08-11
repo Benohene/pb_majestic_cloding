@@ -86,9 +86,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media', # required for media files
                 'cart.contexts.cart_contents' # This will make the cart contents available to all templates
             ],
-            'builtins': ['crispy_forms.templatetags.crispy_forms_tags', 'crispy_forms.templatetags.crispy_forms_field',]  # required
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags', 
+                'crispy_forms.templatetags.crispy_forms_field',]  # required
         },
     },
 ]

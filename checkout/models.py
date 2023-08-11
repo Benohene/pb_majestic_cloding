@@ -10,7 +10,7 @@ class Order(models.Model):
     # The Order model is used to store the order information
     order_number = models.CharField(max_length=32, null=False, editable=False)
     full_name = models.CharField(max_length=50, blank=False)
-    emal = models.EmailField(max_length=254, blank=False)
+    email = models.EmailField(max_length=254, blank=False)
     phone_number = models.CharField(max_length=20, blank=False)
     country = models.CharField(max_length=40, blank=False)
     postcode = models.CharField(max_length=20, blank=True)
