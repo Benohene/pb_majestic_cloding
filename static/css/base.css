@@ -118,6 +118,16 @@ body {
 .bg-black {
   background: var(--wine) !important;
 }
+
+.badge-count {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--dark-wine);
+  color: var(--secondary);
+  border: 1px solid var(--dark-wine);
+  font-size: 12px;
+  transform: translateY(-50%);
+}
 /* -------------------------------- End Navbar */
 
 /* -------------------------------- Products */
@@ -425,6 +435,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 /* ------------------------------- End bootstrap toasts */
 
 /* -------------------------------- Media Queries */

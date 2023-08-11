@@ -48,7 +48,11 @@
     <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none"
         href="{% url 'view_cart' %}">
         <div class="text-center">
-            <div><i class="fa-solid fa-cart-shopping text-black"></i>
+            <div>
+                <i class="fa-solid fa-cart-shopping text-black"></i>
+                {% if product_count %}
+                <span class="badge badge-danger position-absolute badge-count">{{ product_count }}</span>
+                    {% endif %}
             </div>
             <p class="my-0 text-black">
                 {% if grand_total %}
