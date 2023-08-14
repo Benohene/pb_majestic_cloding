@@ -128,6 +128,10 @@ body {
   font-size: 12px;
   transform: translateY(-50%);
 }
+
+.text-main-black {
+  color: black !important;
+}
 /* -------------------------------- End Navbar */
 
 /* -------------------------------- Products */
