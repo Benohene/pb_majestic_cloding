@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-p!38e82^6)f3#20b65fipb^*gp^em(v*@krbmbtx4*90aa#l=*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['4801-2a01-c22-bc24-6a00-e95d-2f72-1d5f-f691.ngrok-free.app']
 CSRF_TRUSTED_ORIGINS = []
 
 # Application definition
@@ -184,6 +184,8 @@ STRIPE_CURRENCY = 'eur'
 STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY", "")
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
 
+# Stripe WHS
+STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
