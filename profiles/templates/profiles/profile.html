@@ -23,4 +23,21 @@
             <hr>
         </div>
     </div>
+    ## Profile Info
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="logo-font mb-0">Profile Info</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <p class="mb-0"><strong>Username:</strong> {{ user.username }}</p>
+                            <p class="mb-0"><strong>Email:</strong> {{ user.email }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     {% endblock %}
