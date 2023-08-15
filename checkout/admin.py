@@ -12,9 +12,9 @@ class OrderAdmin(admin.ModelAdmin):
     # This class is used to display the order information in the admin panel
     inlines = (OrderLineItemAdminInline,)
     
-    readonly_fields = ('order_number', 'date', 'delivery_cost', 'order_total', 'grand_total',)
+    readonly_fields = ('order_number', 'date', 'delivery_cost', 'order_total', 'grand_total','original_cart', 'stripe_pid')
     
-    fields = ('order_number', 'date', 'full_name', 'email', 'phone_number', 'country', 'postcode', 'town_or_city', 'street_address1', 'street_address2', 'region', 'delivery_cost', 'order_total', 'grand_total',)
+    fields = ('order_number', 'date', 'full_name', 'email', 'phone_number', 'country', 'postcode', 'town_or_city', 'street_address1', 'street_address2', 'region', 'delivery_cost', 'order_total', 'grand_total','original_cart', 'stripe_pid')
     
     list_display = ('order_number', 'date', 'full_name', 'order_total', 'delivery_cost','grand_total',)
     
