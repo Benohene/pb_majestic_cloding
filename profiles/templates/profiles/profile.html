@@ -23,58 +23,71 @@
             <hr>
         </div>
     </div>
-    <!-- Usename and Email -->
-    <div class="row">
-        <div class="col text-black">
-            <div class="card">
-                <div class="card-header bg-black text-white">
-                    <h4 class="logo-font mb-0">Profile Info</h4>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col">
-                            <p class="mb-0"><strong>Username:</strong> {{ user.username }}</p>
-                                <p class="mb-0"><strong>Email:</strong> {{ user.email }}</p>
-                        </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header bg-black text-white">
+                        Navigation
                     </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#" class="text-main-black">Profile</a></li>
+                        <li class="list-group-item"><a href="#" class="text-main-black">Order History</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header bg-black text-white">
+                        Profile Information
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-black">Username: <span class="text-main-black">{{ user.username }}</span></h5>
+                            <p class="card-text text-black">Email: <span class="text-main-black">{{ user.email }}</span></p>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header bg-black text-white">
+                        Defualt Delivery Information
+                    </div>
+                    <div class="card-body">
+                        <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <button class="btn btn-black rounded-0 text-uppercase float-right">Update Information</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header bg-black text-white">
+                        Order History
+                    </div>
+                    <p class="text-black">{{ order_history }}</p>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="row mt-5">
-        <div class="col-12 col-lg-6">
-            <p class="text-muted">Defualt Delivery Information</p>
-            <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
-                {% csrf_token %}
-                {{ form|crispy }}
-                <button class="btn btn-black rounded-0 text-uppercase float-right">Update Information</button>
-            </form>
-        </div>
-        <div class="col-12 col-lg-6">
-            <p class="text-muted">Order History</p>
-            <!-- This is where the order history will go  -->
-            <p class="text-black">{{ order_history }}</p>
-            </div>
-        </div>
+</div>
 
-        {% endblock %}
+{% endblock %}
 
-        {% block postloadjs %}
-        {{ block.super }}
-        <script>
-            let countrySelected = $('#id_default_country').val();
-            if (!countrySelected) {
-                $('#id_default_country').css('color', '#aab7c4');
-            };
-            $('#id_default_country').change(function () {
-                countrySelected = $(this).val();
-                if (!countrySelected) {
-                    $(this).css('color', '#aab7c4');
-                } else {
-                    $(this).css('color', '#000');
-                }
-            });
-        </script>
-        {% endblock %}
+{% block postloadjs %}
+{{ block.super }}
+<script>
+    let countrySelected = $('#id_default_country').val();
+    if (!countrySelected) {
+        $('#id_default_country').css('color', '#aab7c4');
+    };
+    $('#id_default_country').change(function () {
+        countrySelected = $(this).val();
+        if (!countrySelected) {
+            $(this).css('color', '#aab7c4');
+        } else {
+            $(this).css('color', '#000');
+        }
+    });
+</script>
+{% endblock %}
