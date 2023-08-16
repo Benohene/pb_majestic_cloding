@@ -32,9 +32,11 @@
                         Navigation
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="{% url 'profile' %}" class="text-main-black"><i class="fa-solid fa-user"></i> Profile</a>
+                        <li class="list-group-item"><a href="{% url 'profile' %}" class="text-main-black"><i
+                                    class="fa-solid fa-user"></i> Profile</a>
                         </li>
-                        <li class="list-group-item"><a href="{% url 'order_list' %}" class="text-main-black"><i class="fa-solid fa-receipt"></i> Order
+                        <li class="list-group-item"><a href="{% url 'order_list' %}" class="text-main-black"><i
+                                    class="fa-solid fa-receipt"></i> Order
                                 History</a></li>
                     </ul>
                 </div>
@@ -59,8 +61,9 @@
                     </div>
                     <div class="card-body order-history">
                         {% if orders.exists %}
-                        <p class="font-weight-bold text-black mb-5">Click Order number to access your Order
+                        <p class="font-weight-bold text-black mb-3">Click Order number to access your Order
                             Summary.</p>
+                        <hr class="mt-0 border-black">
                         {% for order in orders %}
                         <div class="row">
                             <div class="col-12 col-md-6 mb-2 mb-md-0">
@@ -68,7 +71,7 @@
                                 <a class="order-number text-main-black"
                                     href="{% url 'order_history' order.order_number %}"
                                     title="{{ order.order_number }}">
-                                    {{ order.order_number|truncatechars:9 }}</a>
+                                    {{ order.order_number|truncatechars:15 }}</a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <p class="text-black font-weight-bold mb-0">Order Date</p>
@@ -89,14 +92,15 @@
                                 <p class="text-main-black">€{{ order.grand_total }}</p>
                             </div>
                         </div>
-                        <hr class="mt-0">
+                        <hr class="mt-0 border-black">
                         {% endfor %}
                         {% else %}
                         <p class="font-weight-bold text-black">Order history empty!</p>
-                        <p class="text-main-black">Start shopping today with PB Majestic Cloding. We have affordable but quality products. We
+                        <p class="text-main-black">Start shopping today with PB Majestic Cloding. We have affordable but
+                            quality products. We
                             ship to you in short time.</p>
 
-                            <a href="{% url 'products' %}" class="btn btn-primary rounded-0 border-0 updateBtn"><i
+                        <a href="{% url 'products' %}" class="btn btn-primary rounded-0 border-0 updateBtn"><i
                                 class="fas fa-chevron-left"></i> Back to Shop</a>
                         {% endif %}
                     </div>
