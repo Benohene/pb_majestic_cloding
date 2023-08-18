@@ -188,6 +188,10 @@ STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
 # Stripe WHS
 STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
+# Email Confirmation
+DEFAULT_FROM_EMAIL = 'pbmajestic.cloding@gmail.com'
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
