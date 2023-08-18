@@ -61,9 +61,12 @@ def order_list(request):
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-    
+            messages.success(request, 'Profile updated successfully')
+        else:
+            messages.success(request, 'Update failed. Please ensure the form is valid.')
+    else:
     # If the request is a POST request, get the form data
-    form = UserProfileForm(request.POST or None, instance=profile)
+        form = UserProfileForm(request.POST or None, instance=profile)
     orders = profile.orders.all()
     
     template = 'profiles/order_list.html'

@@ -33,9 +33,15 @@
                 {% for item in cart_items %}
                 <div class="d-sm-flex justify-content-between my-4">
                     <div class="media d-block d-sm-flex text-center text-sm-left">
+                        {% if item.product.image %}
                         <a class="cart-item-thumb mx-auto mr-sm-4"
                             href="{% url 'product_detail' item.product.id %}"><img class="img-fluid rounded"
                                 src="{{ item.product.image.url }}"></a>
+                        {% else %}
+                        <a class="cart-item-thumb mx-auto mr-sm-4"
+                            href="{% url 'product_detail' item.product.id %}"><img class="img-fluid rounded"
+                                src="{{ MEDIA_URL }}noimage.png"></a>
+                        {% endif %}
                         <div class="media-body pt-3">
                             <h3 class="product-card-title font-weight-semibold border-0 pb-0 "><a
                                     href="{% url 'product_detail' item.product.id %}"
