@@ -112,6 +112,16 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <p class="">
+                                        {% if request.user.is_superuser %}
+                                        <div class="ml-1 mt-2">
+                                            <a href="{% url 'edit_product' product.id %}" class="bg-white p-2 mr-2">Edit</a>
+                                            <a class="text-danger bg-white p-2"
+                                                href="{% url 'delete_product' product.id %}" >Delete</a>
+                                        </div>
+                                        {% endif %}
+                                    </p>
                                     <div class="col{% if hs %}-12 mt-2{% endif %}">
                                         <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                                             <span class="icon">
