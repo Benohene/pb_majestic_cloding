@@ -86,40 +86,53 @@
                             <div class="col">
                                 <p class="lead mb-0 text-left font-weight-bold text-black">€{{ product.price }}
                                     <!--Stock here-->
-                                    <span class="badge badge-pill badge-warning mb-0">
-                                        {{ product.stock }} in stock</span>
-
-                                        <!-- category -->
-                                        {% if product.category %}
-                                        <p class="small mt-1 mb-1">
-                                            <a class="text-black"
-                                                href="{% url 'products' %}?category={{ product.category.name }}">
-                                                <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                                                </a>
-                                        </p>
-                                        {% endif %}
-                                        {% if product.rating %}
-                                        <p>
-                                            <small class="text-muted"><i
-                                                    class="fas fa-star mr-1 mt-0"></i>{{ product.rating }} / 5</small>
-                                                {% else %}
-                                                <small class="text-muted">No Rating</small>
-                                                {% endif %}
-                                        </p>
-                                        <p>
-                                            {% if request.user.is_superuser %}
-                                            <small class="ml-3">
-                                                <a href="{% url 'edit_product' product.id %}">Edit</a> |
-                                                <a class="text-danger"
-                                                    href="{% url 'delete_product' product.id %}">Delete</a>
-                                            </small>
+                                    {% if product.stock > 0 %}
+                                    {% if product.stock < 10 %} <span
+                                        class="badge badge-pill badge-warning">{{ product.stock }} in stock</span>
+                                        {% else %}
+                                        <span class="badge badge-pill badge-success">{{ product.stock }} in stock</span>
                                             {% endif %}
-                                        </p>
+                                            {% else %}
+                                            <span class="badge badge-pill badge-danger">OUT OF STOCK</span>
+                                            {% endif %}
 
-                                        <p>
-                                            <a href="{% url 'product_detail' product.id %}"
-                                                class="btn btn-success border-0" id="view_btn">View Product</a>
-                                        </p>
+                                            <!-- category -->
+                                            {% if product.category %}
+                                            <p class="small mt-1 mb-1">
+                                                <a class="text-black"
+                                                    href="{% url 'products' %}?category={{ product.category.name }}">
+                                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                                </a>
+                                            </p>
+                                            {% endif %}
+                                            {% if product.rating %}
+                                            <p>
+                                                <small class="text-muted"><i
+                                                        class="fas fa-star mr-1 mt-0"></i>{{ product.rating }} / 5</small>
+                                                    {% else %}
+                                                    <small class="text-muted">No Rating</small>
+                                                    {% endif %}
+                                            </p>
+                                            <p>
+                                                {% if request.user.is_superuser %}
+                                                <small class="ml-3">
+                                                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                                                    <a class="text-danger"
+                                                        href="{% url 'delete_product' product.id %}">Delete</a>
+                                                </small>
+                                                {% endif %}
+                                            </p>
+
+                                            <p>
+                                                <button class="btn btn-success border-0" id="view_btn"><a
+                                                        href="{% url 'product_detail' product.id %}"
+                                                        class="text-cream text-decoration-none">View
+                                                        Product</a></button>
+
+
+
+
+                                            </p>
                             </div>
                         </div>
                     </div>
