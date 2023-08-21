@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-p!38e82^6)f3#20b65fipb^*gp^em(v*@krbmbtx4*90aa#l=*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pb-majestic-cloding.herokuapp.com', '127.0.0.1', '']
-CSRF_TRUSTED_ORIGINS = []
+ALLOWED_HOSTS = ['pb-majestic-cloding.herokuapp.com', '127.0.0.1', 'pb-majestic-cloding-b9d992700fae.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ["https://pb-majestic-cloding-b9d992700fae.herokuapp.com"]
 
 # Application definition
 
