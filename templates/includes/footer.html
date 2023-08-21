@@ -1,0 +1,67 @@
+<footer class="bg-black text-white mt-5">
+    <div class="container py-4 py-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 text-center text-lg-left d-flex flex-column item">
+                <h3 class="font-weight-bold" style="font-size: 1rem;">PB Majestic Cloding</h3>
+                <ul class="list-unstyled">
+                    <li>
+                        <p class="text-white">Cork's favourite retro gaming store</p>
+                    </li>
+                    <li><a class="text-white" href="">Blog</a></li>
+                    <li><a class="text-white" href="">Contact Us</a></li>
+                </ul>
+                <ul class="list-inline text-yellow">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/" target="_blank" rel="nofollow" class="me-4 text-reset">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/" target="_blank" rel="nofollow" class="me-4 text-reset">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/" target="_blank" rel="nofollow" class="me-4 text-reset">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 text-center text-lg-left d-flex flex-column item">
+                <h3 class="font-weight-bold" style="font-size: 1rem;"><i class="fa-solid fa-shirt"></i> T-Shirt
+                </h3>
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'products' %}?category=mens_wear" class="dropdown-item">Men</a></li>
+                    <li></li><a href="{% url 'products' %}?category=womens_wear" class="dropdown-item">Women</a></li>
+                    <li></li><a href="{% url 'products' %}?category=mens_wear,womens_wear" class="dropdown-item">All
+                        T-Shirts</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 text-center text-lg-left d-flex flex-column item">
+                <h3 class="font-weight-bold" style="font-size: 1rem;"><i class="fa-solid fa-gift"></i> Special Offers</h3>
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a></li>
+                    <li><a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a></li>
+                    <li><a href="{% url 'products' %}?category=new_arrivals,deals" class="dropdown-item">All
+                            Specials</a></li>
+                </ul>
+            </div>
+            <div
+                class="col-lg-3 text-center text-lg-left d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social">
+                <h4 class="font-weight-bold mb-2"><strong>Subscribe to our newsletter</strong></h4>
+                <form class="d-flex justify-content-center flex-wrap" method="POST"
+                    action="">
+                    {% csrf_token %}
+                    <div class="my-2"><input class="form-control" type="email" name="email" placeholder="Your Email">
+                    </div>
+                    <div class="my-2"><button class="btn btn-outline-black ml-2" type="submit">Subscribe </button></div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center pt-3">
+            <p class="mb-0">Developed By <a href="" target="_blank" rel="nofollow">Benjamin Ohene Konadu</a> for Code Institute's Portfolio Project 5 - 2023</p>
+        </div>
+    </div>
+</footer>
