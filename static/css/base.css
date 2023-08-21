@@ -372,6 +372,7 @@ body {
 }
 /* --------------------------------- End Product view */
 
+<<<<<<< HEAD
 /* Product Form */
 
 .btn-file {
@@ -400,6 +401,8 @@ body {
   border-radius: 0;
 }
 
+=======
+>>>>>>> parent of 49ad288 (PÜroduct Admin -completed image field fix)
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
