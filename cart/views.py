@@ -34,7 +34,7 @@ def add_to_cart(request, item_id):
         # stock control
         if cart[item_id]['items_by_size'][size] > product.stock:
             cart[item_id]['items_by_size'][size] = product.stock
-            messages.warning(request, f'You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.')
+            messages.error(request, f'You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.')
     else:
         if item_id in list(cart.keys()):
             cart[item_id] += quantity
@@ -45,7 +45,7 @@ def add_to_cart(request, item_id):
         # stock control
         if cart[item_id] > product.stock:
             cart[item_id] = product.stock
-            messages.warning(request, f'You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.')
+            messages.error(request, f'You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.')
 
     
     request.session['cart'] = cart
@@ -74,7 +74,7 @@ def adjust_cart(request, item_id):
         # stock control
         if cart[item_id]['items_by_size'][size] > product.stock:
             cart[item_id]['items_by_size'][size] = product.stock
-            messages.warning(request, f'You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.')
+            messages.error(request, f'You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.')
     else:
         if quantity > 0:
             cart[item_id] = quantity
@@ -85,7 +85,7 @@ def adjust_cart(request, item_id):
         # stock control
         if cart[item_id] > product.stock:
             cart[item_id] = product.stock
-            messages.warning(request, f'You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.')
+            messages.error(request, f'You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.')
     
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))

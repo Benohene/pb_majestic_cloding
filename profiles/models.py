@@ -3,6 +3,8 @@ from django.contrib.auth.models import User
 from django_countries.fields import CountryField
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from products.models import Product
+
 
 # Create your models here.
 class UserProfile(models.Model):
@@ -33,3 +35,19 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         
     # Existing users: just save the profile
     instance.userprofile.save()
+
+# Wishlist models
+class Wishlist(models.Model):
+    """
+    A wishlist model for maintaining a user's wishlist
+    """
+    user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
+    product = models.ManyToManyField(Product, blank=True)
+    
+    @property
+    def product_count(self):
+        '''Returns the number of products in the wishlist'''
+        return self.product.count()
+    
+    def __str__(self):
+        return f'{self.user.username}\'s wishlist'

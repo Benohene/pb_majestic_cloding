@@ -79,3 +79,18 @@ def order_list(request):
     }
     
     return render(request, template, context)
+
+#view wishlist
+@login_required
+def view_wishlist(request):
+    """ A view to return the wishlist page """
+    # Get the user profile
+    profile = get_object_or_404(UserProfile, user=request.user)
+    
+    template = 'profiles/wishlist.html'
+    context = {
+        'profile': profile,
+        'on_profile_page': True
+    }
+    
+    return render(request, template, context)
