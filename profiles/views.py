@@ -1,8 +1,12 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from .models import UserProfile	
 from .forms import UserProfileForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect, Http404
+from products.models import Product
+from .models import Wishlist
+
 
 from checkout.models import Order
 
@@ -13,6 +17,7 @@ def profile(request):
     """ A view to return the profile page """
     # Get the user profile
     profile = get_object_or_404(UserProfile, user=request.user)
+    wishlist = Wishlist.objects.get_or_create(user=request.user)
     
     if request.method == 'POST':
         # If the request is a POST request, get the form data
@@ -29,6 +34,8 @@ def profile(request):
     context = {
         'form': form,
         'orders': orders,
+        'profile': profile,
+        'wishlist': wishlist,
         'on_profile_page': True
     }
     
@@ -84,13 +91,32 @@ def order_list(request):
 @login_required
 def view_wishlist(request):
     """ A view to return the wishlist page """
-    # Get the user profile
-    profile = get_object_or_404(UserProfile, user=request.user)
-    
+    wishlist = Wishlist.objects.get_or_create(user=request.user)
+    wishlist = wishlist[0]
     template = 'profiles/wishlist.html'
     context = {
-        'profile': profile,
-        'on_profile_page': True
+        'wishlist': wishlist,
     }
-    
     return render(request, template, context)
+
+#add to wishlist
+@login_required
+def add_to_wishlist(request, product_id):
+    """ Add a product to the wishlist """
+    product = get_object_or_404(Product, pk=product_id)
+    wishlist = Wishlist.objects.get_or_create(user=request.user)
+    wishlist = wishlist[0]
+    wishlist.products.add(product)
+    messages.success(request, f'{product.name} added to your wishlist')
+    return redirect(reverse('products'))
+
+
+#remove from wishlist
+@login_required
+def remove_from_wishlist(request, product_id):
+    """ Remove a product from the wishlist """
+    product = get_object_or_404(Product, pk=product_id)
+    wishlist = Wishlist.objects.get(user=request.user)
+    wishlist.products.remove(product)
+    messages.success(request, f'{product.name} removed from your wishlist')
+    return redirect(reverse('view_wishlist'))

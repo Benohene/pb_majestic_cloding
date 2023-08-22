@@ -5,6 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import ProductForm
+from profiles.models import Wishlist
 
 # Create your views here.
 def all_products(request):
@@ -15,6 +16,12 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+    
+    #wishlist
+    if request.user.is_authenticated:
+        wishlist = Wishlist.objects.get_or_create(user=request.user)
+    else:
+        wishlist = None
     
 
     if request.GET:
@@ -58,7 +65,8 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
-        'current_direction': direction,      
+        'current_direction': direction,
+        'wishlist': wishlist,     
     }
     
     

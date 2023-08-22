@@ -42,12 +42,12 @@ class Wishlist(models.Model):
     A wishlist model for maintaining a user's wishlist
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
-    product = models.ManyToManyField(Product, blank=True)
+    products = models.ManyToManyField(Product, blank=True)
     
     @property
     def product_count(self):
         '''Returns the number of products in the wishlist'''
-        return self.product.count()
+        return self.products.count()
     
     def __str__(self):
         return f'{self.user.username}\'s wishlist'

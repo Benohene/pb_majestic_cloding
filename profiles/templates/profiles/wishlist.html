@@ -56,14 +56,18 @@
                     </div>
                 </div>
 
-                <!-- Order History -->
+                <!-- Wish list -->
                 <div class="card mt-3">
                     <div class="card-header bg-black text-white">
                         Wishlist
                     </div>
                     <div class="card-body order-history">
-                        <p class="text-center text-main-black">Wishlist Count 2</p>
+                        <!-- if wishlist exists -->
+                        {% if wishlist.products.exists %}
+                        <p class="text-center text-main-black">Wishlist Count {{ wishlist.products.count }}</p>
                         <p class="text-center"><a href="" class="btn btn-danger mb-3">Clear Wishlist</a></p>
+
+                        {% for product in wishlist.products.all %}
                         <table class="table text-center">
                             <thead>
                                 <tr>
@@ -75,28 +79,49 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><img src="media\set-free-1-hoodies.jpg" id="wishlist_img" alt=""></td>
-                                    <td>Item 1
-                                        <br>
-                                        stock
-                                    </td>
-                                    <td>$50</td>
                                     <td>
-                                        <button class="btn btn-success">View Product</button>
+                                        {% if product.image %}
+                                        <img class="card-img-top img-fluid" id="wishlist-img-card" src="{{ product.image.url }}"
+                                            alt="{{ product.name }}">
+                                        {% else %}
+                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                            alt="{{ product.name }}">
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {{ product.name }}
+                                        <br>
+                                        <!--Stock here-->
+                                        {% if product.stock > 0 %}
+                                        {% if product.stock < 10 %} <span
+                                            class="badge badge-pill badge-warning">{{ product.stock }} IN STOCK</span>
+                                            {% else %}
+                                            <span class="badge badge-pill badge-success"> IN STOCK</span>
+                                            {% endif %}
+                                            {% else %}
+                                            <span class="badge badge-pill badge-danger">OUT OF STOCK</span>
+                                            {% endif %}
+                                    </td>
+                                    <td>€{{ product.price }}</td>
+                                    <td>
+                                        <button class="btn btn-success"><a href="{% url 'product_detail' product.id %}"
+                                                class="text-cream text-decoration-none">View
+                                                Product</a></button>
                                         <button class="btn btn-danger">Remove</button>
                                     </td>
                                 </tr>
                                 <!-- Add more items as needed -->
                             </tbody>
                         </table>
-
+                        {% endfor %}
+                        {% else %}
                         <!-- else -->
-                        <p class="font-weight-bold text-black">Order history empty!</p>
+                        <p class="font-weight-bold text-black">Wish history empty!</p>
                         <p class="text-main-black">You have no product in your wishlist</p>
 
                         <a href="{% url 'products' %}" class="btn btn-primary rounded-0 border-0 updateBtn"><i
                                 class="fas fa-chevron-left"></i> Back to Shop</a>
-
+                        {% endif %}
                     </div>
                 </div>
             </div>

@@ -19,3 +19,12 @@
   #id_default_country option:first-child {
     color: #aab7c4;
   }
+
+  /* ------------------------------- Wishlist */
+#wishlist-img-card {
+  width: 100px;
+  height: 100px;
+  border: none;
+}
+
+/* ------------------------------- End Wishlist */
