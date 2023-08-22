@@ -174,9 +174,10 @@
         {% block content %}
         {% endblock %}
 
-
         <!-- Footer -->
-        {% include 'includes/footer.html' %}
+        {% block footer %}
+        {% endblock %}
+
 
         <!-- Post JS -->
         {% block postloadjs %}

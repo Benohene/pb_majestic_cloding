@@ -237,6 +237,16 @@ body {
   margin-top: 20px;
 }
 
+.cart-container {
+  background: var(--cream);
+  border: 2px solid var(--dark-wine);
+}
+
+#cart-container h4 {
+  color: black;
+  height: 1000px;
+}
+
 .cart-item-thumb {
   display: block;
   width: 10rem;
@@ -584,4 +594,14 @@ body {
   }
 }
 
+footer {
+  background: var(--dark-wine);
+  color: var(--secondary);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  margin-top: 2rem;
+}
 /* -------------------------------- End Media Queries */
