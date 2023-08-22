@@ -242,11 +242,6 @@ body {
   border: 2px solid var(--dark-wine);
 }
 
-#cart-container h4 {
-  color: black;
-  height: 1000px;
-}
-
 .cart-item-thumb {
   display: block;
   width: 10rem;

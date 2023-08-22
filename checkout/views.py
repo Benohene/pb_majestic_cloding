@@ -65,6 +65,11 @@ def checkout(request):
                             product=product,
                             quantity=item_data,
                         )
+                        
+                        # Reduce stock on purchase
+                        product.stock = product.stock - order_line_item.quantity
+                        product.save()
+                        
                         order_line_item.save()
                     else:
                         # If the item has sizes
@@ -75,6 +80,11 @@ def checkout(request):
                                 quantity=quantity,
                                 product_size=size,
                             )
+                            
+                            # Reduce stock on purchase
+                            product.stock = product.stock - order_line_item.quantity
+                            product.save()
+                            
                             order_line_item.save()               
                 except Product.DoesNotExist:
                     messages.error(request, (

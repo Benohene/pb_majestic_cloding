@@ -21,6 +21,7 @@ def add_to_cart(request, item_id):
     
     if size:
         if item_id in list(cart.keys()):
+            # If the item is already in the cart
             if size in cart[item_id]['items_by_size'].keys():
                 cart[item_id]['items_by_size'][size] += quantity
                 messages.success(request, f'Updated size {size.upper()} {product.name} quantity to {cart[item_id]["items_by_size"][size]}')
@@ -30,6 +31,10 @@ def add_to_cart(request, item_id):
         else:
             cart[item_id] = {'items_by_size': {size: quantity}}
             messages.success(request, f'Added size {size.upper()} {product.name} to your cart')
+        # stock control
+        if cart[item_id]['items_by_size'][size] > product.stock:
+            cart[item_id]['items_by_size'][size] = product.stock
+            messages.warning(request, f'You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.')
     else:
         if item_id in list(cart.keys()):
             cart[item_id] += quantity
@@ -37,7 +42,11 @@ def add_to_cart(request, item_id):
         else:
             cart[item_id] = quantity
             messages.success(request, f'Added {product.name} to your cart')
-            
+        # stock control
+        if cart[item_id] > product.stock:
+            cart[item_id] = product.stock
+            messages.warning(request, f'You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.')
+
     
     request.session['cart'] = cart
     return redirect(redirect_url)
@@ -62,6 +71,10 @@ def adjust_cart(request, item_id):
             if not cart[item_id]['items_by_size']:
                 cart.pop(item_id)
                 messages.success(request, f'Removed size {size.upper()} {product.name} from your cart')
+        # stock control
+        if cart[item_id]['items_by_size'][size] > product.stock:
+            cart[item_id]['items_by_size'][size] = product.stock
+            messages.warning(request, f'You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.')
     else:
         if quantity > 0:
             cart[item_id] = quantity
@@ -69,6 +82,10 @@ def adjust_cart(request, item_id):
         else:
             cart.pop(item_id)
             messages.success(request, f'Removed {product.name} from your cart')
+        # stock control
+        if cart[item_id] > product.stock:
+            cart[item_id] = product.stock
+            messages.warning(request, f'You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.')
     
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
