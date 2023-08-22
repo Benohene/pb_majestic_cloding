@@ -3,7 +3,6 @@ from .models import UserProfile
 from .forms import UserProfileForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponseRedirect, Http404
 from products.models import Product
 from .models import Wishlist
 
@@ -119,4 +118,14 @@ def remove_from_wishlist(request, product_id):
     wishlist = Wishlist.objects.get(user=request.user)
     wishlist.products.remove(product)
     messages.success(request, f'{product.name} removed from your wishlist')
+    #return with HTTP REFERRER
+    return redirect(request.META['HTTP_REFERER'])
+
+#clear wishlist
+@login_required
+def clear_wishlist(request):
+    """ Clear the wishlist """
+    wishlist = Wishlist.objects.get(user=request.user)
+    wishlist.products.clear()
+    messages.success(request, f'Your wishlist has been cleared')
     return redirect(reverse('view_wishlist'))
