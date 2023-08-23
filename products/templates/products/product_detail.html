@@ -154,6 +154,20 @@
                                                     <span class="text-uppercase">Back to Shop</span>
                                                 </a></p>
                                             {% endif %}
+
+                                            {% if user.is_authenticated %}
+                                            {% if product in user.wishlist.products.all %}
+                                            <button class="btn btn-success border-3 border-white" id="view_btn"><a
+                                                    href="{% url 'remove_from_wishlist' product.id %}"
+                                                    class="text-cream text-decoration-none"><i
+                                                        class="fa-solid fa-heart"></i> Remove to Wishlist</a></button>
+                                            {% else %}
+                                            <button class="btn btn-success border-3 border-white" id="view_btn_remove-wishlist"><a
+                                                    href="{% url 'add_to_wishlist' product.id %}"
+                                                    class="text-cream text-decoration-none"><i
+                                                        class="fa-regular fa-heart"></i> Add to Wishlist</a></button>
+                                            {% endif %}
+                                            {% endif %}
                                     </div>
                                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                     {% endwith %}

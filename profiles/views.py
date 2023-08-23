@@ -107,7 +107,7 @@ def add_to_wishlist(request, product_id):
     wishlist = wishlist[0]
     wishlist.products.add(product)
     messages.success(request, f'{product.name} added to your wishlist')
-    return redirect(reverse('products'))
+    return redirect(request.META['HTTP_REFERER'])
 
 
 #remove from wishlist

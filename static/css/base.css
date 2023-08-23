@@ -178,6 +178,17 @@ body {
   color: var(--secondary);
 }
 
+#view_btn_remove-wishlist {
+  background: rgb(0, 0, 0);
+  color: var(--secondary);
+}
+
+#view_btn_remove-wishlist:hover {
+  background: rgb(68, 68, 68);
+  color: var(--secondary);
+}
+
+
 #view_btn:hover {
   background: #9e6650;
   color: var(--secondary);
