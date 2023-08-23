@@ -1,11 +1,12 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
+from django.db.models import Q, Avg
 from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import ProductForm
 from profiles.models import Wishlist
+from reviews.models import Review
 
 # Create your views here.
 def all_products(request):
@@ -77,11 +78,24 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
     ''' This function will render the product_detail.html template '''
     product = get_object_or_404(Product, pk=product_id)
+    user = request.user
+    reviews = Review.objects.filter(product=product)
+    rating_avg = reviews.aggregate(Avg('review_rating'))
     
+    if user.is_authenticated:
+        wishlist = Wishlist.objects.get_or_create(user=user)
+        review_user = Review.objects.filter(user=user, product=product).exists()
+    else:
+        wishlist = None
+        review_user = None
 
          
     context = {
         'product': product,
+        'reviews': reviews,
+        'wishlist': wishlist,
+        'rating_avg': rating_avg,
+        'review_user': review_user,
     }
     
     return render(request, 'products/product_detail.html', context)

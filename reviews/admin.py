@@ -24,6 +24,7 @@ class ReviewAdmin(admin.ModelAdmin):
     )
     
     list_filter	= (
+        'user',
         'review_date',
         'review_rating',
     )

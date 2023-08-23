@@ -28,18 +28,9 @@ class ReviewForm(forms.ModelForm):
         # set autofocus on first field
         self.fields['review_title'].widget.attrs['autofocus'] = True
         
-        # add placeholders and classes to fields
-        for field in self.fields:
-            if field != 'review_rating':
-                placeholder = placeholders[field]
-                self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'border-black rounded-0'
+
             
-            # remove form field labels
-            self.fields[field].label = False
-            
-            # set review rating field to number input type
-            self.fields['review_rating'].widget.attrs['type'] = 'number'
-            self.fields['review_rating'].widget.attrs['min'] = '1'
-            self.fields['review_rating'].widget.attrs['max'] = '5'
-            
+        # set review rating field to number input type
+        self.fields['review_rating'].widget.attrs['type'] = 'number'
+        self.fields['review_rating'].widget.attrs['min'] = '1'
+        self.fields['review_rating'].widget.attrs['max'] = '5'

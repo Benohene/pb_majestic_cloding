@@ -119,6 +119,10 @@ body {
   background: var(--wine) !important;
 }
 
+.bg-black-main {
+  background: black !important;
+}
+
 .badge-count {
   position: absolute;
   border-radius: 50%;
@@ -187,7 +191,6 @@ body {
   background: rgb(68, 68, 68);
   color: var(--secondary);
 }
-
 
 #view_btn:hover {
   background: #9e6650;
@@ -387,6 +390,27 @@ body {
   border: 1px solid black;
 }
 /* --------------------------------- End Product view */
+
+/* --------------------------------- Product Review */
+#review-container {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.review {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.review img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+.review-info {
+  margin-left: 10px;
+}
+/* --------------------------------- End Product Review */
 
 /* ------------------------------- bootstrap toasts */
 
