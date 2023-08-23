@@ -49,37 +49,30 @@ def add_review(request, product_id):
 # Edit a review for product with prodict id
 
 @login_required
-def edit_review(request, review_id):
+def edit_review(request, product_id, review_id):
     # get product
     user = request.user
+    product = get_object_or_404(Product, pk=product_id)
+    # get review
     review = get_object_or_404(Review, pk=review_id)
-    product = get_object_or_404(Product, pk=review.product.id)
     
-    # check if user has already reviewed this product
-    review_exists = Review.objects.filter(user=user, product=product).exists()
-    # if user has already reviewed this product, redirect to product detail page
-    if review_exists:
-        messages.error(request, 'You have already reviewed this product')
+    # if user is not the review owner or superuser, redirect to product detail page
+    if not user == review.user and not user.is_superuser:
+        messages.error(request, 'You cannot edit this review')
         return redirect(reverse('product_detail', args=[product.id]))
-    # if user has not already reviewed this product, add review
-    else:
-        if user.is_superuser or user == review.user:
-            if request.method == 'POST':
-                form = ReviewForm(request.POST, request.FILES, instance=review)
-                if form.is_valid():
-                    review = form.save(commit=False)
-                    review.user = user
-                    review.product = product
-                    review = form.save()
-                    messages.success(request, 'Review updated successfully')
-                    return redirect(reverse('product_detail', args=[product.id]))
-                else:
-                    messages.error(request, 'Failed to update review. Please ensure the form is valid.')
-            else:
-                form = ReviewForm(instance=review)
-        else:
-            messages.error(request, 'You do not have permission to edit this review')
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, request.FILES, instance=review)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.user = user
+            review.product = product
+            review = form.save()
+            messages.success(request, 'Review updated successfully')
             return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to update review. Please ensure the form is valid.')
+    else:
+        form = ReviewForm(instance=review)
             
         template = 'reviews/edit_review.html'
         context = {

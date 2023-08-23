@@ -211,12 +211,19 @@
                     <p class="mt-0 mb-0 text-black"><strong>{{ review.user.username }}</strong></p>
                     <p class="mt-0 mb-0 text-main-black">{{ review.product.name }}</p>
                         <p class="mb-1 text-danger">Reviewed on: {{ review.review_date }}</p>
-                            <p class="mb-0 text-main-black"><i>fdfdfdfsd</i></p>
+                            <p class="mb-0 text-main-black"><i><strong>{{ review.review_title }}</strong></i></p>
+                            <p class="mb-0 text-main-black"><i>{{ review.review_text }}</i></p>
                             <p class="mb-0 text-muted"><i class="fas fa-star mr-1"></i>{{ review.review_rating }}/5</p>
                 </div>
             </div>
             <hr>
-
+            {% if user == review.user or user.is_superuser %}
+            <div class="my-2">
+                <a href="{% url 'edit_review' product.id review.id %}" class="cta btn-sm text-decoration-none" id="view_btn">Edit
+                    Review
+                    <i class="fa-solid fa-sm fa-pencil"></i></a>
+            </div>
+            {% endif %}
         </div>
         {% endfor %}
         {% else %}
