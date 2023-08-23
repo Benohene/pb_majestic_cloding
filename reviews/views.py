@@ -82,3 +82,22 @@ def edit_review(request, product_id, review_id):
         }
         
         return render(request, template, context)
+    
+# Delete a review for product with prodict id with confirmation
+@login_required
+def delete_review(request, product_id, review_id):
+    # get product
+    user = request.user
+    product = get_object_or_404(Product, pk=product_id)
+    # get review
+    review = get_object_or_404(Review, pk=review_id)
+    
+    # if user is not the review owner or superuser, redirect to product detail page
+    if not user == review.user and not user.is_superuser:
+        messages.error(request, 'You cannot delete this review')
+        return redirect(reverse('product_detail', args=[product.id]))
+    # if user is the review owner or superuser, delete review
+    else:
+        review.delete()
+        messages.success(request, 'Review deleted successfully')
+        return redirect(reverse('product_detail', args=[product.id]))

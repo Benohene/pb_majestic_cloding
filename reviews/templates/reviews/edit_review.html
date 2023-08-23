@@ -31,10 +31,47 @@
                         {{form|crispy}}
                         <div class="">
                             <a class="btn cta cta-danger bg-black text-white"
-                                href="{% url 'product_detail' product.id %}">Cancel</a>
-                            <button class="btn cta bg-black-main text-white" type="submit">Update Review</button>
+                                href="{% url 'product_detail' product.id %}"><i class="fa-solid fa-xmark"></i>
+                                Cancel</a>
+                            <button class="btn cta bg-black-main text-white" type="submit"><i
+                                    class="fa-solid fa-square-pen"></i> Update Review</button>
+                            <!-- delete_review -->
+                            <button class="btn cta-danger bg-danger text-white" type="button" class="btn btn-primary"
+                                data-toggle="modal" data-target="#deleteModal{{ review.id }}"><i
+                                    class="fa-solid fa-trash"></i> Delete</button>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Review Modal -->
+    <div class="modal fade" id="deleteModal{{ review.id }}" tabindex="-1" aria-labelledby="deleteReviewModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-black">
+                    <h2 class="modal-title text-white mb-0 text-lg" id="deleteReviewModalLabel">Delete Review by <span
+                            class="text-cream">{{ review.user.username }}</span></h2>
+                </div>
+                <div class="modal-body">
+                    {% if user == review.user or user.is_superuser %}
+                    <form method="post" action="{% url 'delete_review' product.id review.id %}" role="form">
+                        {% csrf_token %}
+                        <p class="text-main-black"><strong><i>Are you sure you want to Delete this review?</strong></i>
+                        </p>
+                        <p class="text-danger">This review will be permanently removed and you will not be able to
+                            retrieve it.</p>
+                        <button type="button" class="btn cta bg-black text-white" data-dismiss="modal"
+                            aria-label="Close"><i class="fa-solid fa-xmark"></i> Cancel</button>
+                        <button type="submit" name="action" value="delete"
+                            class="btn cta-danger text-white bg-danger"><i class="fa-solid fa-trash"></i>
+                            Delete</button>
+                    </form>
+                    {% else %}
+                    <h3>You are not authorized to delete this review.</h3>
+                    {% endif %}
                 </div>
             </div>
         </div>
