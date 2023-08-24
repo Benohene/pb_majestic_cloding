@@ -17,6 +17,7 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+
     
     #wishlist
     if request.user.is_authenticated:
@@ -67,7 +68,7 @@ def all_products(request):
         'current_categories': categories,
         'current_sorting': current_sorting,
         'current_direction': direction,
-        'wishlist': wishlist,     
+        'wishlist': wishlist,
     }
     
     
@@ -80,7 +81,8 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     user = request.user
     reviews = Review.objects.filter(product=product)
-    rating_avg = reviews.aggregate(Avg('review_rating'))
+    rating_avg = reviews.aggregate(Avg('review_rating'))['review_rating__avg']
+    
     
     if user.is_authenticated:
         wishlist = Wishlist.objects.get_or_create(user=user)
@@ -88,8 +90,8 @@ def product_detail(request, product_id):
     else:
         wishlist = None
         review_user = None
-
-         
+        
+  
     context = {
         'product': product,
         'reviews': reviews,

@@ -105,44 +105,44 @@
                                                 </a>
                                         </p>
                                         {% endif %}
-                                        {% if product.rating %}
-                                        <p>
-                                            <small class="text-muted"><i
-                                                    class="fas fa-star mr-1 mt-0"></i>{{ product.rating }} / 5</small>
-                                                {% else %}
-                                                <small class="text-muted">No Rating</small>
+                                            <!-- rating -->
+                                            <p class="mb-0"><small><a href="{% url 'product_detail' product.id %}"
+                                                        class="text-muted">Ratings/Reviews</a></small></p>
+
+                                            <p>
+                                                {% if request.user.is_superuser %}
+                                                <small class="m-0 p-0">
+                                                    <a href="{% url 'edit_product' product.id %}"
+                                                        class="m-0 p-0">Edit</a> |
+                                                    <a class="text-danger"
+                                                        href="{% url 'delete_product' product.id %}">Delete</a>
+                                                </small>
                                                 {% endif %}
-                                        </p>
-                                        <p>
-                                            {% if request.user.is_superuser %}
-                                            <small class="ml-3">
-                                                <a href="{% url 'edit_product' product.id %}">Edit</a> |
-                                                <a class="text-danger"
-                                                    href="{% url 'delete_product' product.id %}">Delete</a>
-                                            </small>
-                                            {% endif %}
-                                        </p>
+                                            </p>
 
-                                        <p>
-                                            <button class="btn btn-success border-0" id="view_btn"><a
-                                                    href="{% url 'product_detail' product.id %}"
-                                                    class="text-cream text-decoration-none">View
-                                                    Product</a></button>
+                                            <p>
+                                                <button class="btn btn-success border-0" id="view_btn"><a
+                                                        href="{% url 'product_detail' product.id %}"
+                                                        class="text-cream text-decoration-none">View
+                                                        Product</a></button>
 
-                                            {% if user.is_authenticated %}
-                                            {% if product in user.wishlist.products.all %}
-                                            <button class="btn btn-success border-0" id="view_btn"><a
-                                                    href="{% url 'remove_from_wishlist' product.id %}"
-                                                    class="text-cream text-decoration-none"><i
-                                                        class="fa-solid fa-heart"></i> Remove to Wishlist</a></button>
-                                            {% else %}
-                                            <button class="btn btn-success border-0" id="view_btn_remove-wishlist"><a
-                                                    href="{% url 'add_to_wishlist' product.id %}"
-                                                    class="text-cream text-decoration-none"><i
-                                                        class="fa-regular fa-heart"></i> Add to Wishlist</a></button>
-                                            {% endif %}
-                                            {% endif %}
-                                        </p>
+                                                {% if user.is_authenticated %}
+                                                {% if product in user.wishlist.products.all %}
+                                                <button class="btn btn-success border-0" id="view_btn"><a
+                                                        href="{% url 'remove_from_wishlist' product.id %}"
+                                                        class="text-cream text-decoration-none"><i
+                                                            class="fa-solid fa-heart"></i> Remove to
+                                                        Wishlist</a></button>
+                                                {% else %}
+                                                <button class="btn btn-success border-0"
+                                                    id="view_btn_remove-wishlist"><a
+                                                        href="{% url 'add_to_wishlist' product.id %}"
+                                                        class="text-cream text-decoration-none"><i
+                                                            class="fa-regular fa-heart"></i> Add to
+                                                        Wishlist</a></button>
+                                                {% endif %}
+                                                {% endif %}
+                                            </p>
                             </div>
                         </div>
                     </div>
