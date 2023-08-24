@@ -27,6 +27,10 @@ class CommentAdmin(admin.ModelAdmin):
     
     list_filter = ('approved',)
     search_fields = ['body']
+    actions = ['approve_comments']
+    
+    def approve_comments(self, request, queryset):
+        queryset.update(approved=True)
     
     
 admin.site.register(Blog, BlogAdmin)
