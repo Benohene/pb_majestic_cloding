@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import Blog
 from django.core.paginator import Paginator
 from django.contrib.auth.models import User
+from django.contrib import messages
 
 # Create your views here.
 def blog(request):
@@ -23,9 +24,9 @@ def blog_detail(request, blog_id):
     user = request.user
     blog = get_object_or_404(Blog, pk=blog_id)
     liked = False
-    
-    if blog.likes.filter(id=user.id).exists():
-        liked = True
+    if user.is_authenticated:
+        if blog.likes.filter(id=user.id).exists():
+            liked = True
     
     template = 'blog/blog_detail.html'
     context = {
@@ -34,6 +35,25 @@ def blog_detail(request, blog_id):
     }
     
     return render(request, template, context)
+
+def like_blog(request, blog_id):
+    """ A view to return the like blog page """
+    user = request.user
+    blog = get_object_or_404(Blog, pk=blog_id)
+    liked = False
+    
+    if user.is_authenticated:
+        if blog.likes.filter(id=request.user.id).exists():
+            blog.likes.remove(request.user)
+            liked = False
+            messages.success(request, 'You have unliked this blog')
+        else:
+            blog.likes.add(request.user)
+            liked = True
+            messages.success(request, 'You have liked this blog')
+
+                    
+    return render(request, 'blog/blog_detail.html', {'blog': blog, 'liked': liked})
 
 def add_blog(request):
     """ A view to return the add blog page """

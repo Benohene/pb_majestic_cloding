@@ -22,7 +22,8 @@
         <div class="col">
             <hr>
             <div class="col-12 col-md-10 mx-auto text-center d-flex">
-                <a href="{% url 'blog' %}" class="cta btn text-uppercase w-100 mx-auto mb-3 bg-black text-white blog-btn"><i
+                <a href="{% url 'blog' %}"
+                    class="cta btn text-uppercase w-100 mx-auto mb-3 bg-black text-white blog-btn"><i
                         class="fa-solid fa-hand-point-left"></i>
                     &nbsp;&nbsp;Blog Posts</a>
             </div>
@@ -38,8 +39,7 @@
                     {% if blog.image %}
                     <img src="{{ blog.image.url }}" alt="{{ blog.title }} image">
                     {% else %}
-                    <img src=""
-                        alt="Default blog image">
+                    <img src="" alt="Default blog image">
                     {% endif %}
                 </div>
                 <div class="col-lg-6 col-md-12 masthead-text">
@@ -47,13 +47,15 @@
                     <h1 class="blog-title">{{ blog.title }}</h1>
                         <!-- blog author goes before the | the blog's created date goes after -->
                         <p class="blog-subtitle ">{{ blog.author }} | {{ blog.created_on }}</p>
-                        {% if request.user.is_superuser %}
+                            {% if request.user.is_superuser %}
                             <p class="blog-subtitle">
-                                <a class="blogEdit" href=""><i class="fa-solid fa-pen-to-square"></i> Edit</a>
-                                <a class="blogDelete" href=""><i class="fa-regular fa-trash-can"></i> Delete</a>
+                                <a class="text-decoration-none text-white blog-edit" href=""><i
+                                        class="fa-solid fa-pen-to-square"></i> Edit</a>
+                                <a class="text-decoration-none text-black blog-delete" href=""><i
+                                        class="fa-regular fa-trash-can"></i> Delete</a>
                             </p>
                             {% endif %}
-                        
+
                 </div>
             </div>
         </div>
@@ -70,6 +72,19 @@
                         {{ blog.body | safe }}
                     </div>
                         <!--  -->
+                        <form action="{% url 'like_blog' blog.id %}" method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="blog_id" value="{{ blog.id }}">
+                            {% if liked %}
+                            <button type="submit" class="btn btn-danger btn-sm"><i class="fa-solid fa-thumbs-down"></i>
+                                Unlike</button>
+                            <span class="badge badge-danger">{{ blog.total_likes }}</span>
+                                {% else %}
+                                <button type="submit" class="btn btn-primary btn-sm"><i
+                                        class="fa-solid fa-thumbs-up"></i> Like</button>
+                                <span class="badge badge-primary">{{ blog.total_likes }}</span>
+                                    {% endif %}
+                        </form>
                     </div>
                 </div>
             </div>
