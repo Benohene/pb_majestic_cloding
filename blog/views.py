@@ -1,13 +1,36 @@
 from django.shortcuts import render
+from .models import Blog
+from django.core.paginator import Paginator
+from django.contrib.auth.models import User
 
 # Create your views here.
 def blog(request):
     """ A view to return the blog page """
+    blogs = Blog.objects.all()
+    paginator = Paginator(blogs, 8)
+    page = request.GET.get('page')
+    paged_blogs = paginator.get_page(page)
     
-    return render(request, 'blog/blog.html')
+    template = 'blog/blog.html'
+    context = {
+        'blogs': paged_blogs,
+    }
+    
+    return render(request, template, context)
 
 def blog_detail(request, blog_id):
     """ A view to return the blog detail page """
+    user = request.user
+    blog = get_object_or_404(Blog, pk=blog_id)
+    liked = False
+    
+    if blog.likes.filter(id=user.id).exists():
+        liked = True
+    
+    context = {
+        'blog': blog,
+        'liked': liked,
+    }
     
     return render(request, 'blog/blog_detail.html')
 
