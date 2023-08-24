@@ -36,48 +36,77 @@
                     </div>
                 </div>
             </div>
-    </div>
-    <!-- CONTENT -->
-    <div class="row">
-        {% if blogs %}
-        {% for blog in blogs %}
-        <div class="col-12 col-lg-6 mb-4 d-flex">
-            <div class="card border-black-light flex-fill">
-                {% if blog.image %}
-                <a href=""><img src="{{ blog.image.url }}" class="card-img-top"
-                        alt="..."></a>
-                {% else %}
-                <a href=""><img
-                        src="" class="card-img-top"
-                        alt="..."></a>
-                {% endif %}
-                <div class="bg-black text-white font-weight-bold text-center">
-                    <a href="" class="text-decoration-none">
-                        <p class="text-white p-2 mb-0">{{ blog.title }}</p>
-                    </a>
-                </div>
-                {% if request.user.is_superuser %}
-                <div class="row">
-                    <div class="col-12">
-                        <hr class="my-0">
-                        <div class="text-center">
-                            <a href="" class="text-black btn text-sm">Manage
-                                Blog
-                                <i class="fa-solid fa-sm fa-pencil"></i></a>
+        </div>
+        <!-- CONTENT -->
+        <div class="row">
+            {% if blogs %}
+            {% for blog in blogs %}
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+                <div class="card border-black-light flex-fill">
+                    {% if blog.image %}
+                    <a href="{% url 'blog_detail' blog.id %}"><img src="{{ blog.image.url }}" class="card-img-top"
+                            alt="..."></a>
+                    {% else %}
+                    <a href="{% url 'blog_detail' blog.id %}"><img src="" class="card-img-top" alt="..."></a>
+                    {% endif %}
+                    <div class="bg-black text-white font-weight-bold text-center">
+                        <a href="" class="text-decoration-none">
+                            <p class="text-white p-2 mb-0">{{ blog.title }}</p>
+                        </a>
+                    </div>
+                    {% if request.user.is_superuser %}
+                    <div class="row">
+                        <div class="col-12">
+                            <hr class="my-0">
+                            <div class="text-center">
+                                <a href="" class="text-black btn text-sm">Manage
+                                    Blog
+                                    <i class="fa-solid fa-sm fa-pencil"></i></a>
+                            </div>
                         </div>
                     </div>
+                    {% endif %}
                 </div>
-                {% endif %}
             </div>
+            {% endfor %}
+            {% else %}
+            <div class="col-12">
+                <p class="text-black font-weight-bold font-italic text-center">Sorry there are no blog posts currently
+                    please
+                    check back
+                    later.</p>
+            </div>
+            {% endif %}
         </div>
-        {% endfor %}
-        {% else %}
-        <div class="col-12">
-            <p class="text-black font-weight-bold font-italic text-center">Sorry there are no blog posts currently please
-                check back
-                later.</p>
-        </div>
-        {% endif %}
     </div>
+</div>
+
+<!-- Pagiantion -->
+<div class="container paginate">
+    {% if blogs.paginator.num_pages > 1 %}
+    <div class="row">
+        <div class="col">
+            <nav aria-label="...">
+                <ul class="pagination ">
+                    {% if blogs.has_previous %}
+                    <li class="page-item disabled justify-content-center">
+                        <a class="" id="paginateBtn" href="?page={{ blogs.previous_page_number }}"
+                            tabindex="-1">Prev</a>
+                    </li>
+                    {% endif %}
+                    <li class="page-item active">
+                        <a class="" href="?page={{ blogs.number }}" id="paginateBtn">{{ blogs.number }}<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    {% if blogs.has_next %}
+                    <li class="page-item">
+                        <a class="" href="?page={{ blogs.next_page_number }}" id="paginateBtn">Next</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+    {% endif %}
 </div>
 {% endblock %}

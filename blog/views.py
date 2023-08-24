@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Blog
 from django.core.paginator import Paginator
 from django.contrib.auth.models import User
@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 def blog(request):
     """ A view to return the blog page """
     blogs = Blog.objects.all()
-    paginator = Paginator(blogs, 8)
+    paginator = Paginator(blogs, 3)
     page = request.GET.get('page')
     paged_blogs = paginator.get_page(page)
     
@@ -27,12 +27,13 @@ def blog_detail(request, blog_id):
     if blog.likes.filter(id=user.id).exists():
         liked = True
     
+    template = 'blog/blog_detail.html'
     context = {
         'blog': blog,
         'liked': liked,
     }
     
-    return render(request, 'blog/blog_detail.html')
+    return render(request, template, context)
 
 def add_blog(request):
     """ A view to return the add blog page """

@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}PB-Majestic Blog{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container mb-2" id="cart-container">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <div class="col-12 col-md-10 mx-auto text-center d-flex">
+                <a href="{% url 'blog' %}" class="cta btn text-uppercase w-100 mx-auto mb-3 bg-black text-white blog-btn"><i
+                        class="fa-solid fa-hand-point-left"></i>
+                    &nbsp;&nbsp;Blog Posts</a>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="masthead">
+        <div class="container p-3 bg-black">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 masthead-image">
+                    <!-- The featured image URL goes in the src attribute -->
+                    {% if blog.image %}
+                    <img src="{{ blog.image.url }}" alt="{{ blog.title }} image">
+                    {% else %}
+                    <img src=""
+                        alt="Default blog image">
+                    {% endif %}
+                </div>
+                <div class="col-lg-6 col-md-12 masthead-text">
+                    <!-- blog title goes in these h1 tags -->
+                    <h1 class="blog-title">{{ blog.title }}</h1>
+                        <!-- blog author goes before the | the blog's created date goes after -->
+                        <p class="blog-subtitle ">{{ blog.author }} | {{ blog.created_on }}</p>
+                        {% if request.user.is_superuser %}
+                            <p class="blog-subtitle">
+                                <a class="blogEdit" href=""><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                                <a class="blogDelete" href=""><i class="fa-regular fa-trash-can"></i> Delete</a>
+                            </p>
+                            {% endif %}
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- blog content -->
+    <div class="container">
+        <div class="row">
+            <div class="col card mb-4  mt-3 left  top">
+                <div class="card-body">
+                    <!-- The post content goes inside the card-text. -->
+                    <!-- Use the | safe filter inside the template tags -->
+                    <div class="card-text text-black">
+                        {{ blog.body | safe }}
+                    </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT -->
+    </div>
+    {% endblock %}

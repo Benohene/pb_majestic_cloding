@@ -13,7 +13,121 @@
   transition: all 300ms;
 }
 
-.card:hover {
+.card:hover, .blog-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(70, 3, 3, 0.25), 0 10px 10px rgba(129, 1, 1, 0.22);
 }
+
+/* Blog Styles */
+
+.image-container {
+    position: relative;
+}
+
+.blog-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: var(--main-teal);
+}
+
+.author {
+    color: white;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.masthead-image img {
+    width: 100%;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.masthead-text {
+    color: white;
+}
+
+.blogEdit{
+    background-color: rgb(0, 0, 156);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.blogDelete{
+    background-color: rgb(134, 0, 0);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.blog-title {
+    margin-top: 20%;
+    margin-left: 5%;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.blog-subtitle {
+    margin-left: 5%;
+    color: var(--off-white);
+}
+
+.pagination {
+    justify-content: center;
+  }
+  
+  /* Optional: Adjust spacing and styles */
+  .page-item {
+    margin: 0 5px;
+  }
+  
+  .page-link {
+    border-radius: 0;
+    color: black;
+  }
+  #paginateBtn {
+    background-color: rgb(105, 0, 0);
+    color: white;
+    border-radius: 0;
+    padding: 5px;
+    margin: 3px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+  #page-num {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 0;
+    padding: 5px;
+    margin: 3px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+
+  #paginateBtn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+  #page-num {
+    background-color: black;
+    color: white;
+  }
