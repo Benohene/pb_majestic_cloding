@@ -76,12 +76,12 @@
                             {% csrf_token %}
                             <input type="hidden" name="blog_id" value="{{ blog.id }}">
                             {% if liked %}
-                            <button type="submit" class="btn btn-danger btn-sm"><i class="fa-solid fa-thumbs-down"></i>
-                                Unlike</button>
+                            <button type="submit" class="btn btn-danger btn-sm"><i
+                                    class="fa-solid fa-thumbs-down"></i></button>
                             <span class="badge badge-danger">{{ blog.total_likes }}</span>
                                 {% else %}
                                 <button type="submit" class="btn btn-primary btn-sm"><i
-                                        class="fa-solid fa-thumbs-up"></i> Like</button>
+                                        class="fa-solid fa-thumbs-up"></i></button>
                                 <span class="badge badge-primary">{{ blog.total_likes }}</span>
                                     {% endif %}
                         </form>

@@ -51,14 +51,41 @@ def like_blog(request, blog_id):
             blog.likes.add(request.user)
             liked = True
             messages.success(request, 'You have liked this blog')
-
-                    
+    else:
+        messages.warning(request, 'You need to login to like this blog')
+        return render(request, 'account/login.html')
+                  
     return render(request, 'blog/blog_detail.html', {'blog': blog, 'liked': liked})
 
 def add_blog(request):
     """ A view to return the add blog page """
+    user = request.user
+    if not user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
     
-    return render(request, 'blog/add_blog.html')
+    if request.method == 'POST':
+        form = BlogForm(request.POST, request.FILES)
+        if form.is_valid():
+            blog = form.save(commit=False)
+            blog.author = user
+            blog.save()
+            title = form.cleaned_data.get('title')
+            messages.success(request, 'Successfully added blog!')
+            return redirect(reverse('blog_detail', args=[blog.id]))
+        else:
+            messages.error(request, 'Failed to add blog. Please ensure the form is valid.')
+            
+    else:
+        form = BlogForm()
+    
+    template = 'blog/add_blog.html'
+    context = {
+        'form': form,
+    }
+    
+    return render(request, template, context)
+    
 
 def edit_blog(request, blog_id):
     """ A view to return the edit blog page """
