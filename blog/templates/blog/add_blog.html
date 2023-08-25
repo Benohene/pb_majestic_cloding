@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title %}PB-Majestic Blog{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -13,17 +19,17 @@
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-8 mx-auto">
             <hr>
-            <h2 class="logo-font mb-4 text-black">Product Management</h2>
-            <h5 class="text-main-black">Add a Product</h5>
+            <h2 class="logo-font mb-4 text-black">Blog Management</h2>
+            <h5 class="text-main-black">Add a Blog</h5>
             <hr>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-12 col-md-6 text-black">
-            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+        <div class="col-12 col-md-8 mx-auto mb-5 text-black">
+            <form method="POST" action="{% url 'add_blog' %}" class="mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
                 {% if field.name != 'image' %}
@@ -33,14 +39,15 @@
                     {% endif %}
                 {% endfor %}
                 <div class="text-right">
-                    <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
-                    <button class="btn btn-black rounded-0" type="submit">Add Product</button>
+                    <a class="btn btn-outline-black rounded-0" href="{% url 'blog' %}">Cancel</a>
+                    <button class="btn btn-black rounded-0" type="submit">Add Blog</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
 {% endblock %}
+
 
 {% block postloadjs %}
 {{ block.super }}

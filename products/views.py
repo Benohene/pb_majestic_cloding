@@ -1,24 +1,23 @@
+''' This file will contain all the views for the products app '''
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q, Avg
 from django.db.models.functions import Lower
-from .models import Product, Category
-from .forms import ProductForm
 from profiles.models import Wishlist
 from reviews.models import Review
+from .models import Product, Category
+from .forms import ProductForm
 
-# Create your views here.
+
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
-    ''' This function will render the products.html template '''
     products = Product.objects.all()
     query = None
     categories = None
     sort = None
     direction = None
 
-    
     #wishlist
     if request.user.is_authenticated:
         wishlist = Wishlist.objects.get_or_create(user=request.user)
@@ -70,8 +69,7 @@ def all_products(request):
         'current_direction': direction,
         'wishlist': wishlist,
     }
-    
-    
+
     return render(request, 'products/products.html', context)
 
 

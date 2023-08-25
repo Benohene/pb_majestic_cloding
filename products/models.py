@@ -1,23 +1,31 @@
+''' This file contains the models for the products app. '''
 from django.db import models
+
 
 # Create your models here.
 class Category(models.Model):
+    ''' This class will create the category model '''
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
-    
+
     class Meta:
+        ''' This will change the name of the model in the admin panel '''
         verbose_name_plural = 'Categories'
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     def __str__(self):
+        ''' This will return the name of the category '''
         return self.name
-    
+
     def get_friendly_name(self):
+        ''' This will return the friendly name of the category '''
         return self.friendly_name
-    
+
+
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True,on_delete=models.CASCADE, blank=True)
+    ''' This class will create the product model '''
+    category = models.ForeignKey('Category', null=True, on_delete=models.CASCADE, blank=True)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()

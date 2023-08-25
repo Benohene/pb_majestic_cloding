@@ -21,7 +21,12 @@
     <div class="row">
         <div class="col">
             <hr>
-            <h2 class="text-black text-center text-uppercase"> PB-Majestic Blog</h2>
+            <p>
+                <h2 class="text-black text-center text-uppercase mb-3"> PB-Majestic Blog</h2>
+                {% if request.user.is_superuser %}
+                <p class="text-center"><a href="{% url 'add_blog' %}" class="text-decoration-none add_blog">ADD BLOG</a></p>
+                {% endif %}
+            </p>
             <hr>
         </div>
     </div>
