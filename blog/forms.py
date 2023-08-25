@@ -51,23 +51,13 @@ class CommentForm(forms.ModelForm):
         model = Comment
         fields = ('name', 'body')
 
+        labels = {
+            "body": "Comment (Max 500 Characters) ",
+        }
+
+
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.fields['name'].widget.attrs['autofocus'] = True
-
-        ''' Add placeholders and classes to form fields '''
-        placeholders = {
-            'name': 'Name',
-            'body': 'Comment',
-        }
-
-        self.fields['name'].widget.attrs['autofocus'] = True
-
-        for field in self.fields:
-            placeholder = f'{placeholders[field]}'
-            self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'border-black rounded-0'
-
-        for field in self.fields:
-            self.fields[field].label = False

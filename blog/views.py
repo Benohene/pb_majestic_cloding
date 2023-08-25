@@ -28,6 +28,8 @@ def blog_detail(request, blog_id):
     user = request.user
     blog = get_object_or_404(Blog, pk=blog_id)
     liked = False
+    comments = Comment.objects.filter(blog=blog).order_by("-created_on")
+    
     if user.is_authenticated:
         if blog.likes.filter(id=user.id).exists():
             liked = True
@@ -36,6 +38,8 @@ def blog_detail(request, blog_id):
     context = {
         'blog': blog,
         'liked': liked,
+        'comments': comments,
+        'on_blog_detail_page': True,
     }
 
     return render(request, template, context)
@@ -51,18 +55,18 @@ def like_blog(request, blog_id):
         if blog.likes.filter(id=request.user.id).exists():
             blog.likes.remove(request.user)
             liked = False
-            messages.success(request, 'You have unliked this blog')
+            messages.success(request, f"{user} you have unliked this Blog post.")
         else:
             blog.likes.add(request.user)
             liked = True
-            messages.success(request, 'You have liked this blog')
+            messages.success(request, f"{user} you have liked this Blog post.")
     else:
         messages.warning(request, 'You need to login to like this blog')
         return render(request, 'account/login.html')
                   
     return render(request, 'blog/blog_detail.html', {'blog': blog, 'liked': liked})
 
-
+@login_required
 def add_blog(request):
     """Add a blog post to the site"""
 
@@ -104,7 +108,7 @@ def add_blog(request):
 
     return render(request, template, context)
 
-
+@login_required
 def edit_blog(request, blog_id):
     """ A view to return the edit blog page """
     user = request.user
@@ -145,7 +149,7 @@ def edit_blog(request, blog_id):
 
     return render(request, template, context)
 
-
+@login_required
 def delete_blog(request, blog_id):
     """ A view to return the delete blog page """
     user = request.user
@@ -161,3 +165,34 @@ def delete_blog(request, blog_id):
         blog.delete()
         messages.success(request, f"Blog post {blog.title} has been deleted!")
         return redirect(reverse("blog"))
+    
+
+def add_comment_to_blog(request, blog_id):
+    ''' Add a comment to a blog post '''
+    blog = get_object_or_404(Blog, pk=blog_id)
+    
+    if not request.user.is_authenticated:
+        messages.error(request, 'You need to login to comment on this blog')
+        return render(request, 'account/login.html')
+    
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+        
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.blog = blog
+            comment.save()
+            messages.success(request, 'Successfully added comment!')
+            return redirect(reverse('blog_detail', args=[blog.id]))
+        else:
+            messages.error(request, 'Failed to add comment. Please ensure the form is valid.')
+    else:
+        form = CommentForm()
+        
+    template = 'blog/comment_blog.html'
+    context = {
+        'blog': blog,
+        'form': form,
+    }
+    
+    return render(request, template, context)

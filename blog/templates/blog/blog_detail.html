@@ -63,7 +63,7 @@
     <!-- blog content -->
     <div class="container">
         <div class="row">
-            <div class="col card mb-4  mt-3 left  top">
+            <div class="col card mb-4  mt-3 left top">
                 <div class="card-body">
                     <!-- The post content goes inside the card-text. -->
                     <!-- Use the | safe filter inside the template tags -->
@@ -75,15 +75,28 @@
                             {% csrf_token %}
                             <input type="hidden" name="blog_id" value="{{ blog.id }}">
                             {% if liked %}
-                            <button type="submit" class="btn btn-danger btn-sm"><i
-                                    class="fa-solid fa-thumbs-down"></i></button>
+                            <button type="submit" class="btn  btn-sm"><i class="fa-regular fa-thumbs-up"></i></button>
                             <span class="badge badge-danger">{{ blog.total_likes }}</span>
                                 {% else %}
-                                <button type="submit" class="btn btn-primary btn-sm"><i
-                                        class="fa-solid fa-thumbs-up"></i></button>
+                                <button type="submit" class="btn btn-sm"><i class="fa-solid fa-thumbs-up"></i></button>
                                 <span class="badge badge-primary">{{ blog.total_likes }}</span>
                                     {% endif %}
                         </form>
+                        <!--  -->
+                        <div class="comment">
+                            <div class="row mt-5">
+                                <p class="ml-3">
+                                    <a class="text-decoration-none text-white blog-edit"
+                                        href="{% url 'comment_blog' blog.id %}"><i
+                                            class="fa-solid fa-pen-to-square"></i>
+                                        ADD COMMENT</a>
+                                </p>
+                                <div class="col-12">
+                                    <h2 class="text-black font-weight-bold">Comment</h2>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

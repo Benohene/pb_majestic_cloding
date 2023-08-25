@@ -61,16 +61,16 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <p class="card-text text-center"><small class="text-main-black">{{ blog.author }} | {{ blog.created_on }}</small></p>
+                        <p class="card-text text-center"><small class="text-main-black">{{ blog.author }} |
+                                {{ blog.created_on }}</small></p>
                     </div>
                     {% if request.user.is_superuser %}
                     <div class="card-footer">
                         <div class="col-12">
-                            <hr class="my-0">
                             <div class="text-center">
-                                <a href="{% url 'edit_blog' blog.id %}" class="text-black btn text-sm">Edit
-                                    Blog
-                                    <i class="fa-solid fa-sm fa-pencil"></i></a>
+                                <a class="text-decoration-none text-white blog-edit"
+                                    href="{% url 'edit_blog' blog.id %}"><i class="fa-solid fa-pen-to-square"></i>
+                                    Edit Blog</a>
                             </div>
                         </div>
                     </div>

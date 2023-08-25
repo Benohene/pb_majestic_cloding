@@ -35,8 +35,6 @@ class Comment(models.Model):
     
     class Meta:
         ordering = ['-created_on']
-        
+
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
-    
-    
