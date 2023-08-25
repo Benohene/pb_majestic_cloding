@@ -41,8 +41,44 @@
                 <div class="text-right">
                     <a class="btn btn-outline-black rounded-0" href="{% url 'blog' %}">Cancel</a>
                     <button class="btn btn-black rounded-0" type="submit">Update Blog</button>
+                    <!-- delete blog post -->
+                    <button class="btn cta-danger bg-danger text-white" type="button" class="btn btn-primary"
+                        data-toggle="modal" data-target="#deleteModal{{ blog.id }}"><i class="fa-solid fa-trash"></i>
+                        Delete</button>
                 </div>
             </form>
+        </div>
+    </div>
+
+    <!-- Delete Review Modal -->
+    <div class="modal fade" id="deleteModal{{ blog.id }}" tabindex="-1" aria-labelledby="deleteReviewModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-black">
+                    <h2 class="modal-title text-white mb-0 text-lg" id="deleteReviewModalLabel">Delete Blog Post -
+                        {{ blog.title }}<span class="text-cream">{{ review.user.username }}</span></h2>
+                </div>
+                <div class="modal-body">
+                    {% if request.user.is_superuser %}
+                    <form method="post" action="{% url 'delete_blog' blog.id %}" role="form">
+                        {% csrf_token %}
+                        <p class="text-main-black"><strong><i>Are you sure you want to Delete this Blog
+                                    Post?</strong></i>
+                        </p>
+                        <p class="text-danger">This Blog will be permanently removed and you will not be able to
+                            retrieve it.</p>
+                        <button type="button" class="btn cta bg-black text-white" data-dismiss="modal"
+                            aria-label="Close"><i class="fa-solid fa-xmark"></i> Cancel</button>
+                        <button type="submit" name="action" value="delete"
+                            class="btn cta-danger text-white bg-danger"><i class="fa-solid fa-trash"></i>
+                            Delete</button>
+                    </form>
+                    {% else %}
+                    <h3>You are not authorized to delete this Blog Post.</h3>
+                    {% endif %}
+                </div>
+            </div>
         </div>
     </div>
 </div>

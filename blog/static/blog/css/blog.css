@@ -125,12 +125,12 @@
   border: 1px solid rgb(255, 255, 255);
 }
 
-.blog-delete {
-  background-color: rgb(255, 220, 188);
-  padding: 7px;
-  border: 1px solid rgb(255, 255, 255);
-}
-
+.blog-edit:hover {
+    background-color: rgb(65, 0, 0);
+    padding: 7px;
+    border: 1px solid rgb(255, 255, 255);
+  }
+  
 .add_blog {
   background-color: rgb(102, 37, 0);
   padding: 7px;

@@ -148,5 +148,16 @@ def edit_blog(request, blog_id):
 
 def delete_blog(request, blog_id):
     """ A view to return the delete blog page """
+    user = request.user
+    blog = get_object_or_404(Blog, pk=blog_id)
 
-    return render(request, 'blog/delete_blog.html')
+    if not user.is_superuser:
+        messages.error(
+            request, f"Sorry {user.username}, only store owners can do that."
+        )
+        return redirect(reverse("home"))
+
+    if user.is_superuser:
+        blog.delete()
+        messages.success(request, f"Blog post {blog.title} has been deleted!")
+        return redirect(reverse("blog"))
