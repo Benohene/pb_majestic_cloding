@@ -75,13 +75,16 @@
                             {% csrf_token %}
                             <input type="hidden" name="blog_id" value="{{ blog.id }}">
                             {% if liked %}
-                            <button type="submit" class="btn  btn-sm"><i class="fa-regular fa-thumbs-up"></i></button>
-                            <span class="badge badge-danger">{{ blog.total_likes }}</span>
+                            <button type="submit" class="btn  btn-sm bg-black text-white"><i
+                                    class="fa-regular fa-thumbs-up"></i> {{ blog.total_likes }}</button>
                                 {% else %}
-                                <button type="submit" class="btn btn-sm"><i class="fa-solid fa-thumbs-up"></i></button>
-                                <span class="badge badge-primary">{{ blog.total_likes }}</span>
-                                    {% endif %}
+                                <button type="submit" class="btn btn-sm bg-black-main text-white"><i
+                                        class="fa-solid fa-thumbs-up"> {{ blog.total_likes }}</i></button>
+                                {% endif %}
+                                <span class="badge comment-badge text-black ml-3"><i class="fa-regular fa-comment"></i>
+                                    {{ blog.comments.count }}</span>
                         </form>
+
                         <!--  -->
                         <div class="comment">
                             <div class="row mt-5">
@@ -91,16 +94,36 @@
                                             class="fa-solid fa-pen-to-square"></i>
                                         ADD COMMENT</a>
                                 </p>
-                                <div class="col-12">
-                                    <h2 class="text-black font-weight-bold">Comment</h2>
-                                </div>
+                            </div>
+                            <div class="comment-container">
+                                <h2 class="text-black mt-5">Comments:</h2>
+                                <hr>
+                                {% if comments %}
+                                {% for comment in comments %}
+                                <p class="text-black mb-0"> <strong class="text-main-black">Comment by:</strong>
+                                    {{ comment.name }} </p>
+                                    <p class="text-black mb-0"> {{ comment.body }} </p>
+                                        <p class="text-black mb-3"><i class="text-main-black">Added on:</i>
+                                            {{ comment.created_on }} </p>
+                                            {% if user == comment.user or user.is_superuser %}
+                                            <a href="" class="text-decoration-none text-white blog-edit"><small><i
+                                                        class="fa-solid fa-pencil"></i> Manage Comment</small></a>
+                                            {% endif %}
+                                            <hr>
+                                            {% endfor %}
+                                            {% else %}
+                                            <p class="text-black">No comments yet, Be the first to comment
+                                                {% if not user.is_authenticated %} <i class="text-main-black">Please
+                                                    register or sign in to comment</i> {% endif %}</p>
+                                            {% endif %}
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </div>
         </div>
-        <!-- CONTENT -->
     </div>
-    {% endblock %}
+    <!-- CONTENT -->
+</div>
+{% endblock %}

@@ -49,22 +49,19 @@ def like_blog(request, blog_id):
     """ A view to return the like blog page """
     user = request.user
     blog = get_object_or_404(Blog, pk=blog_id)
-    liked = False
     
     if user.is_authenticated:
         if blog.likes.filter(id=request.user.id).exists():
             blog.likes.remove(request.user)
-            liked = False
             messages.success(request, f"{user} you have unliked this Blog post.")
         else:
             blog.likes.add(request.user)
-            liked = True
             messages.success(request, f"{user} you have liked this Blog post.")
     else:
         messages.warning(request, 'You need to login to like this blog')
         return render(request, 'account/login.html')
-                  
-    return render(request, 'blog/blog_detail.html', {'blog': blog, 'liked': liked})
+    
+    return redirect(reverse('blog_detail', args=[blog.id]))
 
 @login_required
 def add_blog(request):
@@ -170,7 +167,7 @@ def delete_blog(request, blog_id):
 def add_comment_to_blog(request, blog_id):
     ''' Add a comment to a blog post '''
     blog = get_object_or_404(Blog, pk=blog_id)
-    
+
     if not request.user.is_authenticated:
         messages.error(request, 'You need to login to comment on this blog')
         return render(request, 'account/login.html')
