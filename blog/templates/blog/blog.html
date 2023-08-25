@@ -24,7 +24,8 @@
             <p>
                 <h2 class="text-black text-center text-uppercase mb-3"> PB-Majestic Blog</h2>
                 {% if request.user.is_superuser %}
-                <p class="text-center"><a href="{% url 'add_blog' %}" class="text-decoration-none add_blog">ADD BLOG</a></p>
+                <p class="text-center"><a href="{% url 'add_blog' %}" class="text-decoration-none add_blog">ADD BLOG</a>
+                </p>
                 {% endif %}
             </p>
             <hr>
@@ -50,21 +51,24 @@
                 <div class="card border-black-light flex-fill">
                     {% if blog.image %}
                     <a href="{% url 'blog_detail' blog.id %}"><img src="{{ blog.image.url }}" class="card-img-top"
-                            alt="..."></a>
+                            id="blog-img" alt="..."></a>
                     {% else %}
                     <a href="{% url 'blog_detail' blog.id %}"><img src="" class="card-img-top" alt="..."></a>
                     {% endif %}
                     <div class="bg-black text-white font-weight-bold text-center">
                         <a href="" class="text-decoration-none">
-                            <p class="text-white p-2 mb-0">{{ blog.title }}</p>
+                            <p class="text-white p-2 mb-0">{{ blog.title }} </p>
                         </a>
                     </div>
+                    <div class="card-body">
+                        <p class="card-text text-center"><small class="text-main-black">{{ blog.author }} | {{ blog.created_on }}</small></p>
+                    </div>
                     {% if request.user.is_superuser %}
-                    <div class="row">
+                    <div class="card-footer">
                         <div class="col-12">
                             <hr class="my-0">
                             <div class="text-center">
-                                <a href="" class="text-black btn text-sm">Manage
+                                <a href="{% url 'edit_blog' blog.id %}" class="text-black btn text-sm">Manage
                                     Blog
                                     <i class="fa-solid fa-sm fa-pencil"></i></a>
                             </div>

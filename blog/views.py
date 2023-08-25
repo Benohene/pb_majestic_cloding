@@ -11,7 +11,7 @@ from django.contrib.auth.decorators import login_required
 def blog(request):
     """ A view to return the blog page """
     blogs = Blog.objects.all()
-    paginator = Paginator(blogs, 3)
+    paginator = Paginator(blogs, 6)
     page = request.GET.get('page')
     paged_blogs = paginator.get_page(page)
 
@@ -85,7 +85,7 @@ def add_blog(request):
                 messages.success(
                     request, f"Successfully added blog post - {title}."
                 )
-                return redirect(reverse("blog"))
+                return redirect(reverse("blog_detail", args=[blog.id]))
             else:
                 messages.error(
                     request,
@@ -107,7 +107,43 @@ def add_blog(request):
 
 def edit_blog(request, blog_id):
     """ A view to return the edit blog page """
-    return render(request, 'blog/edit_blog.html')
+    user = request.user
+    blog = get_object_or_404(Blog, pk=blog_id)
+
+    if not user.is_superuser:
+        messages.error(
+            request, f"Sorry {user.username}, only store owners can do that."
+        )
+        return redirect(reverse("home"))
+
+    if user.is_superuser:
+        if request.method == "POST":
+            form = BlogForm(request.POST, request.FILES, instance=blog)
+            if form.is_valid():
+                form.save()
+                messages.success(
+                    request, f"Successfully updated blog post - {blog.title}."
+                )
+                return redirect(reverse("blog_detail", args=[blog.id]))
+            else:
+                messages.error(
+                    request,
+                    (
+                        "Failed to update blog post. "
+                        "Please ensure the form is valid."
+                    ),
+                )
+        else:
+            form = BlogForm(instance=blog)
+            messages.info(request, f"You are editing {blog.title}")
+
+    template = "blog/edit_blog.html"
+    context = {
+        "form": form,
+        "blog": blog,
+    }
+
+    return render(request, template, context)
 
 
 def delete_blog(request, blog_id):

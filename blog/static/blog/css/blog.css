@@ -56,6 +56,12 @@
   color: white;
 }
 
+
+#blog-img {
+  height: 200px;
+  object-fit: cover;
+}
+
 .blog-title {
   margin-top: 20%;
   margin-left: 5%;
