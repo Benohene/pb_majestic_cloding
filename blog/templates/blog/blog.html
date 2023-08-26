@@ -61,8 +61,11 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <p class="card-text text-center"><small class="text-main-black">{{ blog.author }} |
-                                {{ blog.created_on }}</small></p>
+                        <p class="card-text text-center pb-0"><small class="text-main-black">{{ blog.author }} |
+                                {{ blog.created_on }}</small> <br>
+                                <small class="pb-0 text-black"><i class="fa-solid fa-thumbs-up"></i> {{ blog.total_likes }}</small>  |  
+                                <small class="pb-0 text-main-black"><i class="fa-regular fa-comment"></i> {{ blog.comments.count }}</small>
+                            </p>
                     </div>
                     {% if request.user.is_superuser %}
                     <div class="card-footer">

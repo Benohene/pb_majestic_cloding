@@ -107,7 +107,7 @@
                                             {{ comment.created_on }} </p>
                                             {% if user == comment.user or user.is_superuser %}
                                             <a href="{% url 'edit_comment' blog.id comment.id %}" class="text-decoration-none text-white blog-edit"><small><i
-                                                        class="fa-solid fa-pencil"></i> Manage Comment</small></a>
+                                                        class="fa-solid fa-pencil"></i> Edit Comment</small></a>
                                             {% endif %}
                                             <hr>
                                             {% endfor %}

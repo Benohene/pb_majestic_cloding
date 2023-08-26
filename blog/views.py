@@ -237,3 +237,18 @@ def edit_comment(request, blog_id, comment_id):
     }
 
     return render(request, "blog/edit_comment.html", context)
+
+
+def delete_comment(request, blog_id, comment_id):
+    """A view to delete a comment from a blog post"""
+    user = request.user
+    blog = get_object_or_404(Blog, pk=blog_id)
+    comment = get_object_or_404(Comment, pk=comment_id)
+
+    if user.is_superuser or user == comment.name:
+        comment.delete()
+        messages.success(request, "Comment deleted!")
+        return redirect(reverse("blog_detail", args=[blog.id]))
+    else:
+        messages.error(request, "You are not authorized to delete this comment.")
+        return redirect(reverse("blog_detail", args=[blog.id]))
