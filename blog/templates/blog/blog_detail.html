@@ -106,7 +106,7 @@
                                         <p class="text-black mb-3"><i class="text-main-black">Added on:</i>
                                             {{ comment.created_on }} </p>
                                             {% if user == comment.user or user.is_superuser %}
-                                            <a href="" class="text-decoration-none text-white blog-edit"><small><i
+                                            <a href="{% url 'edit_comment' blog.id comment.id %}" class="text-decoration-none text-white blog-edit"><small><i
                                                         class="fa-solid fa-pencil"></i> Manage Comment</small></a>
                                             {% endif %}
                                             <hr>
