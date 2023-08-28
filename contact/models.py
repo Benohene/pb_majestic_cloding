@@ -16,8 +16,13 @@ class ContactMail(models.Model):
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     enquiry_type = models.CharField(
-        max_length=50, null=False, blank=False, choices=ENQUIRY_TYPE
+        max_length=50,
+        null=False,
+        blank=False,
+        choices=ENQUIRY_TYPE,
+        default="General Enquiry",
     )
+    subject = models.CharField(max_length=254, null=False, blank=False, default="")
     message = models.TextField(null=False, blank=False)
     date_sent = models.DateTimeField(auto_now_add=True)
     replied = models.BooleanField(default=False)

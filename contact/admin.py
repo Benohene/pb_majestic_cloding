@@ -9,6 +9,7 @@ class ContactMailAdmin(admin.ModelAdmin):
     list_display = (
         "full_name",
         "email",
+        "subject",
         "enquiry_type",
         "date_sent",
         "replied",

@@ -1,1 +1,44 @@
-<h2>test</h2>
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}PB-Majestic Blog{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8 mx-auto">
+            <hr>
+            <h2 class="logo-font mb-4 text-black">Contact Us</h2>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-8 mx-auto mb-5 text-black">
+            <form method="POST" action="{% url 'contact' %}" class="mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{form|crispy}}
+                <div class="text-right">
+                    <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Cancel</a>
+                    <button class="btn btn-black rounded-0" type="submit">Add Comment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
