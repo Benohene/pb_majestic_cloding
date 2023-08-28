@@ -1,0 +1,310 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+
+<section class="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 mx-auto">
+                <hr>
+                <h1 class="text-black text-center">Frequently Asked Questions (FAQ)</h1>
+                <hr>
+            </div>
+            <div class="col-12 col-md-8 mx-auto mb-5">
+                <!-- content -->
+                <p class="text-main-black text-center">If you have any questions that are not listed below, feel free to
+                    contact us
+                    and we will get back to you as soon as possible.</p>
+                <!-- Accordion -->
+                <div class="accordion" id="accordionExample">
+                    <!-- Accordion item 1 -->
+                    <div class="card">
+                        <div class="card-header bg-black" id="headingOne">
+                            <h2 class="mb-0">
+                                <!-- Button -->
+                                <a class="btn btn-link btn-block text-left text-white text-decoration-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-controls="collapseOne">
+                                    What is PB Majestic Clothing?
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- Content -->
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body border-1 border-black text-main-black">
+                                <strong>PB Majestic Clothing</strong> is an online store dealing in high quality
+                                customised clothings. We are inspired by our Faith and Beliefs. Be
+                                yourself, yourself is not who you see in the mirror but the one fashioned after Christ.
+                                We promote the Gospel of Christ through our products. We are a Christian Clothing Brand.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion item 2 -->
+                    <div class="card mt-2">
+                        <div class="card-header bg-black" id="headingTwo">
+                            <h2 class="mb-0">
+                                <!-- Button -->
+                                <a class="btn btn-link btn-block text-left collapsed text-white text-decoration-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-controls="collapseTwo">
+                                    How do I place an order?
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- Content -->
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body border-1 border-black text-main-black">
+                                <p>Placing an order is very easy. Just follow the steps below:</p>
+                                <ol>
+                                    <li>Click on the product you want to buy.</li>
+                                    <li>Click on the "Add to Cart" button.</li>
+                                    <li>Click on the "Cart" icon at the top right corner of the page.</li>
+                                    <li>Click on the "Checkout" button.</li>
+                                    <li>Fill in your details and click on the "Place Order" button.</li>
+                                    <li>Make payment.</li>
+                                    <li>Wait for your order to be delivered.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion item 3 -->
+                    <div class="card mt-2">
+                        <div class="card-header bg-black" id="headingThree">
+                            <h2 class="mb-0">
+                                <!-- Button -->
+                                <a class="btn btn-link btn-block text-left collapsed text-white text-decoration-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-controls="collapseThree">
+                                    How do I pay for my order?
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- Content -->
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body border-1 border-black text-main-black">
+                                <p>Payment can be made through the following channels:</p>
+                                <ol>
+                                    <li>Visa Card</li>
+                                    <li>Master Card</li>
+                                    <li>Credit Card</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion item 4 -->
+                    <div class="card mt-2">
+                        <div class="card-header bg-black" id="headingFour">
+                            <h2 class="mb-0">
+                                <!-- Button -->
+                                <a class="btn btn-link btn-block text-left collapsed text-white text-decoration-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseFour"
+                                    aria-controls="collapseFour">
+                                    How long will it take to receive my order?
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- Content -->
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body border-1 border-black text-main-black">
+                                It will take 3-5 business days to process your order. After that, it will take 7-10
+                                business days for delivery in the United States, and 10-15 business days for
+                                international orders (depending on location).
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion item 5 -->
+                    <div class="card mt-2">
+                        <div class="card-header bg-black" id="headingFive">
+                            <h2 class="mb-0">
+                                <!-- Button -->
+                                <a class="btn btn-link btn-block text-left collapsed text-white text-decoration-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseFive"
+                                    aria-controls="collapseFive">
+                                    How do I track my order?
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- Content -->
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-parent="#accordionExample">
+                            <div class="card-body border-1 border-black text-main-black">
+                                <p>We make sure we always send your a tracking information to your proviced email
+                                    immediately your product has been shipped</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion item 6 -->
+                    <div class="card mt-2">
+                        <div class="card-header bg-black" id="headingSix">
+                            <h2 class="mb-0">
+                                <!-- Button -->
+                                <a class="btn btn-link btn-block text-left collapsed text-white text-decoration-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseSix"
+                                    aria-controls="collapseSix">
+                                    What is your return policy?
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- Content -->
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                            data-parent="#accordionExample">
+                            <div class="card-body border-1 border-black text-main-black">
+                                <p>We have an easy return policy.You can return your order within 14 days of
+                                    purchase.Please notify our customer service within 14 days
+                                    after receiving your order if you get a faulty or inaccurate item. We will walk
+                                    you through the return procedure and either replace or refund your purchase. Please
+                                    note
+                                    that the item must be in its original condition and packaging.</p>
+                                <a href=""><button class="btn btn-black rounded-0" type="submit">Contact Us</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion item 7 -->
+                    <div class="card mt-2">
+                        <div class="card-header bg-black" id="headingSeven">
+                            <h2 class="mb-0">
+                                <!-- Button -->
+                                <a class="btn btn-link btn-block text-left collapsed text-white text-decoration-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseSeven"
+                                    aria-controls="collapseSeven">
+                                    How do I contact customer service?
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- Content -->
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                            data-parent="#accordionExample">
+                            <div class="card-body border-1 border-black text-main-black">
+                                <p>You can contact customer service by sending us a message</p>
+                                <a href=""><button class="btn btn-black rounded-0" type="submit">Contact Us</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion item 8 -->
+                    <div class="card mt-2">
+                        <div class="card-header bg-black" id="headingEight">
+                            <h2 class="mb-0">
+                                <!-- Button -->
+                                <a class="btn btn-link btn-block text-left collapsed text-white text-decoration-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseEight"
+                                    aria-controls="collapseEight">
+                                    How do I cancel my order?
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- Content -->
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                            data-parent="#accordionExample">
+                            <div class="card-body border-1 border-black text-main-black">
+                                <p>You can contact customer service by sending us a message</p>
+                                <a href=""><button class="btn btn-black rounded-0" type="submit">Contact Us</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion item 9 -->
+                    <div class="card mt-2">
+                        <div class="card-header bg-black" id="headingNine">
+                            <h2 class="mb-0">
+                                <!-- Button -->
+                                <a class="btn btn-link btn-block text-left collapsed text-white text-decoration-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseNine"
+                                    aria-controls="collapseNine">
+                                    How do I change my shipping address?
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- Content -->
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                            data-parent="#accordionExample">
+                            <div class="card-body border-1 border-black text-main-black">
+                                <p>You can contact customer service by sending us a message</p>
+                                <a href=""><button class="btn btn-black rounded-0" type="submit">Contact Us</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion item 10 -->
+                    <div class="card mt-2">
+                        <div class="card-header bg-black" id="headingTen">
+                            <h2 class="mb-0">
+                                <!-- Button -->
+                                <a class="btn btn-link btn-block text-left collapsed text-white text-decoration-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseTen"
+                                    aria-controls="collapseTen">
+                                    How do I change my billing address?
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- Content -->
+                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
+                            data-parent="#accordionExample">
+                            <div class="card-body border-1 border-black text-main-black">
+                                <p>You can contact customer service by sending us a message</p>
+                                <a href=""><button class="btn btn-black rounded-0" type="submit">Contact Us</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion item 11 -->
+                    <div class="card mt-2">
+                        <div class="card-header bg-black" id="headingEleven">
+                            <h2 class="mb-0">
+                                <!-- Button -->
+                                <a class="btn btn-link btn-block text-left collapsed text-white text-decoration-none"
+                                    type="button" data-toggle="collapse" data-target="#collapseEleven"
+                                    aria-controls="collapseEleven">
+                                    How do I change my email address?
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- Content -->
+                        <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                            data-parent="#accordionExample">
+                            <div class="card-body border-1 border-black text-main-black">
+                                <p>You can contact customer service by sending us a message</p>
+                                <a href=""><button class="btn btn-black rounded-0" type="submit">Contact Us</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion item 12 -->
+                    <div class="card mt-2">
+                        <div class="card-header bg-black" id="headingTwelve">
+                            <h2 class="mb-0">
+                                <!-- Button -->
+                                <a class="btn btn-link btn-block text-left collapsed text-white text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-controls="collapseTwelve">
+                                    Is PB Majestic Cloding shipping to all countries?
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- Content -->
+                        <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+                            <div class="card-body border-1 border-black text-main-black">
+                                <p>No, we dont ship to all countries. We ship to Europe , Britain and the United States</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
+
+{% block footer %}
+{% include 'includes/footer.html' %}
+{% endblock %}

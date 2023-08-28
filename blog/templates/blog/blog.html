@@ -102,17 +102,17 @@
                 <ul class="pagination ">
                     {% if blogs.has_previous %}
                     <li class="page-item disabled justify-content-center">
-                        <a class="" id="paginateBtn" href="?page={{ blogs.previous_page_number }}"
+                        <a class="" id="paginatePrevBtn" href="?page={{ blogs.previous_page_number }}"
                             tabindex="-1">Prev</a>
                     </li>
                     {% endif %}
                     <li class="page-item active">
-                        <a class="" href="?page={{ blogs.number }}" id="paginateBtn">{{ blogs.number }}<span
+                        <a class="" href="?page={{ blogs.number }}" id="paginateNumBtn">{{ blogs.number }}<span
                                 class="sr-only">(current)</span></a>
                     </li>
                     {% if blogs.has_next %}
                     <li class="page-item">
-                        <a class="" href="?page={{ blogs.next_page_number }}" id="paginateBtn">Next</a>
+                        <a class="" href="?page={{ blogs.next_page_number }}" id="paginateNextBtn">Next</a>
                     </li>
                     {% endif %}
                 </ul>

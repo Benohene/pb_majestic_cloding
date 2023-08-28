@@ -1,10 +1,11 @@
+'''Admin page  for blog app'''
 from django.contrib import admin
-from .models import Blog, Comment
 from django_summernote.admin import SummernoteModelAdmin
+from .models import Blog, Comment
 
 
-# Register your models here.
 class BlogAdmin(SummernoteModelAdmin):
+    '''Admin content for blog'''
     list_display = (
         'title',
         'author',
@@ -20,15 +21,15 @@ class BlogAdmin(SummernoteModelAdmin):
 
 
 class CommentAdmin(admin.ModelAdmin):
+    '''Admin content for comments'''
     list_display = (
         'blog',
         'name',
         'created_on',
     )
-    
+
     search_fields = ['body']
 
-    
-    
+
 admin.site.register(Blog, BlogAdmin)
 admin.site.register(Comment, CommentAdmin)
