@@ -1,5 +1,7 @@
+''' This file is used to customise the image field in the product form'''
 from django.forms.widgets import ClearableFileInput
 from django.utils.translation import gettext_lazy as _
+
 
 class CustomClearableFileInput(ClearableFileInput):
     """ This class is used to customise the image field in the product form """
