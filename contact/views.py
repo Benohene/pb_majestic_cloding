@@ -4,6 +4,7 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
 from django.contrib import messages
+from django.conf import settings
 from .forms import ContactMailForm
 
 
@@ -18,7 +19,7 @@ def contact(request):
             message = form.cleaned_data["message"]
 
             subject = "Thanks for getting in touch with PB Majestic Cloding!"
-            from_email = "noreply@pbmajestic.com"
+            from_email = settings.DEFAULT_FROM_EMAIL
             to_email = [email]
 
             html_message = render_to_string(
