@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     "crispy_forms",
     "django_resized",
     "django_summernote",
+    "storages",
 ]
 
 MIDDLEWARE = [
@@ -185,6 +186,24 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 # Free shipping threshold
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
+
+if 'USE_AWS' in os.environ:
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'pbmajestic-cloding'
+    AWS_S3_REGION_NAME = 'eu-central-1'
+    AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID", "")
+    AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY", "")
+    AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
+    
+    # Static and Media files
+    STATICFILES_LOCATION = 'static'
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATIC_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/"
+    
+    MEDIAFILES_LOCATION = 'media'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/"
+    
 
 # Stripe
 STRIPE_CURRENCY = "eur"
