@@ -1,0 +1,2067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/cart/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/?category=mens_wear</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/?category=womens_wear</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/?category=mens_wear,womens_wear</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/?category=hoodies</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/?category=sweatshirts</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/?category=hoodies,sweatshirts</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/?category=new_arrivals</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/?category=deals</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/?category=new_arrivals,deals</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/blog/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/contact/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/faq/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/4/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/20/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/57/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/81/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/60/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/12/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/88/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/84/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/99/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/95/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/103/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/102/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/94/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/91/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/89/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/15/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/71/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/21/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/23/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/22/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/11/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/5/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/6/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/8/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/17/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/18/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/62/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/72/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/104/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/19/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/1/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/78/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/79/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/80/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/82/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/83/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/14/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/92/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/86/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/90/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/13/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/87/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/16/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/46/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/70/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/74/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/58/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/98/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/61/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/77/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/63/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/65/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/67/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/97/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/101/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/51/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/100/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/45/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/73/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/56/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/68/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/66/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/47/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/50/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/2/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/37/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/30/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/35/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/76/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/43/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/44/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/48/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/52/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/53/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/54/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/59/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/64/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/69/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/85/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/75/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/93/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/49/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/96/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/42/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/55/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/26/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/27/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/39/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/33/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/3/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/34/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/38/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/40/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/31/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/41/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/28/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/25/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/24/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/7/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/32/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/36/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/29/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/9/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/products/10/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/summernote/editor/id_message/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/4/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/20/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/57/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/81/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/60/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/12/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/88/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/84/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/99/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/95/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/103/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/102/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/94/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/91/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/89/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/15/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/71/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/21/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/23/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/22/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/11/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/5/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/6/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/8/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/17/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/18/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/62/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/72/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/104/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/19/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/1/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/78/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/79/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/80/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/82/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/83/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/14/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/92/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/86/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/90/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/13/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/87/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/16/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/46/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/70/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/74/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/58/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/98/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/61/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/77/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/63/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/65/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/67/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/97/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/101/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/51/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/100/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/45/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/73/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/56/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/68/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/66/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/47/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/50/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/2/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/37/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/30/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/35/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/76/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/43/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/44/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/48/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/52/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/53/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/54/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/59/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/64/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/69/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/85/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/75/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/93/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/49/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/96/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/42/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/55/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/26/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/27/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/39/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/33/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/3/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/34/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/38/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/40/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/31/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/41/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/28/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=/reviews/add_review/29/</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F20%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F57%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F81%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F88%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F84%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F99%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F95%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F103%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F102%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F94%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F91%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F89%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F15%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F71%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F21%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F23%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F22%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F11%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F5%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F6%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F8%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F17%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F18%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F62%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F72%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F104%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F19%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F1%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F78%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F79%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F80%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F82%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F83%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F14%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F92%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F86%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F90%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F13%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F87%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F16%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F46%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F70%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F74%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F58%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F98%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F61%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F77%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F63%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F65%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F67%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F97%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F101%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F51%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F100%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F45%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F73%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F56%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F68%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F66%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F47%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F50%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F2%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F37%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F30%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F35%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F76%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F43%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F44%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F48%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F52%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F53%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F54%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F59%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F64%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F69%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F85%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F75%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F93%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F49%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F96%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F42%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F55%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F26%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F27%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F39%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F33%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F3%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F34%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F38%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F40%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F31%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F41%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F28%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F29%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F20%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F57%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F81%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F88%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F84%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F99%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F95%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F103%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F102%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F94%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F91%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F89%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F15%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F71%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F21%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F23%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F22%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F11%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F5%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F6%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F8%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F17%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F18%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F62%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F72%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F104%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F19%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F1%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F78%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F79%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F80%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F82%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F83%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F14%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F92%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F86%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F90%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F13%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F87%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F16%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F46%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F70%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F74%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F58%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F98%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F61%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F77%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F63%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F65%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F67%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F97%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F101%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F51%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F100%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F45%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F73%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F56%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F68%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F66%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F47%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F50%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F2%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F37%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F30%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F35%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F76%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F43%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F44%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F48%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F52%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F53%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F54%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F59%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F64%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F69%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F85%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F75%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F93%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F49%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F96%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F42%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F55%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F26%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F27%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F39%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F33%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F3%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F34%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F38%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F40%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F31%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F41%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F28%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F29%2F</loc>
+  <lastmod>2023-08-29T20:00:11+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>

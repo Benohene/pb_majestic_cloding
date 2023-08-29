@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /cart/
+Disallow: /profiles/
+Disallow: /checkout/
+Disallow: /admin/
+Sitemap: https://pb-majestic-cloding.herokuapp.com/sitemap.xml
