@@ -58,9 +58,7 @@ INSTALLED_APPS = [
     "contact",
     # Other
     "crispy_forms",
-    "django_countries",
     "django_resized",
-    "storages",
     "django_summernote",
 ]
 
