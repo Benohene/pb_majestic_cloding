@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import handler404
+from .views import error_403, error_404, error_500
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -36,4 +36,6 @@ urlpatterns = [
 
 
 # Error Handlers
-handler404 = 'pd_majestic_cloding.handler404'
+handler403 = "pd_majestic_cloding.views.error_403"
+handler404 = "pd_majestic_cloding.views.error_404"
+handler500 = "pd_majestic_cloding.views.error_500"
