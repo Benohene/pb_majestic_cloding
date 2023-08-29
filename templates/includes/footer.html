@@ -12,7 +12,8 @@
                 </ul>
                 <ul class="list-inline">
                     <li class="list-inline-item">
-                        <a href="https://www.facebook.com/" target="_blank" rel="nofollow noopener" class="me-4 text-decoration-none" id="facebook">
+                        <a href="https://www.facebook.com/" target="_blank" rel="nofollow noopener"
+                            class="me-4 text-decoration-none" id="facebook">
                             <i class="fab fa-facebook-f p-2"></i> <span class="p-2">Follow us on Facebook</span>
                         </a>
                     </li>
@@ -23,8 +24,10 @@
                 </h3>
                 <ul class="list-unstyled">
                     <li><a href="{% url 'products' %}?category=mens_wear" class="drop-items dropdown-item">Men</a></li>
-                    <li></li><a href="{% url 'products' %}?category=womens_wear" class="drop-items dropdown-item">Women</a></li>
-                    <li></li><a href="{% url 'products' %}?category=mens_wear,womens_wear" class="drop-items dropdown-item">All
+                    <li></li><a href="{% url 'products' %}?category=womens_wear"
+                        class="drop-items dropdown-item">Women</a></li>
+                    <li></li><a href="{% url 'products' %}?category=mens_wear,womens_wear"
+                        class="drop-items dropdown-item">All
                         T-Shirts</a></li>
                 </ul>
             </div>
@@ -32,7 +35,8 @@
                 <h3 class="font-weight-bold cat-Title"><i class="fa-solid fa-gift"></i> Special Offers
                 </h3>
                 <ul class="list-unstyled">
-                    <li><a href="{% url 'products' %}?category=new_arrivals" class="drop-items dropdown-item">New Arrivals</a></li>
+                    <li><a href="{% url 'products' %}?category=new_arrivals" class="drop-items dropdown-item">New
+                            Arrivals</a></li>
                     <li><a href="{% url 'products' %}?category=deals" class="drop-items dropdown-item">Deals</a></li>
                     <li><a href="{% url 'products' %}?category=new_arrivals,deals" class="drop-items dropdown-item">All
                             Specials</a></li>
@@ -41,12 +45,104 @@
             <div
                 class="col-lg-3 text-center text-lg-left d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social">
                 <h4 class="font-weight-bold mb-2 text-cream"><strong>Subscribe to our newsletter</strong></h4>
-                <form class="d-flex justify-content-center flex-wrap" method="POST" action="">
-                    {% csrf_token %}
-                    <div class="my-2"><input class="form-control" type="email" name="email" placeholder="Your Email">
+                <!-- Mailchimp -->
+                <div id="mc_embed_shell">
+                    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet"
+                        type="text/css">
+                    <style type="text/css">
+                        #mc_embed_signup {
+                            background: #581e07;
+                            false;
+                            clear: left;
+                            font: 14px Helvetica, Arial, sans-serif;
+                            width: auto;
+                        }
+
+                        #mc_embed_signup #mce-success-response {
+                            color: #fff;
+                            false;
+                            display: none;
+                            false;
+                            font-size: 1em;
+                            false;
+                            margin: 0;
+                            false;
+                            padding: 0;
+                            false;
+                            text-align: center;
+                            false;
+                        }
+
+                        #mc_embed_signup form {
+                            margin: 0;
+                            false;
+                        }
+
+                        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                    </style>
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://yahoo.us17.list-manage.com/subscribe/post?u=568d18fa7bbab6da8ef6c00e8&amp;id=596cc8a7cc&amp;f_id=00da61e0f0"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate" target="_blank">
+                            <div id="mc_embed_signup_scroll">
+
+                                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                                <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span
+                                            class="asterisk">*</span></label><input type="email" name="EMAIL"
+                                        class="required email" id="mce-EMAIL" required="" value=""></div>
+                                <div id="mce-responses" class="clear foot">
+                                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                                </div>
+                                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                    /* real people should not fill this in and expect good things - do not remove this
+                                    or risk form bot signups */
+                                    <input type="text" name="b_568d18fa7bbab6da8ef6c00e8_596cc8a7cc" tabindex="-1"
+                                        value="">
+                                </div>
+                                <div class="optionalParent">
+                                    <div class="clear foot">
+                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
+                                            value="Subscribe">
+                                        <p style="margin: 0px auto;"><a href="http://eepurl.com/iyCR7E"
+                                                title="Mailchimp - email marketing made easy and fun"><span
+                                                    style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
+                                                        class="refferal_badge"
+                                                        src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-light.svg"
+                                                        alt="Intuit Mailchimp"
+                                                        style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="my-2"><button class="btn btn-outline-black ml-2" type="submit">Subscribe </button></div>
-                </form>
+                    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
+                    </script>
+                    <script type="text/javascript">
+                        (function ($) {
+                            window.fnames = new Array();
+                            window.ftypes = new Array();
+                            fnames[0] = 'EMAIL';
+                            ftypes[0] = 'email';
+                            fnames[1] = 'FNAME';
+                            ftypes[1] = 'text';
+                            fnames[2] = 'LNAME';
+                            ftypes[2] = 'text';
+                            fnames[3] = 'ADDRESS';
+                            ftypes[3] = 'address';
+                            fnames[4] = 'PHONE';
+                            ftypes[4] = 'phone';
+                            fnames[5] = 'BIRTHDAY';
+                            ftypes[5] = 'birthday';
+                        }(jQuery));
+                        var $mcj = jQuery.noConflict(true);
+                    </script>
+                </div>
+
+                <!-- End  Mailchimp -->
             </div>
         </div>
         <hr>
