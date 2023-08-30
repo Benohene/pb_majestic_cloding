@@ -178,5 +178,148 @@ I created an entity relationship diagram using [sqldbm](https://app.sqldbm.com/C
 
 ## Features
 ### Home Page
-![home](![Alt text](docs/features_images/home.jpg))
+![features](docs/features_images/home.jpg)
 
+### Navbar with Search field and nav links
+![features](docs\features_images\navbar.jpg)
+
+### Footer with Newletter
+![features](docs\features_images\footer.jpg)
+
+### All Products
+![features](docs\features_images\all-product.jpg)
+
+### All Products Details
+![features](docs\features_images\prod-view.jpg)
+
+## Product reviews
+![features](docs\features_images\review.jpg)
+
+* No review on product page
+![features](docs\features_images\no-review.jpg)
+
+* Add product review forms
+![features](docs\features_images\add-review.jpg)
+
+* Edit product review forms
+![features](docs\features_images\edit-review.jpg)
+
+* Delete product review forms
+![features](docs\features_images\delete-review.jpg)
+
+### Product Management
+* Add Products
+![features](docs\features_images\prod-manage.jpg)
+
+* Edit Products
+![features](docs\features_images\prod-edit.jpg)
+
+* Edit Products
+![features](docs\features_images\prod-edit.jpg)
+
+### Cart
+![features](docs\features_images\cart-view.jpg)
+
+### Checkout
+![features](docs\features_images\checkout.jpg)
+
+### Order Completion
+![features](docs\features_images\thankyou-page.jpg)
+
+### User Profile
+* Detail Profile
+![features](docs\features_images\profile-info.jpg)
+
+* Orders on Profile
+![features](docs\features_images\profile-order.jpg)
+
+* Wishlist on Profile
+![features](docs\features_images\profile-wish.jpg)
+
+### Blog
+* Blog view
+![features](docs\features_images\blog-list.jpg)
+
+* Blog Add
+![features](docs\features_images\add-blog.jpg)
+
+* Blog Edit
+![features](docs\features_images\blog-update.jpg)
+
+* Blog Delete
+![features](docs\features_images\blog-delete.jpg)
+
+* Blog comment
+![features](docs\features_images\blog-commented.jpg)
+
+* Blog edit comment
+![features](docs\features_images\edit-blog-comment.jpg)
+
+* Blog delete
+![features](docs\features_images\blog-delete.jpg)
+
+### Contact Us
+![features](docs\features_images\contact-page.jpg)
+
+### Status Error Templates
+
+As a Developer I can implement a 403 error page to redirect unauthorised users so that I can secure my views
+
+As a Developer I can implement a 404 error page so that I can alert users when they have accessed a page that doesn't exist
+
+As a Developer I can implement a 500 error page so that I can alert users when an internal server error occurs
+
+A 403 error page has been implemented to provide feedback to the user when they try to access unauthorized content. Users will be directed to this page if they alter the URLs and attempt to edit, delete, or access pages that are restricted.
+
+A 404 page has been implemented and will display if a user navigates to a broken link.
+
+The 404 page will allow the user to easily navigate back to the main website if they direct to a broken link / missing page, without the need for the browser's back button.
+
+A 500 error page has been displayed to alert users when an internal server error occurs. The message relays to users that the problem is on our end, not theirs.
+
+![features](docs\features_images\error-404.jpg)
+
+### User Sign Up
+
+Users without an account can register for one through the register link in the main nav menu. This will present them with a form to add their details and created a profile for that user on completion.
+Users are sent a confirmation email to complete their account sign up to help avoid people from creating spam accounts on the site.
+![features](docs\features_images\sign-up.jpg)
+
+### User Sign In
+
+If a user isn't signed in to the site but has a profile, they can follow the sign in link where they're presented with a log in page. They must input their username or email address and correct password to do so. There's also a checkbox to let the user be remembered on their current device to avoid having to log in every time they visit the site.
+There's a link for users who have forgotten their password.
+![features](docs\features_images\sign-in.jpg)
+
+### User Sign Out
+
+If a user wants to end their logged in session, they can click logout under the account dropdown in the nav menu.
+This will bring them to a page confirming they want to log out.
+![features](docs\features_images\sign-out.jpg)
+
+### Password Reset
+
+If a user is trying to log in and has forgotten their password they can visit the password reset page. Here a user must enter their email address they used to sign up with and an email will be sent to them with further instructions on resetting their password to regain access to their account.
+![features](docs\features_images\pass-reset.jpg)
+
+## Tools & Technologies Used
+This site couldn't have been created without a variety of tools and technologies. I've listed the ones used below.
+
+* HTML used for the main site content.
+* CSS used for the main site design and layout.
+* CSS :root variables used for reusable styles throughout the site.
+* CSS Flexbox used for an enhanced responsive layout.
+* JavaScript used for user interaction on the site.
+* Python used as the back-end programming language.
+* Git used for version control. (git add, git commit, git push)
+* GitHub used for secure online code storage.
+* Gitpod used as a cloud-based IDE for development.
+* Bootstrap used as the front-end CSS framework for modern responsiveness and pre-built components.
+* Django used as the Python framework for the site.
+* PostgreSQL used as the relational database management.
+* ElephantSQL used as the Postgres database.
+* Heroku used for hosting the deployed back-end site.
+* Stripe used for online secure payments of ecommerce products/services.
+* AWS S3 used for online static file storage.
+* Django Summernote used for the body field for blog posts.
+* Pillow used for handling images.
