@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 import dj_database_url
+
 if os.path.exists("env.py"):
     import env
 
@@ -107,7 +108,9 @@ TEMPLATES = [
 ]
 
 # Messages
-MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
+MESSAGE_STORAGE = (
+    "django.contrib.messages.storage.session.SessionStorage"
+)
 
 
 # Allauth settings
@@ -133,7 +136,9 @@ WSGI_APPLICATION = "pd_majestic_cloding.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 if "DATABASE_URL" in os.environ:
     DATABASES = {
-        "default": dj_database_url.parse(os.environ.get("DATABASE_URL")),
+        "default": dj_database_url.parse(
+            os.environ.get("DATABASE_URL")
+        ),
     }
 else:
     DATABASES = {
@@ -187,26 +192,28 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 
-if 'USE_AWS' in os.environ:
+if "USE_AWS" in os.environ:
     # Cache Control
     AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-        'CacheControl': 'max-age=94608000',
+        "Expires": "Thu, 31 Dec 2099 20:00:00 GMT",
+        "CacheControl": "max-age=94608000",
     }
     # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'pb-majestic-cloding'
-    AWS_S3_REGION_NAME = 'eu-central-1'
+    AWS_STORAGE_BUCKET_NAME = "pb-majestic-cloding"
+    AWS_S3_REGION_NAME = "eu-central-1"
     AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID", "")
     AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY", "")
     AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
 
     # Static and Media files
-    STATICFILES_LOCATION = 'static'
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-    STATIC_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/"
+    STATICFILES_LOCATION = "static"
+    STATICFILES_STORAGE = "custom_storages.StaticStorage"
+    STATIC_URL = (
+        f"https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/"
+    )
 
-    MEDIAFILES_LOCATION = 'media'
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = "media"
+    DEFAULT_FILE_STORAGE = "custom_storages.MediaStorage"
     MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/"
 
 
@@ -219,16 +226,16 @@ STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY", "")
 STRIPE_WH_SECRET = os.environ.get("STRIPE_WH_SECRET", "")
 
 # Email Confirmation
-if 'DEVELOPMENT' in os.environ:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+if "DEVELOPMENT" in os.environ:
+    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
     DEFAULT_FROM_EMAIL = "noreply@pbmajesticcloding.com"
 else:
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
     EMAIL_USE_TLS = True
-    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST = "smtp.gmail.com"
     EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
     EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASS")
-    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+    DEFAULT_FROM_EMAIL = os.environ.get("EMAIL_HOST_USER")
     EMAIL_PORT = 587
 
 # Default primary key field type

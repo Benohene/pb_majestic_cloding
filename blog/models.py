@@ -25,7 +25,9 @@ class Blog(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=False)
-    likes = models.ManyToManyField(User, related_name="likes", blank=True)
+    likes = models.ManyToManyField(
+        User, related_name="likes", blank=True
+    )
 
     class Meta:
         """This class is used to order the blog posts by the created date"""
@@ -40,7 +42,9 @@ class Blog(models.Model):
 class Comment(models.Model):
     """This model is used to create the comments for the blog posts"""
 
-    blog = models.ForeignKey(Blog, on_delete=models.CASCADE, related_name="comments")
+    blog = models.ForeignKey(
+        Blog, on_delete=models.CASCADE, related_name="comments"
+    )
     name = models.CharField(max_length=80, null=False, blank=False)
     body = models.TextField(null=False, blank=False, max_length=500)
     created_on = models.DateTimeField(auto_now_add=True)

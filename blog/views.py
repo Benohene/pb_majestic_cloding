@@ -1,5 +1,10 @@
 """ This file is used to create the views for the blog app."""
-from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.shortcuts import (
+    render,
+    get_object_or_404,
+    redirect,
+    reverse,
+)
 from django.core.paginator import Paginator
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -52,10 +57,14 @@ def like_blog(request, blog_id):
     if user.is_authenticated:
         if blog.likes.filter(id=request.user.id).exists():
             blog.likes.remove(request.user)
-            messages.success(request, f"{user} you have unliked this Blog post.")
+            messages.success(
+                request, f"{user} you have unliked this Blog post."
+            )
         else:
             blog.likes.add(request.user)
-            messages.success(request, f"{user} you have liked this Blog post.")
+            messages.success(
+                request, f"{user} you have liked this Blog post."
+            )
     else:
         messages.warning(request, "You need to login to like this blog")
         return render(request, "account/login.html")
@@ -71,7 +80,8 @@ def add_blog(request):
 
     if not user.is_superuser:
         messages.error(
-            request, f"Sorry {user.username}, only store owners can do that."
+            request,
+            f"Sorry {user.username}, only store owners can do that.",
         )
         return redirect(reverse("home"))
 
@@ -83,12 +93,17 @@ def add_blog(request):
                 blog.author = user
                 blog.save()
                 title = form.cleaned_data["title"]
-                messages.success(request, f"Successfully added blog post - {title}.")
+                messages.success(
+                    request, f"Successfully added blog post - {title}."
+                )
                 return redirect(reverse("blog_detail", args=[blog.id]))
             else:
                 messages.error(
                     request,
-                    ("Failed to add blog post. " "Please ensure the form is valid."),
+                    (
+                        "Failed to add blog post. "
+                        "Please ensure the form is valid."
+                    ),
                 )
         else:
             form = BlogForm()
@@ -109,7 +124,8 @@ def edit_blog(request, blog_id):
 
     if not user.is_superuser:
         messages.error(
-            request, f"Sorry {user.username}, only store owners can do that."
+            request,
+            f"Sorry {user.username}, only store owners can do that.",
         )
         return redirect(reverse("home"))
 
@@ -119,13 +135,17 @@ def edit_blog(request, blog_id):
             if form.is_valid():
                 form.save()
                 messages.success(
-                    request, f"Successfully updated blog post - {blog.title}."
+                    request,
+                    f"Successfully updated blog post - {blog.title}.",
                 )
                 return redirect(reverse("blog_detail", args=[blog.id]))
             else:
                 messages.error(
                     request,
-                    ("Failed to update blog post. " "Please ensure the form is valid."),
+                    (
+                        "Failed to update blog post. "
+                        "Please ensure the form is valid."
+                    ),
                 )
         else:
             form = BlogForm(instance=blog)
@@ -148,13 +168,16 @@ def delete_blog(request, blog_id):
 
     if not user.is_superuser:
         messages.error(
-            request, f"Sorry {user.username}, only store owners can do that."
+            request,
+            f"Sorry {user.username}, only store owners can do that.",
         )
         return redirect(reverse("home"))
 
     if user.is_superuser:
         blog.delete()
-        messages.success(request, f"Blog post {blog.title} has been deleted!")
+        messages.success(
+            request, f"Blog post {blog.title} has been deleted!"
+        )
         return redirect(reverse("blog"))
 
 
@@ -163,13 +186,17 @@ def add_comment_to_blog(request, blog_id):
     blog = get_object_or_404(Blog, pk=blog_id)
 
     if not request.user.is_authenticated:
-        messages.error(request, "You need to login to comment on this blog")
+        messages.error(
+            request, "You need to login to comment on this blog"
+        )
         return render(request, "account/login.html")
 
     # if user comment on blog post exists raise error
     comments_exist = Comment.objects.filter(blog=blog).exists()
     if comments_exist:
-        messages.error(request, "You have already commented on this blog")
+        messages.error(
+            request, "You have already commented on this blog"
+        )
         return redirect(reverse("blog_detail", args=[blog.id]))
     else:
         if request.method == "POST":
@@ -183,7 +210,8 @@ def add_comment_to_blog(request, blog_id):
                 return redirect(reverse("blog_detail", args=[blog.id]))
             else:
                 messages.error(
-                    request, "Failed to add comment. Please ensure the form is valid."
+                    request,
+                    "Failed to add comment. Please ensure the form is valid.",
                 )
         else:
             form = CommentForm()
@@ -196,8 +224,8 @@ def add_comment_to_blog(request, blog_id):
         }
 
         return render(request, template, context)
-    
-    
+
+
 def edit_comment(request, blog_id, comment_id):
     """
     Checks the database for the comment.id and then confirms if
@@ -209,12 +237,15 @@ def edit_comment(request, blog_id, comment_id):
 
     if user.is_superuser or user == comment.name:
         if request.method == "POST":
-            form = CommentForm(request.POST, request.FILES, instance=comment)
+            form = CommentForm(
+                request.POST, request.FILES, instance=comment
+            )
             if form.is_valid():
                 comment = form.save(commit=False)
                 comment.save()
                 messages.success(
-                    request, f"{user.username} your comment has been updated"
+                    request,
+                    f"{user.username} your comment has been updated",
                 )
 
                 return redirect(reverse("blog_detail", args=[blog.id]))
@@ -227,7 +258,9 @@ def edit_comment(request, blog_id, comment_id):
             form = CommentForm(instance=comment)
 
     else:
-        messages.error(request, "You are not authorized to edit this comment.")
+        messages.error(
+            request, "You are not authorized to edit this comment."
+        )
         return redirect(reverse("blog_detail", args=[blog.id]))
 
     context = {
@@ -250,5 +283,7 @@ def delete_comment(request, blog_id, comment_id):
         messages.success(request, "Comment deleted!")
         return redirect(reverse("blog_detail", args=[blog.id]))
     else:
-        messages.error(request, "You are not authorized to delete this comment.")
+        messages.error(
+            request, "You are not authorized to delete this comment."
+        )
         return redirect(reverse("blog_detail", args=[blog.id]))

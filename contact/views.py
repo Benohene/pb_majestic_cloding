@@ -18,7 +18,9 @@ def contact(request):
             email = form.cleaned_data["email"]
             message = form.cleaned_data["message"]
 
-            subject = "Thanks for getting in touch with PB Majestic Cloding!"
+            subject = (
+                "Thanks for getting in touch with PB Majestic Cloding!"
+            )
             from_email = settings.DEFAULT_FROM_EMAIL
             to_email = [email]
 
@@ -33,7 +35,11 @@ def contact(request):
             )
 
             send_mail(
-                subject, plain_message, from_email, to_email, html_message=html_message
+                subject,
+                plain_message,
+                from_email,
+                to_email,
+                html_message=html_message,
             )
             return redirect("contact")
         else:

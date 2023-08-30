@@ -7,29 +7,73 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
-        ('products', '0002_remove_product_size_product_has_size_delete_size'),
+        (
+            "products",
+            "0002_remove_product_size_product_has_size_delete_size",
+        ),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Review',
+            name="Review",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('review_title', models.CharField(blank=True, max_length=100, null=True)),
-                ('review_text', models.TextField(blank=True, max_length=2000, null=True)),
-                ('review_date', models.DateTimeField(auto_now_add=True, null=True)),
-                ('review_rating', models.IntegerField(default=1, validators=[django.core.validators.MaxValueValidator(5), django.core.validators.MinValueValidator(1)])),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='products.product')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "review_title",
+                    models.CharField(
+                        blank=True, max_length=100, null=True
+                    ),
+                ),
+                (
+                    "review_text",
+                    models.TextField(
+                        blank=True, max_length=2000, null=True
+                    ),
+                ),
+                (
+                    "review_date",
+                    models.DateTimeField(auto_now_add=True, null=True),
+                ),
+                (
+                    "review_rating",
+                    models.IntegerField(
+                        default=1,
+                        validators=[
+                            django.core.validators.MaxValueValidator(5),
+                            django.core.validators.MinValueValidator(1),
+                        ],
+                    ),
+                ),
+                (
+                    "product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="products.product",
+                    ),
+                ),
+                (
+                    "user",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
             ],
             options={
-                'verbose_name_plural': 'Reviews',
-                'ordering': ['-review_date'],
+                "verbose_name_plural": "Reviews",
+                "ordering": ["-review_date"],
             },
         ),
     ]

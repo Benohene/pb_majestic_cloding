@@ -19,7 +19,11 @@ class ContactMailForm(forms.ModelForm):
             "message",
         )
         widgets = {
-            "message": SummernoteWidget(attrs={"summernote": {"width": "100%", "height": "400px"}}),
+            "message": SummernoteWidget(
+                attrs={
+                    "summernote": {"width": "100%", "height": "400px"}
+                }
+            ),
         }
 
         labels = {
@@ -43,5 +47,7 @@ class ContactMailForm(forms.ModelForm):
 
         for field_name, field in self.fields.items():
             if field_name not in exclude_fields:
-                field.widget.attrs["placeholder"] = placeholders.get(field_name, "")
+                field.widget.attrs["placeholder"] = placeholders.get(
+                    field_name, ""
+                )
         self.fields["full_name"].widget.attrs["autofocus"] = True

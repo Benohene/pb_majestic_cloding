@@ -4,20 +4,28 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('contact', '0001_initial'),
+        ("contact", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='contactmail',
-            name='subject',
-            field=models.CharField(default='', max_length=254),
+            model_name="contactmail",
+            name="subject",
+            field=models.CharField(default="", max_length=254),
         ),
         migrations.AlterField(
-            model_name='contactmail',
-            name='enquiry_type',
-            field=models.CharField(choices=[('General Enquiry', 'General Enquiry'), ('Customer Service', 'Customer Service'), ('Product Support', 'Product Support'), ('Other', 'Other')], default='General Enquiry', max_length=50),
+            model_name="contactmail",
+            name="enquiry_type",
+            field=models.CharField(
+                choices=[
+                    ("General Enquiry", "General Enquiry"),
+                    ("Customer Service", "Customer Service"),
+                    ("Product Support", "Product Support"),
+                    ("Other", "Other"),
+                ],
+                default="General Enquiry",
+                max_length=50,
+            ),
         ),
     ]

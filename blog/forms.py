@@ -1,4 +1,4 @@
-''' Blog form for admin to add/edit blog posts '''
+""" Blog form for admin to add/edit blog posts """
 from django_summernote.widgets import SummernoteWidget
 from django import forms
 from products.widgets import CustomClearableFileInput
@@ -24,15 +24,16 @@ class BlogForm(forms.ModelForm):
         ]
 
         widgets = {
-            "body": SummernoteWidget(attrs={'summernote': {'width': '100%', 'height': '400px'}}),
+            "body": SummernoteWidget(
+                attrs={
+                    "summernote": {"width": "100%", "height": "400px"}
+                }
+            ),
             "image": CustomClearableFileInput(),
         }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        """
-        Initializes the form attributes
-        """
         placeholders = {
             "title": "Enter Blog Title",
         }
@@ -44,20 +45,19 @@ class BlogForm(forms.ModelForm):
 
 
 class CommentForm(forms.ModelForm):
-    ''' Form to add comments to blog posts '''
+    """Form to add comments to blog posts"""
 
     class Meta:
-        ''' Meta class to define model and fields to be used in form '''
+        """Meta class to define model and fields to be used in form"""
+
         model = Comment
-        fields = ('name', 'body')
+        fields = ("name", "body")
 
         labels = {
             "body": "Comment (Max 500 Characters) ",
         }
 
-
-
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.fields['name'].widget.attrs['autofocus'] = True
+        self.fields["name"].widget.attrs["autofocus"] = True

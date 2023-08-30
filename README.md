@@ -160,8 +160,8 @@ To help with the design of the site, I created wireframes for each page. To foll
 ![sign in](docs\images\sign-in.jpg)
 
 ![sign out](docs\images\sign-out.jpg)
-</details>
 
+</details>
 
 ## The Scope Plane
 
@@ -172,93 +172,108 @@ To help with the design of the site, I created wireframes for each page. To foll
 - Newsletter Subscribing
 
 # Database Design
+
 I created an entity relationship diagram using [sqldbm](https://app.sqldbm.com/CreateNew/). This helped me to visualize the relationships between my data structures and made the development process easier as I had everything mapped out in front of me for reference to avoid having to reference each models.py file individually.
 
 ![diagram](docs\features_images\sqldbm.jpg)
 
 ## Features
+
 ### Home Page
+
 ![features](docs/features_images/home.jpg)
 
 ### Navbar with Search field and nav links
+
 ![features](docs\features_images\navbar.jpg)
 
 ### Footer with Newletter
+
 ![features](docs\features_images\footer.jpg)
 
 ### All Products
+
 ![features](docs\features_images\all-product.jpg)
 
 ### All Products Details
+
 ![features](docs\features_images\prod-view.jpg)
 
 ## Product reviews
+
 ![features](docs\features_images\review.jpg)
 
-* No review on product page
-![features](docs\features_images\no-review.jpg)
+- No review on product page
+  ![features](docs\features_images\no-review.jpg)
 
-* Add product review forms
-![features](docs\features_images\add-review.jpg)
+- Add product review forms
+  ![features](docs\features_images\add-review.jpg)
 
-* Edit product review forms
-![features](docs\features_images\edit-review.jpg)
+- Edit product review forms
+  ![features](docs\features_images\edit-review.jpg)
 
-* Delete product review forms
-![features](docs\features_images\delete-review.jpg)
+- Delete product review forms
+  ![features](docs\features_images\delete-review.jpg)
 
 ### Product Management
-* Add Products
-![features](docs\features_images\prod-manage.jpg)
 
-* Edit Products
-![features](docs\features_images\prod-edit.jpg)
+- Add Products
+  ![features](docs\features_images\prod-manage.jpg)
 
-* Edit Products
-![features](docs\features_images\prod-edit.jpg)
+- Edit Products
+  ![features](docs\features_images\prod-edit.jpg)
+
+- Edit Products
+  ![features](docs\features_images\prod-edit.jpg)
 
 ### Cart
+
 ![features](docs\features_images\cart-view.jpg)
 
 ### Checkout
+
 ![features](docs\features_images\checkout.jpg)
 
 ### Order Completion
+
 ![features](docs\features_images\thankyou-page.jpg)
 
 ### User Profile
-* Detail Profile
-![features](docs\features_images\profile-info.jpg)
 
-* Orders on Profile
-![features](docs\features_images\profile-order.jpg)
+- Detail Profile
+  ![features](docs\features_images\profile-info.jpg)
 
-* Wishlist on Profile
-![features](docs\features_images\profile-wish.jpg)
+- Orders on Profile
+  ![features](docs\features_images\profile-order.jpg)
+
+- Wishlist on Profile
+  ![features](docs\features_images\profile-wish.jpg)
 
 ### Blog
-* Blog view
-![features](docs\features_images\blog-list.jpg)
 
-* Blog Add
-![features](docs\features_images\add-blog.jpg)
+- Blog view
+  ![features](docs\features_images\blog-list.jpg)
 
-* Blog Edit
-![features](docs\features_images\blog-update.jpg)
+- Blog Add
+  ![features](docs\features_images\add-blog.jpg)
 
-* Blog Delete
-![features](docs\features_images\blog-delete.jpg)
+- Blog Edit
+  ![features](docs\features_images\blog-update.jpg)
 
-* Blog comment
-![features](docs\features_images\blog-commented.jpg)
+- Blog Delete
+  ![features](docs\features_images\blog-delete.jpg)
 
-* Blog edit comment
-![features](docs\features_images\edit-blog-comment.jpg)
+- Blog comment
+  ![features](docs\features_images\blog-commented.jpg)
 
-* Blog delete
-![features](docs\features_images\blog-delete.jpg)
+- Blog edit comment
+  ![features](docs\features_images\edit-blog-comment.jpg)
+
+- Blog delete
+  ![features](docs\features_images\blog-delete.jpg)
 
 ### Contact Us
+
 ![features](docs\features_images\contact-page.jpg)
 
 ### Status Error Templates
@@ -303,218 +318,282 @@ If a user is trying to log in and has forgotten their password they can visit th
 ![features](docs\features_images\pass-reset.jpg)
 
 ## Tools & Technologies Used
+
 This site couldn't have been created without a variety of tools and technologies. I've listed the ones used below.
 
-* HTML used for the main site content.
-* CSS used for the main site design and layout.
-* CSS :root variables used for reusable styles throughout the site.
-* CSS Flexbox used for an enhanced responsive layout.
-* JavaScript used for user interaction on the site.
-* Python used as the back-end programming language.
-* Git used for version control. (git add, git commit, git push)
-* GitHub used for secure online code storage.
-* Gitpod used as a cloud-based IDE for development.
-* Bootstrap used as the front-end CSS framework for modern responsiveness and pre-built components.
-* Django used as the Python framework for the site.
-* PostgreSQL used as the relational database management.
-* ElephantSQL used as the Postgres database.
-* Heroku used for hosting the deployed back-end site.
-* Stripe used for online secure payments of ecommerce products/services.
-* AWS S3 used for online static file storage.
-* Django Summernote used for the body field for blog posts.
-* Pillow used for handling images.
+- HTML used for the main site content.
+- CSS used for the main site design and layout.
+- CSS :root variables used for reusable styles throughout the site.
+- CSS Flexbox used for an enhanced responsive layout.
+- JavaScript used for user interaction on the site.
+- Python used as the back-end programming language.
+- Git used for version control. (git add, git commit, git push)
+- GitHub used for secure online code storage.
+- Gitpod used as a cloud-based IDE for development.
+- Bootstrap used as the front-end CSS framework for modern responsiveness and pre-built components.
+- Django used as the Python framework for the site.
+- PostgreSQL used as the relational database management.
+- ElephantSQL used as the Postgres database.
+- Heroku used for hosting the deployed back-end site.
+- Stripe used for online secure payments of ecommerce products/services.
+- AWS S3 used for online static file storage.
+- Django Summernote used for the body field for blog posts.
+- Pillow used for handling images.
 
 ## Marketing Strategy
+
 Social Media Marketing
 A Facebook Business page has been created and deployed. Creating a strong social media campaign and linking back to the site can help drive sales and build a community. I have included links to the site on the Facebook page and have added a post including information about the site/free delivery threshold.
 ![features](docs\features_images\facebook-page.jpg)
 
 ## Newsletter Marketing
+
 I used Mailchimp to set up a newsletter sign-up embedded form on my site, to allow users to supply their email addresses if they are interested in learning more about the site and to drive repeat business. An automated Welcome email campaign was created so that when a user subscribes they will receive an email sent from Mailchimp thanking them for subscribing. Following this I have created a Newsletter campaign which will be manually initiated by the site owner and each subscriber will receive the Newsletter. The hope is to build a community which in turn might lead to returning/new customers and lead to more business.
 ![features](docs\features_images\newsletter.jpg)
 
 ## Search Engine Optimization (SEO)
+
 Keywords
 I utilized Wordtracker to identify keywords that align with my site. The keywords chosen have high enough volume and low enough competition, the KEI (Keyword Effectiveness Index) metric on Wordtracker was used to help decide on the best keywords.
 
 ![features](docs\features_images\seo.jpg)
 
+# Testing
+
+Validator Testing
+
+### HTML Validator:
+
+As this project uses Django templates the html has been validated by manually clicking through the application pages, copying the source of the rendered pages and then validating this version of the html using the W3C Validator [Link](https://validator.w3.org/). To validate the HTML files all Django template tags were manually removed with the HTML code copied and inserted to the base template, including manually pasting in navigation and footer templates into all page testing.
+
+![models](docs\testing\html-valid.jpg)
+
+### PEP 8 Python Linter:
+
+PEP 8 Online linter [Python validator](https://pep8ci.herokuapp.com/#). The code passed without any errors on all files tested:
+
+**Models**
+
+![models](docs\testing\model-checkout.jpg)
+
+### Javascript Validator:
+
+JSHint was used to validate the JavaScript with no errors highlighted.
+
+![js-custom](docs\testing\js-custom.jpg)
+
+### CSS Validator:
+
+The W3C CSS Validator Services were used to validate the CSS to ensure there were no errors. There was one warning that read: "Imported style sheets are not checked in direct input and file upload modes", which is fine as it's referring to a Google fonts import.
+
+![js-custom](docs/testing/css-validator.jpg)
+
+## Lighthouse Report
+
+Lighthouse report showed areas for improvement on SEO and Best practices. Meta descriptions and keywords were added to boost the SEO to 100 but the best practice warnings were coming from the use of an embedded iframe's javascript. Unfortunately I did not find a way to improve this as I am not initialising the google map iframe with javascript.
+
+![lighthouse](docs\testing\lighthouse.jpg)
+
+## Responsiveness
+
+The Website has been tested and it passed responsiveness for small mediumum and large screens of various devices. All pages have been tested for with a device size of from 320px.
+
+The Responsive design was tested manually with [Chrome DevTools](https://developer.chrome.com/docs/devtools/) and also the Microsoft Dev tools. The Website worked perfectly well.
+
+The Website pass its responsiveness and no responsive issues were seen on the following trial device:
+
+- iPhone SE
+- iPhone 12 Pro
+- Samsung Galaxy S20/S20 Ultra
+- Surface Duo
+
 ## Deployment
+
 The live deployed application can be found deployed on Heroku.
 
 ## ElephantSQL Database
+
 This project uses ElephantSQL for the PostgreSQL Database.
 
 To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
 
-* Click Create New Instance to start a new database.
-* Provide a name (this is commonly the name of the project: pb-majestic-cloding).
-* Select the Tiny Turtle (Free) plan.
-* You can leave the Tags blank.
-* Select the Region and Data Center closest to you.
-* Once created, click on the new database name, where you can view the database URL and Password.
+- Click Create New Instance to start a new database.
+- Provide a name (this is commonly the name of the project: pb-majestic-cloding).
+- Select the Tiny Turtle (Free) plan.
+- You can leave the Tags blank.
+- Select the Region and Data Center closest to you.
+- Once created, click on the new database name, where you can view the database URL and Password.
 
 ### Amazon AWS
+
 This project uses AWS to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
 
 Once you've created an AWS account and logged-in, follow these series of steps to get your project connected. Make sure you're on the AWS Management Console page.
 
 ### S3 Bucket
-* Search for S3.
 
-* Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
+- Search for S3.
 
-* Uncheck Block all public access, and acknowledge that the bucket will be public (required for it to work on Heroku).
+- Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
 
-* From Object Ownership, make sure to have ACLs enabled, and Bucket owner preferred selected.
+- Uncheck Block all public access, and acknowledge that the bucket will be public (required for it to work on Heroku).
 
-* From the Properties tab, turn on static website hosting, and type index.html and error.html in their respective fields, then click Save.
+- From Object Ownership, make sure to have ACLs enabled, and Bucket owner preferred selected.
 
-* From the Permissions tab, paste in the following CORS configuration:
+- From the Properties tab, turn on static website hosting, and type index.html and error.html in their respective fields, then click Save.
 
-* Copy your ARN string.
+- From the Permissions tab, paste in the following CORS configuration:
 
-* From the Bucket Policy tab, select the Policy Generator link, and use the following steps:
+- Copy your ARN string.
 
-* Policy Type: S3 Bucket Policy
+- From the Bucket Policy tab, select the Policy Generator link, and use the following steps:
 
-* Effect: Allow
+- Policy Type: S3 Bucket Policy
 
-* Principal: *
+- Effect: Allow
 
-* Actions: GetObject
+- Principal: \*
 
-* Amazon Resource Name (ARN): paste-your-ARN-here
+- Actions: GetObject
 
-* Click Add Statement
+- Amazon Resource Name (ARN): paste-your-ARN-here
 
-* Click Generate Policy
+- Click Add Statement
 
-* Copy the entire Policy, and paste it into the Bucket Policy Editor
+- Click Generate Policy
 
-* Before you click "Save", add /* to the end of the Resource key in the Bucket Policy Editor (like above).
+- Copy the entire Policy, and paste it into the Bucket Policy Editor
 
-* Click Save.
+- Before you click "Save", add /\* to the end of the Resource key in the Bucket Policy Editor (like above).
 
-* From the Access Control List (ACL) section, click "Edit" and enable List for Everyone (public access), and accept the warning box.
+- Click Save.
 
-* If the edit button is disabled, you need to change the Object Ownership section above to ACLs enabled (mentioned above).
+- From the Access Control List (ACL) section, click "Edit" and enable List for Everyone (public access), and accept the warning box.
+
+- If the edit button is disabled, you need to change the Object Ownership section above to ACLs enabled (mentioned above).
 
 ## IAM
+
 Back on the AWS Services Menu, search for and open IAM (Identity and Access Management). Once on the IAM page, follow these steps:
 
-* From User Groups, click Create New Group.
-* Suggested Name: group-pb-majestic-cloding (group + the project name)
-* Tags are optional, but you must click it to get to the review policy page.
-* From User Groups, select your newly created group, and go to the Permissions tab.
-* Open the Add Permissions dropdown, and click Attach Policies.
-* Select the policy, then click Add Permissions at the bottom when finished.
-* From the JSON tab, select the Import Managed Policy link.
-* Search for S3, select the AmazonS3FullAccess policy, and then Import.
-* You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
-* Click Review Policy.
+- From User Groups, click Create New Group.
+- Suggested Name: group-pb-majestic-cloding (group + the project name)
+- Tags are optional, but you must click it to get to the review policy page.
+- From User Groups, select your newly created group, and go to the Permissions tab.
+- Open the Add Permissions dropdown, and click Attach Policies.
+- Select the policy, then click Add Permissions at the bottom when finished.
+- From the JSON tab, select the Import Managed Policy link.
+- Search for S3, select the AmazonS3FullAccess policy, and then Import.
+- You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
+- Click Review Policy.
 
-* Suggested Name: policy-pb-majestic-cloding (policy + the project name)
+- Suggested Name: policy-pb-majestic-cloding (policy + the project name)
 
-* Provide a description:
-"Access to S3 Bucket for pb-majestic-cloding static files."
-Click Create Policy.
+- Provide a description:
+  "Access to S3 Bucket for pb-majestic-cloding static files."
+  Click Create Policy.
 
-* From User Groups, click your "group-pb-majestic-cloding".
-* Click Attach Policy.
-* Search for the policy you've just created ("policy-pb-majestic-cloding") and select it, then Attach Policy.
-* From User Groups, click Add User.
-* Suggested Name: user-pb-majestic-cloding (user + the project name)
-* For "Select AWS Access Type", select Programmatic Access.
-* Select the group to add your new user to: group-pb-majestic-cloding
-* Tags are optional, but you must click it to get to the review user page.
-* Click Create User once done.
-* You should see a button to Download .csv, so click it to save a copy on your system.
-* IMPORTANT: once you pass this page, you cannot come back to download it again, so do it immediately!
-* This contains the user's Access key ID and Secret access key.
-* AWS_ACCESS_KEY_ID = Access key ID
-* AWS_SECRET_ACCESS_KEY = Secret access key
+- From User Groups, click your "group-pb-majestic-cloding".
+- Click Attach Policy.
+- Search for the policy you've just created ("policy-pb-majestic-cloding") and select it, then Attach Policy.
+- From User Groups, click Add User.
+- Suggested Name: user-pb-majestic-cloding (user + the project name)
+- For "Select AWS Access Type", select Programmatic Access.
+- Select the group to add your new user to: group-pb-majestic-cloding
+- Tags are optional, but you must click it to get to the review user page.
+- Click Create User once done.
+- You should see a button to Download .csv, so click it to save a copy on your system.
+- IMPORTANT: once you pass this page, you cannot come back to download it again, so do it immediately!
+- This contains the user's Access key ID and Secret access key.
+- AWS_ACCESS_KEY_ID = Access key ID
+- AWS_SECRET_ACCESS_KEY = Secret access key
+
 ### Final AWS Setup
-* If Heroku Config Vars has DISABLE_COLLECTSTATIC still, this can be removed now, so that AWS will handle the static files.
-* Back within S3, create a new folder called: media.
-* Select any existing media images for your project to prepare them for being uploaded into the new folder.
-* Under Manage Public Permissions, select Grant public read access to this object(s).
-* No further settings are required, so click Upload.
 
+- If Heroku Config Vars has DISABLE_COLLECTSTATIC still, this can be removed now, so that AWS will handle the static files.
+- Back within S3, create a new folder called: media.
+- Select any existing media images for your project to prepare them for being uploaded into the new folder.
+- Under Manage Public Permissions, select Grant public read access to this object(s).
+- No further settings are required, so click Upload.
 
 ### Stripe API
+
 This project uses Stripe to handle the ecommerce payments.
 
 Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
 
-* From your Stripe dashboard, click to expand the "Get your test API keys".
-* You'll have two keys here:
-* STRIPE_PUBLIC_KEY = Publishable Key (starts with pk)
-* STRIPE_SECRET_KEY = Secret Key (starts with sk)
-As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
+- From your Stripe dashboard, click to expand the "Get your test API keys".
+- You'll have two keys here:
+- STRIPE_PUBLIC_KEY = Publishable Key (starts with pk)
+- STRIPE_SECRET_KEY = Secret Key (starts with sk)
+  As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
 
-* From your Stripe dashboard, click Developers, and select Webhooks.
-* From there, click Add Endpoint.
-* https://pb-majestic-cloding.herokuapp.com/checkout/wh/
-* Click receive all events.
-* Click Add Endpoint to complete the process.
-* You'll have a new key here:
-* STRIPE_WH_SECRET = Signing Secret (Wehbook) Key (starts with wh)
+- From your Stripe dashboard, click Developers, and select Webhooks.
+- From there, click Add Endpoint.
+- https://pb-majestic-cloding.herokuapp.com/checkout/wh/
+- Click receive all events.
+- Click Add Endpoint to complete the process.
+- You'll have a new key here:
+- STRIPE_WH_SECRET = Signing Secret (Wehbook) Key (starts with wh)
 
 ## Gmail API
+
 This project uses Gmail to handle sending emails to users for account verification and purchase order confirmations.
 Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
 
-* Click on the Account Settings (cog icon) in the top-right corner of Gmail.
-* Click on the Accounts and Import tab.
-* Within the section called "Change account settings", click on the link for Other Google Account settings.
-* From this new page, select Security on the left.
-* Select 2-Step Verification to turn it on. (verify your password and account)
-* Once verified, select Turn On for 2FA.
-* Navigate back to the Security page, and you'll see a new option called App passwords.
-* This might prompt you once again to confirm your password and account.
-* Select Mail for the app type.
-* Select Other (Custom name) for the device type.
-* Any custom name, such as "Django" or retro-reboot
-* You'll be provided with a 16-character password (API key).
-* Save this somewhere locally, as you cannot access this key again later!
-* EMAIL_HOST_PASS = user's 16-character API key
-* EMAIL_HOST_USER = user's own personal Gmail email address
+- Click on the Account Settings (cog icon) in the top-right corner of Gmail.
+- Click on the Accounts and Import tab.
+- Within the section called "Change account settings", click on the link for Other Google Account settings.
+- From this new page, select Security on the left.
+- Select 2-Step Verification to turn it on. (verify your password and account)
+- Once verified, select Turn On for 2FA.
+- Navigate back to the Security page, and you'll see a new option called App passwords.
+- This might prompt you once again to confirm your password and account.
+- Select Mail for the app type.
+- Select Other (Custom name) for the device type.
+- Any custom name, such as "Django" or retro-reboot
+- You'll be provided with a 16-character password (API key).
+- Save this somewhere locally, as you cannot access this key again later!
+- EMAIL_HOST_PASS = user's 16-character API key
+- EMAIL_HOST_USER = user's own personal Gmail email address
+
 ## Heroku Deployment
+
 This project uses Heroku, a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 
 Deployment steps are as follows, after account setup:
 
-* Select New in the top-right corner of your Heroku Dashboard, and select Create new app from the dropdown menu.
-* Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select Create App.
-* From the new app Settings, click Reveal Config Vars, and set your environment variables.
-* Heroku needs two additional files in order to deploy properly.
-    * Crequirements.txt
-    * Procfile
-* You can install this project's requirements (where applicable) using:
-* pip3 install -r requirements.txt
-* If you have your own packages that have been installed, then the requirements file needs updated using:
+- Select New in the top-right corner of your Heroku Dashboard, and select Create new app from the dropdown menu.
+- Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select Create App.
+- From the new app Settings, click Reveal Config Vars, and set your environment variables.
+- Heroku needs two additional files in order to deploy properly.
+  - Crequirements.txt
+  - Procfile
+- You can install this project's requirements (where applicable) using:
+- pip3 install -r requirements.txt
+- If you have your own packages that have been installed, then the requirements file needs updated using:
 
-* pip3 freeze --local > requirements.txt
-* The Procfile can be created with the following command:
+- pip3 freeze --local > requirements.txt
+- The Procfile can be created with the following command:
 
-    * echo web: gunicorn app_name.wsgi > Procfile
-    * replace app_name with the name of your primary Django app name; the folder where settings.py is located
+  - echo web: gunicorn app_name.wsgi > Procfile
+  - replace app_name with the name of your primary Django app name; the folder where settings.py is located
 
 For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
 
 Either:
 
-* Select Automatic Deployment from the Heroku app.
-Or:
+- Select Automatic Deployment from the Heroku app.
+  Or:
 
-* In the Terminal/CLI, connect to Heroku using this command: heroku login -i
-* Set the remote for Heroku: heroku git:remote -a app_name (replace app_name with your app name)
-* After performing the standard Git add, commit, and push to GitHub, you can now type:
-* git push heroku main
-* The project should now be connected and deployed to Heroku!
+- In the Terminal/CLI, connect to Heroku using this command: heroku login -i
+- Set the remote for Heroku: heroku git:remote -a app_name (replace app_name with your app name)
+- After performing the standard Git add, commit, and push to GitHub, you can now type:
+- git push heroku main
+- The project should now be connected and deployed to Heroku!
 
 ## Cloning
+
 You can clone the repository by following these steps:
 
 1. Go to the GitHub repository
@@ -523,37 +602,39 @@ You can clone the repository by following these steps:
 4. Open Git Bash or Terminal
 5. Change the current working directory to the one where you want the cloned directory
 6. In your IDE Terminal, type the following command to clone my repository:
-    + git clone https://github.com/adamgilroy22/retro-reboot.git
+   - git clone https://github.com/adamgilroy22/retro-reboot.git
 7. Press Enter to create your local clone.
-Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+   Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed. A tutorial on how to do that can be found here.
 
 ## Forking
+
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository. You can fork this repository by using the following steps:
 
 1. Log in to GitHub and locate the GitHub Repository
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
-
 ## Credits
+
 1. Code Institute Template
-This repository was created using the template provided by Code Institute. Also, without the knowledge gained through the coursework, I would not be able to create this site so thank you Code Institute.
+   This repository was created using the template provided by Code Institute. Also, without the knowledge gained through the coursework, I would not be able to create this site so thank you Code Institute.
 
 2. Django Documentation
-Thanks to the Django docs which were also used as a step-by-step while going through the project to ensure everything was set up correctly.
+   Thanks to the Django docs which were also used as a step-by-step while going through the project to ensure everything was set up correctly.
 
 3. Allauth Documentation
-Thanks to the Alluath documentation which was referenced during development.
+   Thanks to the Alluath documentation which was referenced during development.
 
 4. Stackoverflow
-I found myself on Stackoverflow so many times researching issues. This a fantastic place to learn and troubleshoot code.
+   I found myself on Stackoverflow so many times researching issues. This a fantastic place to learn and troubleshoot code.
 
 5. Slack
-The Slack community is great and I reached out to fellow students who had already completed their P5 for their advice and got some nice tips and feedback. I attended some webinars by CI staff which I found very beneficial.
+   The Slack community is great and I reached out to fellow students who had already completed their P5 for their advice and got some nice tips and feedback. I attended some webinars by CI staff which I found very beneficial.
 
 # Acknowledgements
-+ To my mentor Daisy Mc Girr, Daisy always goes above and beyond. Even outside of project planning she is great for advice and is a great help to the Slack community too. Daisy became my Mentor midway through P2 and has been amazing to deal with, she is a great credit to CI and the whole community.
 
-+ Also a big one goes to my wife for the support and helping the kids throughout eventhough it was not an easy journey
+- To my mentor Daisy Mc Girr, Daisy always goes above and beyond. Even outside of project planning she is great for advice and is a great help to the Slack community too. Daisy became my Mentor midway through P2 and has been amazing to deal with, she is a great credit to CI and the whole community.
+
+- Also a big one goes to my wife for the support and helping the kids throughout eventhough it was not an easy journey

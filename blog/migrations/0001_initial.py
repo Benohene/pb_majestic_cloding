@@ -7,7 +7,6 @@ import django_resized.forms
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -16,36 +15,101 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Blog',
+            name="Blog",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=200, unique=True)),
-                ('slug', models.SlugField(max_length=200, unique=True)),
-                ('body', models.TextField()),
-                ('image', django_resized.forms.ResizedImageField(blank=True, crop=None, force_format='JPEG', help_text='Image size must be 800x600px', keep_meta=True, null=True, quality=75, scale=None, size=[800, 600], upload_to='blog/images', verbose_name='Image')),
-                ('image_url', models.URLField(blank=True, max_length=2024, null=True)),
-                ('created_on', models.DateTimeField(auto_now_add=True)),
-                ('updated_on', models.DateTimeField(auto_now=True)),
-                ('status', models.BooleanField(default=False)),
-                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
-                ('likes', models.ManyToManyField(blank=True, related_name='likes', to=settings.AUTH_USER_MODEL)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "title",
+                    models.CharField(max_length=200, unique=True),
+                ),
+                ("slug", models.SlugField(max_length=200, unique=True)),
+                ("body", models.TextField()),
+                (
+                    "image",
+                    django_resized.forms.ResizedImageField(
+                        blank=True,
+                        crop=None,
+                        force_format="JPEG",
+                        help_text="Image size must be 800x600px",
+                        keep_meta=True,
+                        null=True,
+                        quality=75,
+                        scale=None,
+                        size=[800, 600],
+                        upload_to="blog/images",
+                        verbose_name="Image",
+                    ),
+                ),
+                (
+                    "image_url",
+                    models.URLField(
+                        blank=True, max_length=2024, null=True
+                    ),
+                ),
+                ("created_on", models.DateTimeField(auto_now_add=True)),
+                ("updated_on", models.DateTimeField(auto_now=True)),
+                ("status", models.BooleanField(default=False)),
+                (
+                    "author",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
+                (
+                    "likes",
+                    models.ManyToManyField(
+                        blank=True,
+                        related_name="likes",
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
             ],
             options={
-                'ordering': ['-created_on'],
+                "ordering": ["-created_on"],
             },
         ),
         migrations.CreateModel(
-            name='Comment',
+            name="Comment",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('body', models.TextField(max_length=500)),
-                ('created_on', models.DateTimeField(auto_now_add=True)),
-                ('approved', models.BooleanField(default=False)),
-                ('blog', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='comments', to='blog.blog')),
-                ('name', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("body", models.TextField(max_length=500)),
+                ("created_on", models.DateTimeField(auto_now_add=True)),
+                ("approved", models.BooleanField(default=False)),
+                (
+                    "blog",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="comments",
+                        to="blog.blog",
+                    ),
+                ),
+                (
+                    "name",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
             ],
             options={
-                'ordering': ['-created_on'],
+                "ordering": ["-created_on"],
             },
         ),
     ]

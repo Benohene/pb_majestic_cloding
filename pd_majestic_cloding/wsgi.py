@@ -11,6 +11,8 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pd_majestic_cloding.settings')
+os.environ.setdefault(
+    "DJANGO_SETTINGS_MODULE", "pd_majestic_cloding.settings"
+)
 
 application = get_wsgi_application()

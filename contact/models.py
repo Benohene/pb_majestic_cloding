@@ -22,7 +22,9 @@ class ContactMail(models.Model):
         choices=ENQUIRY_TYPE,
         default="General Enquiry",
     )
-    subject = models.CharField(max_length=254, null=False, blank=False, default="")
+    subject = models.CharField(
+        max_length=254, null=False, blank=False, default=""
+    )
     message = models.TextField(null=False, blank=False)
     date_sent = models.DateTimeField(auto_now_add=True)
     replied = models.BooleanField(default=False)

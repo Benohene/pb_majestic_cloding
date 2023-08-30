@@ -4,20 +4,22 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('checkout', '0002_rename_emal_order_email_alter_order_street_address2'),
+        (
+            "checkout",
+            "0002_rename_emal_order_email_alter_order_street_address2",
+        ),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='order',
-            name='original_bag',
-            field=models.TextField(default=''),
+            model_name="order",
+            name="original_bag",
+            field=models.TextField(default=""),
         ),
         migrations.AddField(
-            model_name='order',
-            name='stripe_pid',
-            field=models.CharField(default='', max_length=254),
+            model_name="order",
+            name="stripe_pid",
+            field=models.CharField(default="", max_length=254),
         ),
     ]

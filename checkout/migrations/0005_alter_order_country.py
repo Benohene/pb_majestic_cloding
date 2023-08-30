@@ -5,15 +5,14 @@ import django_countries.fields
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('checkout', '0004_rename_original_bag_order_original_cart'),
+        ("checkout", "0004_rename_original_bag_order_original_cart"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='order',
-            name='country',
+            model_name="order",
+            name="country",
             field=django_countries.fields.CountryField(max_length=2),
         ),
     ]

@@ -1,5 +1,10 @@
 """ Reviews views """
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import (
+    render,
+    redirect,
+    reverse,
+    get_object_or_404,
+)
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from products.models import Product
@@ -14,10 +19,15 @@ def add_review(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
 
     # check if user has already reviewed this product
-    review_exists = Review.objects.filter(user=user, product=product).exists()
-    # if user has already reviewed this product, redirect to product detail page
+    review_exists = Review.objects.filter(
+        user=user, product=product
+    ).exists()
+    # if user has already reviewed this product,
+    # redirect to product detail page
     if review_exists:
-        messages.error(request, "You have already reviewed this product")
+        messages.error(
+            request, "You have already reviewed this product"
+        )
         return redirect(reverse("product_detail", args=[product.id]))
     # if user has not already reviewed this product, add review
     else:
@@ -29,10 +39,13 @@ def add_review(request, product_id):
                 review.product = product
                 review = form.save()
                 messages.success(request, "Review added successfully")
-                return redirect(reverse("product_detail", args=[product.id]))
+                return redirect(
+                    reverse("product_detail", args=[product.id])
+                )
             else:
                 messages.error(
-                    request, "Failed to add review. Please ensure the form is valid."
+                    request,
+                    "Failed to add review. Please ensure the form is valid.",
                 )
         else:
             form = ReviewForm()
@@ -55,7 +68,8 @@ def edit_review(request, product_id, review_id):
     # get review
     review = get_object_or_404(Review, pk=review_id)
 
-    # if user is not the review owner or superuser, redirect to product detail page
+    # if user is not the review owner or
+    # superuser, redirect to product detail page
     if not user == review.user and not user.is_superuser:
         messages.error(request, "You cannot edit this review")
         return redirect(reverse("product_detail", args=[product.id]))
@@ -67,14 +81,19 @@ def edit_review(request, product_id, review_id):
             review.product = product
             review = form.save()
             messages.success(request, "Review updated successfully")
-            return redirect(reverse("product_detail", args=[product.id]))
+            return redirect(
+                reverse("product_detail", args=[product.id])
+            )
         else:
             messages.error(
-                request, "Failed to update review. Please ensure the form is valid."
+                request,
+                "Failed to update review. Please ensure the form is valid.",
             )
     else:
         form = ReviewForm(instance=review)
-        messages.info(request, f"You are editing your review for {product.name}")
+        messages.info(
+            request, f"You are editing your review for {product.name}"
+        )
 
         template = "reviews/edit_review.html"
         context = {

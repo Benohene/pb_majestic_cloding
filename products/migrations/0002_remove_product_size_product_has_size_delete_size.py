@@ -4,22 +4,23 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('products', '0001_initial'),
+        ("products", "0001_initial"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='product',
-            name='size',
+            model_name="product",
+            name="size",
         ),
         migrations.AddField(
-            model_name='product',
-            name='has_size',
-            field=models.BooleanField(blank=True, default=False, null=True),
+            model_name="product",
+            name="has_size",
+            field=models.BooleanField(
+                blank=True, default=False, null=True
+            ),
         ),
         migrations.DeleteModel(
-            name='Size',
+            name="Size",
         ),
     ]

@@ -4,23 +4,40 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='ContactMail',
+            name="ContactMail",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('full_name', models.CharField(max_length=50)),
-                ('email', models.EmailField(max_length=254)),
-                ('enquiry_type', models.CharField(choices=[('General Enquiry', 'General Enquiry'), ('Customer Service', 'Customer Service'), ('Product Support', 'Product Support'), ('Other', 'Other')], max_length=50)),
-                ('message', models.TextField()),
-                ('date_sent', models.DateTimeField(auto_now_add=True)),
-                ('replied', models.BooleanField(default=False)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("full_name", models.CharField(max_length=50)),
+                ("email", models.EmailField(max_length=254)),
+                (
+                    "enquiry_type",
+                    models.CharField(
+                        choices=[
+                            ("General Enquiry", "General Enquiry"),
+                            ("Customer Service", "Customer Service"),
+                            ("Product Support", "Product Support"),
+                            ("Other", "Other"),
+                        ],
+                        max_length=50,
+                    ),
+                ),
+                ("message", models.TextField()),
+                ("date_sent", models.DateTimeField(auto_now_add=True)),
+                ("replied", models.BooleanField(default=False)),
             ],
         ),
     ]
