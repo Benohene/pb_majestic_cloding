@@ -132,29 +132,36 @@ As a User, I must be able to be notified with messages, so that I would know if 
 
 To help with the design of the site, I created wireframes for each page. To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes. I've used Balsamiq to design my site wireframes.
 
-### Desktop
+### Sketches
 
 <details close>
 <summary>Click to view</summary>
-<br>
 
+![Home](docs\images\home.jpg)
+
+![All-product](docs\images\all-prod.jpg)
+
+![product](docs\images\prod-view.jpg)
+
+![cart](docs\images\cart.jpg)
+
+![checkout](docs\images\checkout.jpg)
+
+![complete order](docs\images\order-complete.jpg)
+
+![contact](docs\images\contact.jpg)
+
+![blog](docs\images\blog-list.jpg)
+
+![blog-view](docs\images\blog-view.jpg)
+
+![sign up](docs\images\sign-up.jpg)
+
+![sign in](docs\images\sign-in.jpg)
+
+![sign out](docs\images\sign-out.jpg)
 </details>
 
-### Tablet
-
-<details close>
-<summary>Click to view</summary>
-<br>
-
-</details>
-
-### Mobile
-
-<details close>
-<summary>Click to view</summary>
-<br>
-
-</details>
 
 ## The Scope Plane
 
@@ -163,3 +170,13 @@ To help with the design of the site, I created wireframes for each page. To foll
 - Ability to perform CRUD functionality on Products, Profiles, Reviews, Blog Posts, and Comments
 - Restricted features for registered users such as Product reviewing, adding Products to Wishlist, editing Profiles, and Commenting/Liking Blog posts.
 - Newsletter Subscribing
+
+# Database Design
+I created an entity relationship diagram using [sqldbm](https://app.sqldbm.com/CreateNew/). This helped me to visualize the relationships between my data structures and made the development process easier as I had everything mapped out in front of me for reference to avoid having to reference each models.py file individually.
+
+![diagram](docs\features_images\sqldbm.jpg)
+
+## Features
+### Home Page
+![home](![Alt text](docs/features_images/home.jpg))
+
