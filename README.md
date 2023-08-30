@@ -72,48 +72,94 @@ This project was developed using agile methodologies by delivering small feature
 - As a User I would like to view the details of any Product so that I can see if the Product has the required specifications that I need/want
 
 ### EPIC 6: Purchase / Checkout
-* As a site user I want to be able to add products to my shopping basket so that I can proceed to the checkout and purchase them. 
-* As a site user I want to be able to see a running total of the items in my basket so that I can manage my spending and know what to expect at the checkout. 
-* As a site user I want to be able to checkout with a card payment so that I can place an order for the items in my basket. 
-* As a site user I want to be able to receive an order confirmation email after I purchase from the shop so that I can have a record of what I've purchased in my email inbox.
-* As a site user I want to be able to apply discount codes in the checkout so that I can receive a discount on my purchase.
+
+- As a site user I want to be able to add products to my shopping basket so that I can proceed to the checkout and purchase them.
+- As a site user I want to be able to see a running total of the items in my basket so that I can manage my spending and know what to expect at the checkout.
+- As a site user I want to be able to checkout with a card payment so that I can place an order for the items in my basket.
+- As a site user I want to be able to receive an order confirmation email after I purchase from the shop so that I can have a record of what I've purchased in my email inbox.
+- As a site user I want to be able to apply discount codes in the checkout so that I can receive a discount on my purchase.
 
 ### EPIC 7: Stripe Setup - Purchase / Checkout
+
 As a Developer I can implement Stripe so that it can manage payments for the site products at checkout #46
 
 ### EPIC 8: User Profile (CRUD)
-* As a customer I would like the ability to create my own Profile page so that I can save my shipping address for future purchases and track my orders
-* As a Developer I can implement functionality to allow a customer to save information to a personal Profile so that they can save information i.e. shipping address/orders for future review
-* As a customer I would like to add wishlish items to show in my profile so that I can get easy access to view and purchase them.
+
+- As a customer I would like the ability to create my own Profile page so that I can save my shipping address for future purchases and track my orders
+- As a Developer I can implement functionality to allow a customer to save information to a personal Profile so that they can save information i.e. shipping address/orders for future review
+- As a customer I would like to add wishlish items to show in my profile so that I can get easy access to view and purchase them.
 
 # EPIC 9: Blog
-* As a site user I want to be able to view blog posts on the website so that I can read any posts I feel are relevant to me. 
-* As a site user I want to be able to add, edit and delete comments on blog so that I can share my view on the blog post.
-* As a site admin I want to be able to create blog posts from the front end so that I can share information with site visitors. 
-* As a site admin I want to be able to edit existing blog posts so that I can ensure that posts are up to date and relevant without having to create them from scratch in case of error. 
-As a site admin I want to be able to delete existing blog posts so that I can remove any unwanted posts from the site.
+
+- As a site user I want to be able to view blog posts on the website so that I can read any posts I feel are relevant to me.
+- As a site user I want to be able to add, edit and delete comments on blog so that I can share my view on the blog post.
+- As a site admin I want to be able to create blog posts from the front end so that I can share information with site visitors.
+- As a site admin I want to be able to edit existing blog posts so that I can ensure that posts are up to date and relevant without having to create them from scratch in case of error.
+  As a site admin I want to be able to delete existing blog posts so that I can remove any unwanted posts from the site.
 
 ### EPIC 10: Review Products (CRUD)
-* As a Customer I would like to leave a review on a Product so that my fellow shoppers can benefit from my feedback and make informed purchasing decisions.
-* As a Developer I can build a page to display the Review form so that customer has the ability to write their review and submit it.
+
+- As a Customer I would like to leave a review on a Product so that my fellow shoppers can benefit from my feedback and make informed purchasing decisions.
+- As a Developer I can build a page to display the Review form so that customer has the ability to write their review and submit it.
 
 ### EPIC 11: Contact Us #15
-* As a Developer I can add functionality to allow the customer to contact the site owner so that any issue they encounter can be logged and resolved
-* As a user/customer I should be able to contact the site owner so that I have a comminucation if any issue arises
+
+- As a Developer I can add functionality to allow the customer to contact the site owner so that any issue they encounter can be logged and resolved
+- As a user/customer I should be able to contact the site owner so that I have a comminucation if any issue arises
 
 ### EPIC 12: SEO & Web Marketing #13
-* As a Developer I can create a Facebook business page for my site so that I can market my website on the social platform #60
-* As a Developer I can implement a newsletter on my site so that customers can subscribe for future updates and deals which should bring them back to the site for future purchases.
-* As a Developer I can add helpful description and keywords so that my site can reach a wider audience
+
+- As a Developer I can create a Facebook business page for my site so that I can market my website on the social platform #60
+- As a Developer I can implement a newsletter on my site so that customers can subscribe for future updates and deals which should bring them back to the site for future purchases.
+- As a Developer I can add helpful description and keywords so that my site can reach a wider audience
 
 ### EPIC 13: Error Notification
-* As a Developer I can implement a 403 error page to redirect unauthorised users so that I can secure my views.
-* As a Developer I can implement a 404 error page so that I can alert users when they have accessed a page that doesn't exist.
-* As a Developer I can implement a 500 error page so that I can alert users when an internal server error occurs.
 
-###  EPIC 14:
+- As a Developer I can implement a 403 error page to redirect unauthorised users so that I can secure my views.
+- As a Developer I can implement a 404 error page so that I can alert users when they have accessed a page that doesn't exist.
+- As a Developer I can implement a 500 error page so that I can alert users when an internal server error occurs.
+
+### EPIC 14:
+
 As a User, I must be able to be notified with messages, so that I would know if my request is successful.
 
 ### EPIC 15: Documentation
-* Create/Write README.md
-* Create/Write TESTING.md
+
+- Create/Write README.md
+- Create/Write TESTING.md
+
+## Wireframe
+
+To help with the design of the site, I created wireframes for each page. To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes. I've used Balsamiq to design my site wireframes.
+
+### Desktop
+
+<details close>
+<summary>Click to view</summary>
+<br>
+
+</details>
+
+### Tablet
+
+<details close>
+<summary>Click to view</summary>
+<br>
+
+</details>
+
+### Mobile
+
+<details close>
+<summary>Click to view</summary>
+<br>
+
+</details>
+
+## The Scope Plane
+
+- Responsive Design - The site should be fully functional on all devices from 320px up
+  Hamburger menu for mobile devices
+- Ability to perform CRUD functionality on Products, Profiles, Reviews, Blog Posts, and Comments
+- Restricted features for registered users such as Product reviewing, adding Products to Wishlist, editing Profiles, and Commenting/Liking Blog posts.
+- Newsletter Subscribing
