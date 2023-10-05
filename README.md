@@ -12,7 +12,7 @@ At PB Majestic Clothing, we believe that clothing is not just about fashion; it'
 
 This is my fifth portfolio project for Code Institute, and I hope to demonstrate the abilities I've acquired by doing so. Due to my dream of establishing such an online business, I then decided to use this opportunity to build this for the future.
 
-![Mock up](docs\images\mock.jpg)
+![Mock up](docs/images/mock.jpg)
 
 ### Click [Here](https://pb-majestic-cloding-30c8cd3db475.herokuapp.com/) to visit the deployed Site
 
@@ -31,8 +31,8 @@ All users will be able to browse/sort Products, add to a cart, and checkout. Reg
 
 This project was developed using agile methodologies by delivering small features across the duration of the project. All User Stories were assigned to Epics, prioritized under the labels, Must Have, Should Have, and Could Have. They were assigned story points according to complexity. The Fibonacci sequence is employed for the Story points. "Must Have" stories were completed first, "Should Have's" and then finally "Could Have's". It was done this way to ensure that all core requirements were completed first to give the project a complete feel. In some scenarios, certain "Should Have's" were implemented before schedule due to the nature of the implementation i.e. some Product related "Should Have's" were done during Product development with some "Must Have's" - Error templates developed later on. The Kanban board was created using Github projects user/developer stories and also a list of Acceptance criterias and Task
 
-![Kanban Board](docs\images\kanban-board.jpg)
-![Kanban Board](docs\images\user-stories-eg.jpg)
+![Kanban Board](docs/images/kanban-board.jpg)
+![Kanban Board](docs/images/user-stories-eg.jpg)
 
 ## User Stories
 
@@ -137,29 +137,29 @@ To help with the design of the site, I created wireframes for each page. To foll
 <details close>
 <summary>Click to view</summary>
 
-![Home](docs\images\home.jpg)
+![Home](docs/images/home.jpg)
 
-![All-product](docs\images\all-prod.jpg)
+![All-product](docs/images/all-prod.jpg)
 
-![product](docs\images\prod-view.jpg)
+![product](docs/images/prod-view.jpg)
 
-![cart](docs\images\cart.jpg)
+![cart](docs/images/cart.jpg)
 
-![checkout](docs\images\checkout.jpg)
+![checkout](docs/images/checkout.jpg)
 
-![complete order](docs\images\order-complete.jpg)
+![complete order](docs/images/order-complete.jpg)
 
-![contact](docs\images\contact.jpg)
+![contact](docs/images/contact.jpg)
 
-![blog](docs\images\blog-list.jpg)
+![blog](docs/images/blog-list.jpg)
 
-![blog-view](docs\images\blog-view.jpg)
+![blog-view](docs/images/blog-view.jpg)
 
-![sign up](docs\images\sign-up.jpg)
+![sign up](docs/images/sign-up.jpg)
 
-![sign in](docs\images\sign-in.jpg)
+![sign in](docs/images/sign-in.jpg)
 
-![sign out](docs\images\sign-out.jpg)
+![sign out](docs/images/sign-out.jpg)
 
 </details>
 
@@ -185,96 +185,96 @@ I created an entity relationship diagram using [sqldbm](https://app.sqldbm.com/C
 
 ### Navbar with Search field and nav links
 
-![features](docs\features_images\navbar.jpg)
+![features](docs/features_images/navbar.jpg)
 
 ### Footer with Newletter
 
-![features](docs\features_images\footer.jpg)
+![features](docs/features_images/footer.jpg)
 
 ### All Products
 
-![features](docs\features_images\all-product.jpg)
+![features](docs/features_images/all-product.jpg)
 
 ### All Products Details
 
-![features](docs\features_images\prod-view.jpg)
+![features](docs/features_images/prod-view.jpg)
 
 ## Product reviews
 
-![features](docs\features_images\review.jpg)
+![features](docs/features_images/review.jpg)
 
 - No review on product page
-  ![features](docs\features_images\no-review.jpg)
+  ![features](docs/features_images/no-review.jpg)
 
 - Add product review forms
-  ![features](docs\features_images\add-review.jpg)
+  ![features](docs/features_images/add-review.jpg)
 
 - Edit product review forms
-  ![features](docs\features_images\edit-review.jpg)
+  ![features](docs/features_images/edit-review.jpg)
 
 - Delete product review forms
-  ![features](docs\features_images\delete-review.jpg)
+  ![features](docs/features_images/delete-review.jpg)
 
 ### Product Management
 
 - Add Products
-  ![features](docs\features_images\prod-manage.jpg)
+  ![features](docs/features_images/prod-manage.jpg)
 
 - Edit Products
-  ![features](docs\features_images\prod-edit.jpg)
+  ![features](docs/features_images/prod-edit.jpg)
 
 - Edit Products
-  ![features](docs\features_images\prod-edit.jpg)
+  ![features](docs/features_images/prod-edit.jpg)
 
 ### Cart
 
-![features](docs\features_images\cart-view.jpg)
+![features](docs/features_images/cart-view.jpg)
 
 ### Checkout
 
-![features](docs\features_images\checkout.jpg)
+![features](docs/features_images/checkout.jpg)
 
 ### Order Completion
 
-![features](docs\features_images\thankyou-page.jpg)
+![features](docs/features_images/thankyou-page.jpg)
 
 ### User Profile
 
 - Detail Profile
-  ![features](docs\features_images\profile-info.jpg)
+  ![features](docs/features_images/profile-info.jpg)
 
 - Orders on Profile
-  ![features](docs\features_images\profile-order.jpg)
+  ![features](docs/features_images/profile-order.jpg)
 
 - Wishlist on Profile
-  ![features](docs\features_images\profile-wish.jpg)
+  ![features](docs/features_images/profile-wish.jpg)
 
 ### Blog
 
 - Blog view
-  ![features](docs\features_images\blog-list.jpg)
+  ![features](docs/features_images/blog-list.jpg)
 
 - Blog Add
-  ![features](docs\features_images\add-blog.jpg)
+  ![features](docs/features_images/add-blog.jpg)
 
 - Blog Edit
-  ![features](docs\features_images\blog-update.jpg)
+  ![features](docs/features_images/blog-update.jpg)
 
 - Blog Delete
-  ![features](docs\features_images\blog-delete.jpg)
+  ![features](docs/features_images/blog-delete.jpg)
 
 - Blog comment
-  ![features](docs\features_images\blog-commented.jpg)
+  ![features](docs/features_images/blog-commented.jpg)
 
 - Blog edit comment
-  ![features](docs\features_images\edit-blog-comment.jpg)
+  ![features](docs/features_images/edit-blog-comment.jpg)
 
 - Blog delete
-  ![features](docs\features_images\blog-delete.jpg)
+  ![features](docs/features_images/blog-delete.jpg)
 
 ### Contact Us
 
-![features](docs\features_images\contact-page.jpg)
+![features](docs/features_images/contact-page.jpg)
 
 ### Status Error Templates
 
@@ -287,35 +287,35 @@ As a Developer I can implement a 500 error page so that I can alert users when a
 A 403 error page has been implemented to provide feedback to the user when they try to access unauthorized content. Users will be directed to this page if they alter the URLs and attempt to edit, delete, or access pages that are restricted.
 
 A 404 page has been implemented and will display if a user navigates to a broken link.
-
 The 404 page will allow the user to easily navigate back to the main website if they direct to a broken link / missing page, without the need for the browser's back button.
+![features](docs/features_images/error-404.jpg)
 
 A 500 error page has been displayed to alert users when an internal server error occurs. The message relays to users that the problem is on our end, not theirs.
 
-![features](docs\features_images\error-404.jpg)
+![features](docs/features_images/error-500.jpg)
 
 ### User Sign Up
 
 Users without an account can register for one through the register link in the main nav menu. This will present them with a form to add their details and created a profile for that user on completion.
 Users are sent a confirmation email to complete their account sign up to help avoid people from creating spam accounts on the site.
-![features](docs\features_images\sign-up.jpg)
+![features](docs/features_images/sign-up.jpg)
 
 ### User Sign In
 
 If a user isn't signed in to the site but has a profile, they can follow the sign in link where they're presented with a log in page. They must input their username or email address and correct password to do so. There's also a checkbox to let the user be remembered on their current device to avoid having to log in every time they visit the site.
 There's a link for users who have forgotten their password.
-![features](docs\features_images\sign-in.jpg)
+![features](docs/features_images/sign-in.jpg)
 
 ### User Sign Out
 
 If a user wants to end their logged in session, they can click logout under the account dropdown in the nav menu.
 This will bring them to a page confirming they want to log out.
-![features](docs\features_images\sign-out.jpg)
+![features](docs/features_images/sign-out.jpg)
 
 ### Password Reset
 
 If a user is trying to log in and has forgotten their password they can visit the password reset page. Here a user must enter their email address they used to sign up with and an email will be sent to them with further instructions on resetting their password to regain access to their account.
-![features](docs\features_images\pass-reset.jpg)
+![features](docs/features_images/pass-reset.jpg)
 
 ## Tools & Technologies Used
 
@@ -344,19 +344,19 @@ This site couldn't have been created without a variety of tools and technologies
 
 Social Media Marketing
 A Facebook Business page has been created and deployed. Creating a strong social media campaign and linking back to the site can help drive sales and build a community. I have included links to the site on the Facebook page and have added a post including information about the site/free delivery threshold.
-![features](docs\features_images\facebook-page.jpg)
+![features](docs/features_images/facebook-page.jpg)
 
 ## Newsletter Marketing
 
 I used Mailchimp to set up a newsletter sign-up embedded form on my site, to allow users to supply their email addresses if they are interested in learning more about the site and to drive repeat business. An automated Welcome email campaign was created so that when a user subscribes they will receive an email sent from Mailchimp thanking them for subscribing. Following this I have created a Newsletter campaign which will be manually initiated by the site owner and each subscriber will receive the Newsletter. The hope is to build a community which in turn might lead to returning/new customers and lead to more business.
-![features](docs\features_images\newsletter.jpg)
+![features](docs/features_images/newsletter.jpg)
 
 ## Search Engine Optimization (SEO)
 
 Keywords
 I utilized Wordtracker to identify keywords that align with my site. The keywords chosen have high enough volume and low enough competition, the KEI (Keyword Effectiveness Index) metric on Wordtracker was used to help decide on the best keywords.
 
-![features](docs\features_images\seo.jpg)
+![features](docs/features_images/seo.jpg)
 
 # Testing
 
@@ -366,7 +366,7 @@ Validator Testing
 
 As this project uses Django templates the html has been validated by manually clicking through the application pages, copying the source of the rendered pages and then validating this version of the html using the W3C Validator [Link](https://validator.w3.org/). To validate the HTML files all Django template tags were manually removed with the HTML code copied and inserted to the base template, including manually pasting in navigation and footer templates into all page testing.
 
-![models](docs\testing\html-valid.jpg)
+![models](docs/testing/html-valid.jpg)
 
 ### PEP 8 Python Linter:
 
@@ -374,13 +374,13 @@ PEP 8 Online linter [Python validator](https://pep8ci.herokuapp.com/#). The code
 
 **Models**
 
-![models](docs\testing\model-checkout.jpg)
+![models](docs/testing/model-checkout.jpg)
 
 ### Javascript Validator:
 
 JSHint was used to validate the JavaScript with no errors highlighted.
 
-![js-custom](docs\testing\js-custom.jpg)
+![js-custom](docs/testing/js-custom.jpg)
 
 ### CSS Validator:
 
@@ -392,7 +392,7 @@ The W3C CSS Validator Services were used to validate the CSS to ensure there wer
 
 Lighthouse report showed areas for improvement on SEO and Best practices. Meta descriptions and keywords were added to boost the SEO to 100 but the best practice warnings were coming from the use of an embedded iframe's javascript. Unfortunately I did not find a way to improve this as I am not initialising the google map iframe with javascript.
 
-![lighthouse](docs\testing\lighthouse.jpg)
+![lighthouse](docs/testing/lighthouse.jpg)
 
 ## Responsiveness
 
