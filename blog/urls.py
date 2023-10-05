@@ -1,3 +1,4 @@
+"""This file is used to define the urls for the blog app."""
 from django.urls import path
 from . import views
 

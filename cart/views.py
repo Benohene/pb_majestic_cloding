@@ -1,3 +1,5 @@
+"""This file contains the views for the cart app. The cart app is used to add,
+adjust and delete items from the cart."""
 from django.shortcuts import (
     render,
     redirect,
@@ -33,7 +35,8 @@ def add_to_cart(request, item_id):
                 cart[item_id]["items_by_size"][size] += quantity
                 messages.success(
                     request,
-                    f'Updated size {size.upper()} {product.name} quantity to {cart[item_id]["items_by_size"][size]}',
+                    f'Updated size {size.upper()} {product.name} quantity to '
+                    f'{cart[item_id]["items_by_size"][size]}',
                 )
             else:
                 cart[item_id]["items_by_size"][size] = quantity
@@ -52,7 +55,8 @@ def add_to_cart(request, item_id):
             cart[item_id]["items_by_size"][size] = product.stock
             messages.error(
                 request,
-                f"You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.",
+                f"You have exceeded the available stock of this item. "
+                f"The maximum quantity available is {product.stock}.",
             )
     else:
         if item_id in list(cart.keys()):
@@ -71,7 +75,8 @@ def add_to_cart(request, item_id):
             cart[item_id] = product.stock
             messages.error(
                 request,
-                f"You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.",
+                f"You have exceeded the available stock of this item. "
+                f"The maximum quantity available is {product.stock}.",
             )
 
     request.session["cart"] = cart
@@ -94,7 +99,8 @@ def adjust_cart(request, item_id):
             cart[item_id]["items_by_size"][size] = quantity
             messages.success(
                 request,
-                f'Updated size {size.upper()} {product.name} quantity to {cart[item_id]["items_by_size"][size]}',
+                f'Updated size {size.upper()} {product.name} '
+                f'quantity to {cart[item_id]["items_by_size"][size]}',
             )
         else:
             del cart[item_id]["items_by_size"][size]
@@ -102,14 +108,16 @@ def adjust_cart(request, item_id):
                 cart.pop(item_id)
                 messages.success(
                     request,
-                    f"Removed size {size.upper()} {product.name} from your cart",
+                    f"Removed size {size.upper()} {product.name} "
+                    f"from your cart",
                 )
         # stock control
         if cart[item_id]["items_by_size"][size] > product.stock:
             cart[item_id]["items_by_size"][size] = product.stock
             messages.error(
                 request,
-                f"You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.",
+                f"You have exceeded the available stock of this item. "
+                f"The maximum quantity available is {product.stock}.",
             )
     else:
         if quantity > 0:
@@ -128,7 +136,8 @@ def adjust_cart(request, item_id):
             cart[item_id] = product.stock
             messages.error(
                 request,
-                f"You have exceeded the available stock of this item. The maximum quantity available is {product.stock}.",
+                f"You have exceeded the available stock of this item. "
+                f"The maximum quantity available is {product.stock}.",
             )
 
     request.session["cart"] = cart
@@ -152,7 +161,8 @@ def delete_from_cart(request, item_id):
                 cart.pop(item_id)
                 messages.success(
                     request,
-                    f"Removed size {size.upper()} {product.name} from your cart",
+                    f"Removed size {size.upper()} {product.name} "
+                    f"from your cart",
                 )
         else:
             cart.pop(item_id)

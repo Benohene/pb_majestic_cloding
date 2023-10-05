@@ -1,3 +1,4 @@
+''' This file is used to display the order information in the admin panel '''
 from django.contrib import admin
 from .models import Order, OrderLineItem
 
@@ -5,13 +6,13 @@ from .models import Order, OrderLineItem
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
-    # This class is used to display the line items in the admin panel
+    '''This class is used to display the line items in admin panel'''
     model = OrderLineItem
     readonly_fields = ("lineitem_total",)
 
 
 class OrderAdmin(admin.ModelAdmin):
-    # This class is used to display the order information in the admin panel
+    '''This class is used to display the order information in admin panel'''
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = (

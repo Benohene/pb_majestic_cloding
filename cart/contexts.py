@@ -1,14 +1,10 @@
+"""This file contains the context that is used to
+render the cart contents page
+"""
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
-
-
-"""
-* is used to calculate the total amount of items in the cart, the total cost of the items in the cart, the delivery cost, and the grand total. 
-* It is then used in the cart view, and the add_to_cart view. 
-* The cart_contents function is also used in the context_processors.py file, which allows the cart to be available on every page of the site.
-"""
 
 
 def cart_contents(request):
