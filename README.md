@@ -89,7 +89,7 @@ As a Developer I can implement Stripe so that it can manage payments for the sit
 - As a Developer I can implement functionality to allow a customer to save information to a personal Profile so that they can save information i.e. shipping address/orders for future review
 - As a customer I would like to add wishlish items to show in my profile so that I can get easy access to view and purchase them.
 
-# EPIC 9: Blog
+### EPIC 9: Blog
 
 - As a site user I want to be able to view blog posts on the website so that I can read any posts I feel are relevant to me.
 - As a site user I want to be able to add, edit and delete comments on blog so that I can share my view on the blog post.
@@ -175,27 +175,32 @@ To help with the design of the site, I created wireframes for each page. To foll
 
 I created an entity relationship diagram using [sqldbm](https://app.sqldbm.com/CreateNew/). This helped me to visualize the relationships between my data structures and made the development process easier as I had everything mapped out in front of me for reference to avoid having to reference each models.py file individually.
 
-![diagram](docs\features_images\sqldbm.jpg)
+![diagram](docs/features_images/sqldbm.jpg)
 
 ## Features
 
 ### Home Page
+The Homepage is the landing page o fthe site which welcomes the user with an overview of the website. It consist of the Navbar, Shop now button and Footer
 
 ![features](docs/features_images/home.jpg)
 
 ### Navbar with Search field and nav links
+The Navbar consist of the search field and menu that navigates to the entire pages on the website. It also has the Logo of the website.
 
 ![features](docs/features_images/navbar.jpg)
 
 ### Footer with Newletter
+The Footer consist of the some details of the websites and some links including the facebook link of the website. 
 
 ![features](docs/features_images/footer.jpg)
 
 ### All Products
+The All Product page display all products with sort field that allows uses to sort products according specific preferences like price, rating, names and others
 
 ![features](docs/features_images/all-product.jpg)
 
 ### All Products Details
+The Product Detail pages gives description to the product and also allows user to Add product to cart by selecting the size and quantity.
 
 ![features](docs/features_images/prod-view.jpg)
 
@@ -319,11 +324,11 @@ If a user is trying to log in and has forgotten their password they can visit th
 
 ## Tools & Technologies Used
 
-This site couldn't have been created without a variety of tools and technologies. I've listed the ones used below.
+This site needed a lot of tools and technologies to make it possible. Therefore the following were used for production.
 
-- HTML used for the main site content.
-- CSS used for the main site design and layout.
-- CSS :root variables used for reusable styles throughout the site.
+- HTML used for the main site structure content.
+- CSS used for the main site styling, designing and layout.
+- CSS :root variables used for reusable styles throughout the site especially the colors.
 - CSS Flexbox used for an enhanced responsive layout.
 - JavaScript used for user interaction on the site.
 - Python used as the back-end programming language.
@@ -342,19 +347,20 @@ This site couldn't have been created without a variety of tools and technologies
 
 ## Marketing Strategy
 
-Social Media Marketing
-A Facebook Business page has been created and deployed. Creating a strong social media campaign and linking back to the site can help drive sales and build a community. I have included links to the site on the Facebook page and have added a post including information about the site/free delivery threshold.
+### Social Media Marketing
+I've established a Facebook Business page and integrated it with the website, aiming to boost sales and foster a community through a robust social media campaign. The Facebook page now features links to the website and a post that highlights details about the site and its free delivery threshold.
 ![features](docs/features_images/facebook-page.jpg)
 
 ## Newsletter Marketing
 
-I used Mailchimp to set up a newsletter sign-up embedded form on my site, to allow users to supply their email addresses if they are interested in learning more about the site and to drive repeat business. An automated Welcome email campaign was created so that when a user subscribes they will receive an email sent from Mailchimp thanking them for subscribing. Following this I have created a Newsletter campaign which will be manually initiated by the site owner and each subscriber will receive the Newsletter. The hope is to build a community which in turn might lead to returning/new customers and lead to more business.
+I employed Mailchimp to establish a website-embedded newsletter sign-up form, enabling users to share their email addresses for deeper insights into the site and to encourage repeat engagement. An automated Welcome email series was configured to promptly acknowledge new subscribers with a message from Mailchimp. Additionally, I've set up a Newsletter campaign that will be manually triggered by the site owner, ensuring every subscriber receives the latest updates. The overarching goal is to cultivate a community that has the potential to attract returning and new customers, thereby fostering business growth.
+
 ![features](docs/features_images/newsletter.jpg)
 
 ## Search Engine Optimization (SEO)
 
-Keywords
-I utilized Wordtracker to identify keywords that align with my site. The keywords chosen have high enough volume and low enough competition, the KEI (Keyword Effectiveness Index) metric on Wordtracker was used to help decide on the best keywords.
+### Keywords
+I used Wordtracker to discover keywords for my website that possess a favorable combination of high search volume and low competition, making use of the KEI (Keyword Effectiveness Index) metric on Wordtracker to guide my keyword selection.
 
 ![features](docs/features_images/seo.jpg)
 
@@ -384,13 +390,13 @@ JSHint was used to validate the JavaScript with no errors highlighted.
 
 ### CSS Validator:
 
-The W3C CSS Validator Services were used to validate the CSS to ensure there were no errors. There was one warning that read: "Imported style sheets are not checked in direct input and file upload modes", which is fine as it's referring to a Google fonts import.
+The CSS within the project was checked for errors using W3C CSS Validator Services. While there was a single warning message, it pertained to the use of imported style sheets, specifically in the context of a Google fonts import, and did not pose any significant issue.
 
 ![js-custom](docs/testing/css-validator.jpg)
 
 ## Lighthouse Report
 
-Lighthouse report showed areas for improvement on SEO and Best practices. Meta descriptions and keywords were added to boost the SEO to 100 but the best practice warnings were coming from the use of an embedded iframe's javascript. Unfortunately I did not find a way to improve this as I am not initialising the google map iframe with javascript.
+The Lighthouse report indicated areas where SEO and best practices could be enhanced. We improved the SEO score to 100 by incorporating meta descriptions and keywords. However, we encountered best practice warnings due to the utilization of JavaScript within an embedded iframe. Regrettably, we couldn't find a solution to address this issue since I am not responsible for initializing the Google Map iframe with JavaScript.
 
 ![lighthouse](docs/testing/lighthouse.jpg)
 
@@ -409,212 +415,201 @@ The Website pass its responsiveness and no responsive issues were seen on the fo
 
 ## Deployment
 
-The live deployed application can be found deployed on Heroku.
+The site has been deployed on Heroku. It indicates that the website or web application has been successfully hosted and made accessible to the public using the Heroku platform. Heroku is a cloud platform that allows developers to deploy, manage, and scale web applications with ease. Deploying a site on Heroku often involves uploading code and configuring the necessary settings to run the web application on Heroku's infrastructure. This statement suggests that the deployment process on Heroku has been completed successfully.
 
 ## ElephantSQL Database
 
-This project uses ElephantSQL for the PostgreSQL Database.
+This project employs ElephantSQL as the backend database using PostgreSQL. To set up your own PostgreSQL database, follow these steps:
 
-To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
-
-- Click Create New Instance to start a new database.
-- Provide a name (this is commonly the name of the project: pb-majestic-cloding).
-- Select the Tiny Turtle (Free) plan.
-- You can leave the Tags blank.
-- Select the Region and Data Center closest to you.
-- Once created, click on the new database name, where you can view the database URL and Password.
+1. Sign up with your GitHub account.
+2. Click on "Create New Instance" to initiate the creation of a new database.
+3. Specify a name for your database, typically the project name like "pb-majestic-cloding."
+4. Choose the "Tiny Turtle (Free)" plan.
+5. You can leave the Tags field empty.
+6. Select the Region and Data Center that is geographically closest to your location.
+7. Once the database is successfully created, click on its name to access the database URL and password information.
 
 ### Amazon AWS
 
-This project uses AWS to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
+This project utilizes AWS for the storage of online media and static files because Heroku lacks the ability to retain such data.
 
-Once you've created an AWS account and logged-in, follow these series of steps to get your project connected. Make sure you're on the AWS Management Console page.
+After setting up an AWS account and signing in, proceed with the following sequence of actions to establish the connection for your project. Ensure that you are currently on the AWS Management Console page.
 
 ### S3 Bucket
 
-- Search for S3.
+- Begin by initiating a search for S3.
 
-- Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
+- Proceed to create a new bucket and assign it a name that matches your Heroku app's name, selecting the region that is geographically closest to your location.
 
-- Uncheck Block all public access, and acknowledge that the bucket will be public (required for it to work on Heroku).
+- Ensure that the "Block all public access" option is unchecked and acknowledge that the bucket must be made public for it to function correctly on Heroku.
 
-- From Object Ownership, make sure to have ACLs enabled, and Bucket owner preferred selected.
+- In the Object Ownership section, confirm that ACLs are enabled, and opt for "Bucket owner preferred."
 
-- From the Properties tab, turn on static website hosting, and type index.html and error.html in their respective fields, then click Save.
+- Within the Properties tab, activate static website hosting and specify "index.html" and "error.html" in their respective fields, then save your changes.
 
-- From the Permissions tab, paste in the following CORS configuration:
+- In the Permissions tab, paste the provided CORS configuration.
 
 - Copy your ARN string.
 
-- From the Bucket Policy tab, select the Policy Generator link, and use the following steps:
+- In the Bucket Policy tab, select the Policy Generator link and follow these steps:
 
-- Policy Type: S3 Bucket Policy
+  - Policy Type: S3 Bucket Policy
+  - Effect: Allow
+  - Principal: \*
+  - Actions: GetObject
+  - Amazon Resource Name (ARN): Paste your ARN here
+  - Add Statement
+  - Generate Policy
 
-- Effect: Allow
+- Copy the entire policy generated and insert it into the Bucket Policy Editor.
 
-- Principal: \*
+- Before clicking "Save," append /\* to the end of the Resource key in the Bucket Policy Editor, as mentioned previously.
 
-- Actions: GetObject
+- Save your changes.
 
-- Amazon Resource Name (ARN): paste-your-ARN-here
+- In the Access Control List (ACL) section, click "Edit" and enable "List for Everyone" (public access), accepting any associated warnings.
 
-- Click Add Statement
-
-- Click Generate Policy
-
-- Copy the entire Policy, and paste it into the Bucket Policy Editor
-
-- Before you click "Save", add /\* to the end of the Resource key in the Bucket Policy Editor (like above).
-
-- Click Save.
-
-- From the Access Control List (ACL) section, click "Edit" and enable List for Everyone (public access), and accept the warning box.
-
-- If the edit button is disabled, you need to change the Object Ownership section above to ACLs enabled (mentioned above).
+- If the "Edit" button is inactive, adjust the Object Ownership section as mentioned earlier to enable ACLs.
 
 ## IAM
 
-Back on the AWS Services Menu, search for and open IAM (Identity and Access Management). Once on the IAM page, follow these steps:
+Navigate back to the AWS Services Menu and locate IAM (Identity and Access Management). Once you are on the IAM page, follow these steps:
 
-- From User Groups, click Create New Group.
-- Suggested Name: group-pb-majestic-cloding (group + the project name)
-- Tags are optional, but you must click it to get to the review policy page.
-- From User Groups, select your newly created group, and go to the Permissions tab.
-- Open the Add Permissions dropdown, and click Attach Policies.
-- Select the policy, then click Add Permissions at the bottom when finished.
-- From the JSON tab, select the Import Managed Policy link.
-- Search for S3, select the AmazonS3FullAccess policy, and then Import.
-- You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
-- Click Review Policy.
+1. Within User Groups, select the option to Create a New Group.
+2. Suggested Name: Create a name that combines "group" with the project's name, like "group-pb-majestic-cloding."
+3. Tags are not mandatory, but you should select it to proceed to the policy review page.
+4. In the User Groups section, choose your newly created group, and go to the Permissions tab.
+5. Access the Add Permissions dropdown and choose Attach Policies.
+6. Pick the desired policy, and then click Add Permissions at the bottom once you're finished.
+7. On the JSON tab, choose the Import Managed Policy link.
+8. Search for S3, select the AmazonS3FullAccess policy, and then Import.
+9. You'll need to copy the ARN from the S3 Bucket and paste it into the "Resources" field in the Policy.
+10. Finally, click on Review Policy.
 
-- Suggested Name: policy-pb-majestic-cloding (policy + the project name)
+Suggested Name for the policy: Consider naming it by combining "policy" with the project's name, like "policy-pb-majestic-cloding."
 
-- Provide a description:
-  "Access to S3 Bucket for pb-majestic-cloding static files."
-  Click Create Policy.
+Provide a description for the policy: "This policy grants access to the S3 Bucket for pb-majestic-cloding static files." Click on Create Policy.
 
-- From User Groups, click your "group-pb-majestic-cloding".
-- Click Attach Policy.
-- Search for the policy you've just created ("policy-pb-majestic-cloding") and select it, then Attach Policy.
-- From User Groups, click Add User.
-- Suggested Name: user-pb-majestic-cloding (user + the project name)
-- For "Select AWS Access Type", select Programmatic Access.
-- Select the group to add your new user to: group-pb-majestic-cloding
-- Tags are optional, but you must click it to get to the review user page.
-- Click Create User once done.
-- You should see a button to Download .csv, so click it to save a copy on your system.
-- IMPORTANT: once you pass this page, you cannot come back to download it again, so do it immediately!
-- This contains the user's Access key ID and Secret access key.
-- AWS_ACCESS_KEY_ID = Access key ID
-- AWS_SECRET_ACCESS_KEY = Secret access key
+11. In the User Groups section, click on your "group-pb-majestic-cloding."
+12. Choose Attach Policy.
+13. Search for the policy you just created ("policy-pb-majestic-cloding"), select it, and then click Attach Policy.
+14. In the User Groups section, click on Add User.
+15. Suggested Name: Suggest a name by combining "user" with the project's name, like "user-pb-majestic-cloding."
+16. For the "Select AWS Access Type," choose Programmatic Access.
+17. Select the group to add your new user to, which should be "group-pb-majestic-cloding."
+18. Tags are not mandatory, but you should select it to proceed to the user review page.
+19. Click Create User when you're finished.
+20. You should see a button to Download a .csv file; click it to save a copy on your system.
+21. It's important to note that once you leave this page, you won't be able to return to download it again, so be sure to do it immediately.
+22. This file contains the user's Access Key ID and Secret Access Key.
+23. AWS_ACCESS_KEY_ID corresponds to the Access Key ID.
+24. AWS_SECRET_ACCESS_KEY corresponds to the Secret Access Key.
 
 ### Final AWS Setup
 
-- If Heroku Config Vars has DISABLE_COLLECTSTATIC still, this can be removed now, so that AWS will handle the static files.
-- Back within S3, create a new folder called: media.
-- Select any existing media images for your project to prepare them for being uploaded into the new folder.
-- Under Manage Public Permissions, select Grant public read access to this object(s).
-- No further settings are required, so click Upload.
+- You can now safely eliminate the DISABLE_COLLECTSTATIC variable from Heroku Config Vars, allowing AWS to take over the responsibility of handling static files.
+- Within the S3 interface, establish a fresh directory named "media."
+- Pick any preexisting media images from your project for the purpose of preparing them for placement in the newly created folder.
+- In the "Manage Public Permissions" section, opt for granting public read access to these objects.
+- There is no need for any additional configurations; simply proceed by clicking the "Upload" button.
 
 ### Stripe API
 
-This project uses Stripe to handle the ecommerce payments.
+This project utilizes Stripe for managing ecommerce payments.
 
-Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
+After setting up your Stripe account and logging in, follow these steps to establish the connection for your project.
 
-- From your Stripe dashboard, click to expand the "Get your test API keys".
-- You'll have two keys here:
-- STRIPE_PUBLIC_KEY = Publishable Key (starts with pk)
-- STRIPE_SECRET_KEY = Secret Key (starts with sk)
-  As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
+1. Access your Stripe dashboard and expand the "Retrieve your test API keys" section.
+2. You will find two keys as follows:
+   - STRIPE_PUBLIC_KEY = Publishable Key (starts with pk)
+   - STRIPE_SECRET_KEY = Secret Key (starts with sk)
 
-- From your Stripe dashboard, click Developers, and select Webhooks.
-- From there, click Add Endpoint.
-- https://pb-majestic-cloding.herokuapp.com/checkout/wh/
-- Click receive all events.
-- Click Add Endpoint to complete the process.
-- You'll have a new key here:
-- STRIPE_WH_SECRET = Signing Secret (Wehbook) Key (starts with wh)
+Additionally, to ensure a seamless payment process, we can incorporate Stripe Webhooks as a backup solution in case users accidentally close the purchase order page.
+
+1. Navigate to the Developers section in your Stripe dashboard and select Webhooks.
+2. Click on the option to Add Endpoint.
+3. Enter the URL: https://pb-majestic-cloding.herokuapp.com/checkout/wh/
+4. Select "receive all events."
+5. Click Add Endpoint to finalize the setup.
+6. You will receive a new key:
+   - STRIPE_WH_SECRET = Signing Secret (Webhook) Key (starts with wh)
 
 ## Gmail API
 
-This project uses Gmail to handle sending emails to users for account verification and purchase order confirmations.
-Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
+This project utilizes Gmail as the platform for sending emails to users to carry out tasks like account verification and purchase order confirmations. To establish a connection for your project, follow these steps after creating a Gmail (Google) account and logging in:
 
-- Click on the Account Settings (cog icon) in the top-right corner of Gmail.
-- Click on the Accounts and Import tab.
-- Within the section called "Change account settings", click on the link for Other Google Account settings.
-- From this new page, select Security on the left.
-- Select 2-Step Verification to turn it on. (verify your password and account)
-- Once verified, select Turn On for 2FA.
-- Navigate back to the Security page, and you'll see a new option called App passwords.
-- This might prompt you once again to confirm your password and account.
-- Select Mail for the app type.
-- Select Other (Custom name) for the device type.
-- Any custom name, such as "Django" or retro-reboot
-- You'll be provided with a 16-character password (API key).
-- Save this somewhere locally, as you cannot access this key again later!
-- EMAIL_HOST_PASS = user's 16-character API key
-- EMAIL_HOST_USER = user's own personal Gmail email address
+1. Click on the Account Settings, represented by the cog icon, located in the upper-right corner of Gmail.
+2. Access the Accounts and Import tab.
+3. Under the "Change account settings" section, click on the link that says Other Google Account settings.
+4. On the new page, select the Security option from the left-hand menu.
+5. Activate 2-Step Verification (which requires password and account verification).
+6. After verification, turn on 2FA (Two-Factor Authentication).
+7. Return to the Security page, where you will find a new option called App passwords.
+8. You may need to confirm your password and account once more.
+9. Choose "Mail" as the app type.
+10. Opt for "Other (Custom name)" as the device type.
+11. Provide a custom name, such as "Django" or "retro-reboot."
+12. You will receive a 16-character password (API key).
+13. Safely store this key locally because it cannot be retrieved later.
+14. Set up the following configurations in your project:
+   - EMAIL_HOST_PASS = user's 16-character API key
+   - EMAIL_HOST_USER = user's personal Gmail email address
 
 ## Heroku Deployment
 
-This project uses Heroku, a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+This project utilizes Heroku, a Platform as a Service (PaaS) that empowers developers to construct, execute, and manage applications entirely within the cloud.
 
-Deployment steps are as follows, after account setup:
+Here are the deployment instructions to be followed after setting up your account:
 
-- Select New in the top-right corner of your Heroku Dashboard, and select Create new app from the dropdown menu.
-- Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select Create App.
-- From the new app Settings, click Reveal Config Vars, and set your environment variables.
-- Heroku needs two additional files in order to deploy properly.
-  - Crequirements.txt
-  - Procfile
-- You can install this project's requirements (where applicable) using:
-- pip3 install -r requirements.txt
-- If you have your own packages that have been installed, then the requirements file needs updated using:
-
-- pip3 freeze --local > requirements.txt
-- The Procfile can be created with the following command:
-
-  - echo web: gunicorn app_name.wsgi > Procfile
-  - replace app_name with the name of your primary Django app name; the folder where settings.py is located
+1. Click on "New" located in the upper-right corner of your Heroku Dashboard, and then choose "Create new app" from the dropdown menu.
+2. Ensure that your app name is unique, select a region closest to your location (EU or USA), and finally, click on "Create App."
+3. Within the new app's settings, click on "Reveal Config Vars" and configure your environment variables.
+4. To ensure proper deployment, Heroku requires two additional files:
+   - requirements.txt
+   - Procfile
+5. You can install the project's requirements (where applicable) using:
+   - pip3 install -r requirements.txt
+6. If you have custom packages installed, make sure to update the requirements file with the following command:
+   - pip3 freeze --local > requirements.txt
+7. Create the Procfile using the following command:
+   - echo web: gunicorn app_name.wsgi > Procfile
+   - Replace "app_name" with the name of your primary Django app, which is the folder where "settings.py" is located.
 
 For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
 
-Either:
+Option 1:
+- Choose "Automatic Deployment" from the Heroku app.
 
-- Select Automatic Deployment from the Heroku app.
-  Or:
-
-- In the Terminal/CLI, connect to Heroku using this command: heroku login -i
-- Set the remote for Heroku: heroku git:remote -a app_name (replace app_name with your app name)
-- After performing the standard Git add, commit, and push to GitHub, you can now type:
+Option 2:
+- In your Terminal/CLI, connect to Heroku using this command: heroku login -i
+- Set the remote for Heroku: heroku git:remote -a app_name (replace "app_name" with your app's name)
+- After performing the standard Git commands (add, commit, and push) to your GitHub repository, execute:
 - git push heroku main
-- The project should now be connected and deployed to Heroku!
+- Your project should now be successfully connected and deployed to Heroku!
 
 ## Cloning
 
-You can clone the repository by following these steps:
+To clone the repository, follow these steps:
 
-1. Go to the GitHub repository
-2. Locate the Code button above the list of files and click it
-3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
-4. Open Git Bash or Terminal
-5. Change the current working directory to the one where you want the cloned directory
-6. In your IDE Terminal, type the following command to clone my repository:
-   - git clone https://github.com/adamgilroy22/retro-reboot.git
-7. Press Enter to create your local clone.
-   Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+1. Visit the GitHub repository.
+2. Click on the "Code" button located above the list of files.
+3. Choose your preferred cloning method, whether it's HTTPS, SSH, or GitHub CLI, and use the copy button to copy the URL to your clipboard.
+4. Open either Git Bash or Terminal.
+5. Change your current working directory to the desired location for the cloned directory.
+6. Within your IDE Terminal, enter the following command to clone my repository:
+   - Use the command: "git clone https://github.com/Benohene/pb_majestic_cloding.git"
+7. Hit Enter to initiate the creation of your local clone.
+   Alternatively, if you're using Gitpod, you can simply click below to generate your own workspace with this repository.
 
-Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed. A tutorial on how to do that can be found here.
+Please keep in mind that to directly open the project in Gitpod, you must have the browser extension installed. You can find a tutorial on how to install it here.
 
 ## Forking
 
-By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository. You can fork this repository by using the following steps:
+"When we fork a GitHub Repository, we create a duplicate of the original repository on our own GitHub account, allowing us to view and edit it without impacting the original owner's repository. You can initiate the forking process by following these steps:
 
-1. Log in to GitHub and locate the GitHub Repository
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
+1. Sign in to GitHub and find the desired GitHub Repository.
+2. Navigate to the top of the Repository (not the top of the page) just above the "Settings" Button in the menu, where you will find the "Fork" Button.
+3. After clicking it, you will have a replica of the original repository in your personal GitHub account!"
 
 ## Credits
 
