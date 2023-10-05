@@ -34,17 +34,16 @@ The PEP 8 Python Linter by CI was used to test the validity of the python code. 
 | Contact - contact.py | ![contact forms](docs/testing/contact.forms.png) | No Errors detected - PASS |
 | Contact - models.py | ![contact models](docs/testing/contact.models.png) | No Errors detected - PASS |
 | Contact - views.py | ![contact views](docs/testing/contact.views.png) | No Errors detected - PASS |
-| Name | ![Name]() | No Errors detected - PASS |
-| Name | ![Name]() | No Errors detected - PASS |
-| Name | ![Name]() | No Errors detected - PASS |
-| Name | ![Name]() | No Errors detected - PASS |
-| Name | ![Name]() | No Errors detected - PASS |
-| Name | ![Name]() | No Errors detected - PASS |
-| Name | ![Name]() | No Errors detected - PASS |
-| Name | ![Name]() | No Errors detected - PASS |
-| Name | ![Name]() | No Errors detected - PASS |
-| Name | ![Name]() | No Errors detected - PASS |
-| Name | ![Name]() | No Errors detected - PASS |
+| Product - admin.py | ![product admin](docs/testing/pro.admin.png) | No Errors detected - PASS |
+| Product - forms.py | ![product forms](docs/testing/pro.forms.png) | No Errors detected - PASS |
+| Product - models.py | ![product models](docs/testing/pro.models.png) | No Errors detected - PASS |
+| Product - views.py | ![product views](docs/testing/pro.views.png) | No Errors detected - PASS |
+| Product - widgets.py | ![product widgets](docs/testing/pro.widgets.png) | No Errors detected - PASS |
+| Profile - admin.py | ![profile admin](docs/testing/profile.admin.png) | No Errors detected - PASS |
+| Profile - forms.py | ![profile forms](docs/testing/profile.forms.png) | No Errors detected - PASS |
+| Profile - models.py | ![profile models](docs/testing/profile.models.png) | No Errors detected - PASS |
+| Profile - views.py | ![profile views](docs/testing/profile.views.png) | No Errors detected - PASS |
+| Home - views.py | ![home](docs/testing/home.view.png) | No Errors detected - PASS |
 
 ### Javascript Validator:
 
