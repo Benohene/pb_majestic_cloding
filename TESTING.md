@@ -47,15 +47,18 @@ The PEP 8 Python Linter by CI was used to test the validity of the python code. 
 
 ### Javascript Validator:
 
-JSHint was used to validate the JavaScript with no errors highlighted.
+JSHint was used to validate the JavaScript with no errors highlighted. There were some few issues raised but does not affect the functionality of the website in anyway.
 
+| FILE | IMAGE |
+| --- | --- |
+| Countryfield.js | ![contryfield js](docs/testing/countryfield-js.png) |
+| Quantity.js | ![quantiy js](docs/testing/quantity-js.png) |
+| Stripe.js | ![stripe js](docs/testing/stripe.js.png) |
 ![js-custom](docs/testing/js-custom.jpg)
 
 ### CSS Validator:
 
 The CSS files within the project were all checked for errors using W3C CSS Validator Services. They all passed the text and displayyed the same message. The CSS files are blog.css , checkout.css and profile.css
-
-![js-custom](docs/testing/css-validator.jpg)
 
 ## Lighthouse Report
 
