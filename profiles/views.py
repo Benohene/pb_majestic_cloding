@@ -1,20 +1,17 @@
+'''This file contains the views for the profiles app. The profile view is'''
 from django.shortcuts import (
     render,
     get_object_or_404,
     reverse,
     redirect,
 )
-from .models import UserProfile
-from .forms import UserProfileForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from products.models import Product
-from .models import Wishlist
-
-
 from checkout.models import Order
-
-# Create your views here.
+from .models import UserProfile
+from .forms import UserProfileForm
+from .models import Wishlist
 
 
 @login_required
@@ -139,5 +136,5 @@ def clear_wishlist(request):
     """Clear the wishlist"""
     wishlist = Wishlist.objects.get(user=request.user)
     wishlist.products.clear()
-    messages.success(request, f"Your wishlist has been cleared")
+    messages.success(request, "Your wishlist has been cleared")
     return redirect(reverse("view_wishlist"))

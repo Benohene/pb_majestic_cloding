@@ -1,3 +1,4 @@
+'''Admin for profiles app'''
 from django.contrib import admin
 from .models import UserProfile, Wishlist
 
@@ -5,6 +6,7 @@ from .models import UserProfile, Wishlist
 
 
 class UserProfileAdmin(admin.ModelAdmin):
+    '''Admin for user profiles'''
     list_display = (
         "user",
         "default_full_name",
@@ -26,6 +28,7 @@ class UserProfileAdmin(admin.ModelAdmin):
 
 
 class WishlistAdmin(admin.ModelAdmin):
+    '''Admin for wishlists'''
     list_display = ("user",)
 
     search_fields = ("user",)

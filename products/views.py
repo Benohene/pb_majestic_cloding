@@ -48,7 +48,7 @@ def all_products(request):
             if "direction" in request.GET:
                 direction = request.GET["direction"]
                 if direction == "desc":
-                    sortkey = f"-{sortkey}"  # This will sort the products by name in descending order
+                    sortkey = f"-{sortkey}"
             products = products.order_by(sortkey)
 
         if "category" in request.GET:
@@ -83,7 +83,6 @@ def all_products(request):
 
 def product_detail(request, product_id):
     """A view to show individual product details"""
-    """ This function will render the product_detail.html template """
     product = get_object_or_404(Product, pk=product_id)
     user = request.user
     reviews = Review.objects.filter(product=product)
@@ -114,7 +113,6 @@ def product_detail(request, product_id):
 @login_required
 def add_product(request):
     """A view to add products to the store"""
-    """ This function will render the add_product.html template """
     if not request.user.is_superuser:
         messages.error(
             request,
@@ -147,7 +145,6 @@ def add_product(request):
 @login_required
 def edit_product(request, product_id):
     """A view to edit products in the store"""
-    """ This function will render the edit_product.html template """
     if not request.user.is_superuser:
         messages.error(
             request,
@@ -186,7 +183,6 @@ def edit_product(request, product_id):
 @login_required
 def delete_product(request, product_id):
     """A view to delete products from the store"""
-    """ This function will render the delete_product.html template """
     if not request.user.is_superuser:
         messages.error(request, "Sorry, only store owners can do that.")
         return redirect(reverse("home"))

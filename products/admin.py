@@ -1,3 +1,4 @@
+'''Admin panel for products and categories'''
 from django.contrib import admin
 from .models import Product, Category
 
@@ -5,6 +6,7 @@ from .models import Product, Category
 
 
 class ProductAdmin(admin.ModelAdmin):
+    '''Admin panel for products'''
     list_display = (
         "sku",
         "name",
@@ -20,6 +22,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
+    '''Admin panel for categories'''
     list_display = (
         "friendly_name",
         "name",
