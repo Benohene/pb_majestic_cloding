@@ -1,3 +1,4 @@
+''' This file is used to create the urls for the checkout app.'''
 from django.urls import path
 from . import views
 

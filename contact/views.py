@@ -31,7 +31,8 @@ def contact(request):
             plain_message = strip_tags(html_message)
             messages.success(
                 request,
-                f"Thanks {name}, we have received your message and will be in touch soon on {email}.",
+                f"Thanks {name}, we have received your message and will be "
+                f"in touch soon on {email}.",
             )
 
             send_mail(

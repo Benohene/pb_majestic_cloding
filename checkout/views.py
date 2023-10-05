@@ -116,7 +116,7 @@ def checkout(request):
                     messages.error(
                         request,
                         (
-                            "One of the products in your cart wasn't found in our database."
+                            "One of the products in your cart wasn't found."
                             "Please call us for assistance!"
                         ),
                     )
@@ -223,7 +223,10 @@ def checkout_success(request, order_number):
     def _send_confirmation_email(order):
         """Send the user a confirmation email"""
         cust_email = order.email
-        subject = f"PB Majestic Cloding Confirmation for Order Number {order.order_number}"
+        subject = (
+                    f"PB Majestic Cloding Confirmation for Order Number "
+                    f"{order.order_number}"
+                )
         body = render_to_string(
             "checkout/confirmation_emails/confirmation_email_body.txt",
             {

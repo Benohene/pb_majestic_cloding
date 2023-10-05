@@ -1,9 +1,12 @@
+'''This file is used to create the order form'''
 from django import forms
 from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    '''This class is used to create the order form'''
     class Meta:
+        '''This class is used to create the order form'''
         model = Order
         fields = (
             "full_name",
