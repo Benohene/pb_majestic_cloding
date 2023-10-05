@@ -54,17 +54,26 @@ JSHint was used to validate the JavaScript with no errors highlighted. There wer
 | Countryfield.js | ![contryfield js](docs/testing/countryfield-js.png) |
 | Quantity.js | ![quantiy js](docs/testing/quantity-js.png) |
 | Stripe.js | ![stripe js](docs/testing/stripe.js.png) |
-![js-custom](docs/testing/js-custom.jpg)
 
 ### CSS Validator:
 
 The CSS files within the project were all checked for errors using W3C CSS Validator Services. They all passed the text and displayyed the same message. The CSS files are blog.css , checkout.css and profile.css
+![css validator](docs/testing/css-validator.jpg)
 
 ## Lighthouse Report
 
-The Lighthouse report indicated areas where SEO and best practices could be enhanced. We improved the SEO score to 100 by incorporating meta descriptions and keywords. However, we encountered best practice warnings due to the utilization of JavaScript within an embedded iframe. Regrettably, we couldn't find a solution to address this issue since I am not responsible for initializing the Google Map iframe with JavaScript.
+The Lighthouse report indicated areas where SEO and best practices could be enhanced. We improved the SEO score to 100 by incorporating meta descriptions and keywords. However, we encountered best practice warnings due to the utilization of JavaScript within an embedded iframe.
 
-![lighthouse](docs/testing/lighthouse.jpg)
+| FILE | IMAGE |
+| --- | ---- |
+| All products | ![All product](docs/testing/allproducts-lh.png) |
+| Product details | ![Product detail](docs/testing/product-lh.png) |
+| Product Management | ![Product management](docs/testing/prod-manage-lh.png) |
+| Blog Post | ![Blog](docs/testing/blog-lh.png) |
+| Blog post details | ![Blog detail](docs/testing/blog-detail-lh.png) |
+| Cart | ![Cart](docs/testing/cart-lh.png) |
+| Checkout | ![Checkout](docs/testing/checkout-lh.png) |
+| Profile | ![Profile](docs/testing/profile-lh.png) |
 
 ## Responsiveness
 
