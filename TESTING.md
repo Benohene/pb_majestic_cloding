@@ -21,14 +21,30 @@ The PEP 8 Python Linter by CI was used to test the validity of the python code. 
 | Blog - models.py | ![blog models](docs/testing/blog.model.png) | No Errors detected - PASS |
 | Blog - views.py | ![blog views](docs/testing/blog.views.png) | No Errors detected - PASS |
 | Blog - widgets.py | ![blog widget](docs/testing/blog.widgets.png) | No Errors detected - PASS |
+| Cart - context.py | ![cart-context](docs/testing/cart.context.png) | No Errors detected - PASS |
+| Cart - views.py | ![cart-views](docs/testing/cart.view.png) | No Errors detected - PASS |
+| Checkout - admin.py | ![checkout-admin](docs/testing/co.admin.png) | No Errors detected - PASS |
+| Checkout - forms.py | ![checkout-forms](docs/testing/co.forms.png) | No Errors detected - PASS |
+| Checkout - models.py | ![checkout-models](docs/testing/co.models.png) | No Errors detected - PASS |
+| Checkout - signals.py | ![checkout-signals](docs/testing/co.signals.png) | No Errors detected - PASS |
+| Checkout - views.py | ![checkout-view](docs/testing/co.views.png) | No Errors detected - PASS |
+| Checkout - webhooks-handler.py | ![checkout-webhook-handler](docs/testing/co.webhook-handler.png) | No Errors detected - PASS |
+| Checkout - webhook.py | ![checkout-webhook](docs/testing/co.webhook.py.png) | No Errors detected - PASS Just a long code error which does not affected the code |
+| Contact - admin.py | ![contact admin](docs/testing/contact.admin.png) | No Errors detected - PASS |
+| Contact - contact.py | ![contact forms](docs/testing/contact.forms.png) | No Errors detected - PASS |
+| Contact - models.py | ![contact models](docs/testing/contact.models.png) | No Errors detected - PASS |
+| Contact - views.py | ![contact views](docs/testing/contact.views.png) | No Errors detected - PASS |
 | Name | ![Name]() | No Errors detected - PASS |
 | Name | ![Name]() | No Errors detected - PASS |
 | Name | ![Name]() | No Errors detected - PASS |
 | Name | ![Name]() | No Errors detected - PASS |
-
-**Models**
-
-![models](docs/testing/model-checkout.jpg)
+| Name | ![Name]() | No Errors detected - PASS |
+| Name | ![Name]() | No Errors detected - PASS |
+| Name | ![Name]() | No Errors detected - PASS |
+| Name | ![Name]() | No Errors detected - PASS |
+| Name | ![Name]() | No Errors detected - PASS |
+| Name | ![Name]() | No Errors detected - PASS |
+| Name | ![Name]() | No Errors detected - PASS |
 
 ### Javascript Validator:
 
