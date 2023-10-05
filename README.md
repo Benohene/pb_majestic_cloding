@@ -366,52 +366,8 @@ I used Wordtracker to discover keywords for my website that possess a favorable 
 
 # Testing
 
-Validator Testing
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
-### HTML Validator:
-
-As this project uses Django templates the html has been validated by manually clicking through the application pages, copying the source of the rendered pages and then validating this version of the html using the W3C Validator [Link](https://validator.w3.org/). To validate the HTML files all Django template tags were manually removed with the HTML code copied and inserted to the base template, including manually pasting in navigation and footer templates into all page testing.
-
-![models](docs/testing/html-valid.jpg)
-
-### PEP 8 Python Linter:
-
-PEP 8 Online linter [Python validator](https://pep8ci.herokuapp.com/#). The code passed without any errors on all files tested:
-
-**Models**
-
-![models](docs/testing/model-checkout.jpg)
-
-### Javascript Validator:
-
-JSHint was used to validate the JavaScript with no errors highlighted.
-
-![js-custom](docs/testing/js-custom.jpg)
-
-### CSS Validator:
-
-The CSS within the project was checked for errors using W3C CSS Validator Services. While there was a single warning message, it pertained to the use of imported style sheets, specifically in the context of a Google fonts import, and did not pose any significant issue.
-
-![js-custom](docs/testing/css-validator.jpg)
-
-## Lighthouse Report
-
-The Lighthouse report indicated areas where SEO and best practices could be enhanced. We improved the SEO score to 100 by incorporating meta descriptions and keywords. However, we encountered best practice warnings due to the utilization of JavaScript within an embedded iframe. Regrettably, we couldn't find a solution to address this issue since I am not responsible for initializing the Google Map iframe with JavaScript.
-
-![lighthouse](docs/testing/lighthouse.jpg)
-
-## Responsiveness
-
-The Website has been tested and it passed responsiveness for small mediumum and large screens of various devices. All pages have been tested for with a device size of from 320px.
-
-The Responsive design was tested manually with [Chrome DevTools](https://developer.chrome.com/docs/devtools/) and also the Microsoft Dev tools. The Website worked perfectly well.
-
-The Website pass its responsiveness and no responsive issues were seen on the following trial device:
-
-- iPhone SE
-- iPhone 12 Pro
-- Samsung Galaxy S20/S20 Ultra
-- Surface Duo
 
 ## Deployment
 
@@ -448,6 +404,22 @@ After setting up an AWS account and signing in, proceed with the following seque
 - Within the Properties tab, activate static website hosting and specify "index.html" and "error.html" in their respective fields, then save your changes.
 
 - In the Permissions tab, paste the provided CORS configuration.
+	```shell
+	[
+		{
+			"AllowedHeaders": [
+				"Authorization"
+			],
+			"AllowedMethods": [
+				"GET"
+			],
+			"AllowedOrigins": [
+				"*"
+			],
+			"ExposeHeaders": []
+		}
+	]
+	```
 
 - Copy your ARN string.
 
@@ -462,6 +434,23 @@ After setting up an AWS account and signing in, proceed with the following seque
   - Generate Policy
 
 - Copy the entire policy generated and insert it into the Bucket Policy Editor.
+```
+{
+			"Id": "Policy1234567890",
+			"Version": "2012-10-17",
+			"Statement": [
+				{
+					"Sid": "Stmt1234567890",
+					"Action": [
+						"s3:GetObject"
+					],
+					"Effect": "Allow",
+					"Resource": "arn:aws:s3:::your-bucket-name/*"
+					"Principal": "*",
+				}
+			]
+		}
+```
 
 - Before clicking "Save," append /\* to the end of the Resource key in the Bucket Policy Editor, as mentioned previously.
 
