@@ -184,3 +184,21 @@ Several Test were conducted to test the full functionality of the site in refere
 | User Profile                       |                                                                                           |             |
 |                                    | Click on the my profile under account on nav menu                                         | PASS        |
 |                                    | Navigate on the right to display profile details, order history and wishlist              | PASS        |
+
+## Toast
+There is a message alert that allows the user to see if they have successfully signed up, login and logout.
+There are also alert that communicate to the user in various operations.
+
+| ACTION | PASS/FAIL |
+| :--- | :--- |
+| When a product is added to the Cart | PASS |
+| When a product is removed from the Cart | PASS |
+| When a product is added to the wishlist | PASS |
+| When a product is removed from the wishlist | PASS |
+| When the wishlist is cleared from all products | PASS |
+| When a product is update in the Cart | PASS |
+| When a product review is added | PASS |
+| When a customer like or comment on a blog | PASS |
+| When a product is edited or removed by a staff | PASS |
+| When an order is completed | PASS |
+| When error and warning are raised | PASS |
