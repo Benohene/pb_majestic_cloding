@@ -87,3 +87,100 @@ The Website pass its responsiveness and no responsive issues were seen on the fo
 - iPhone 12 Pro
 - Samsung Galaxy S20/S20 Ultra
 - Surface Duo
+
+## User Story Test
+
+Several Test were conducted to test the full functionality of the site in reference to the User stories. The following table give full details of the out of the test. These are for the main features of the site.
+
+| PAGE | ACTION / EXPECTATIONS | PASS / FAIL |
+| --- | --- | --- |
+| Homepage |  |  |
+|  | Navigate to Homepage by clicking the Logo | PASS |
+|  | Navigate to All products page by clicking the SHOP NOW button | PASS |
+|  | Display footer with Social link and Newsletter | PASS |
+|  | Social link should open a new tab when clicked | PASS |
+|  |  |  |
+| All Product Page |  |  |
+|  | Display all products in the database | PASS |
+|  | Display a search bar to search for products | PASS |
+|  | Display a sort by dropdown to sort products by price, rating and category | PASS |
+|  | Display a product image, name, price and rating | PASS |
+|  | Click back to top button to return to top of page | PASS |
+|  | Click on product image or the view product button to view product details | PASS |
+|  | Display Add to wishlist for only logged in users | PASS |
+|  | Add product to wishlish when user click on the Add to wishlist button | PASS |
+|  |  |  |
+| Product Detail Page |  |  |
+|  | Display product details, Price and category | PASS |
+|  | Display product qunatity selector | PASS |
+|  | Click on + to increase quantity and - to decrease | PASS |
+|  | Quantity ranges from 1 to 99 | PASS |
+|  | Click on Add to Cart to add product to basket | PASS |
+|  | Display Add to wishlist button for only logged in users | PASS |
+|  | Display Add and delete product for only Superusers and Staff | PASS |
+|  | Display status of stock | PASS |
+|  | If out of stock, Add to cart will not display | PASS |
+|  | Display product review from user and other users | PASS |
+|  | Anonymous user can only view reviews but can't write review on products | PASS |
+|  | Anonymous user sis redirected to log in or sign up in an attempt to write review | PASS |
+|  |  |  |
+| Cart Page |  |  |
+|  | Navigate to Cart page by clicking the Cart icon | PASS |
+|  | Display all products in cart with option to update quantity or remove product | PASS |
+|  | Display back to shop button | PASS |
+|  | Click on secure checkout to proceed to payment | PASS |
+|  |  |  |
+| Checkout Page |  |  |
+|  | Display Cart details | PASS |
+|  | Display Cart total | PASS |
+|  | Display Cart subtotal | PASS |
+|  | Display Cart delivery | PASS |
+|  | Display Cart grand total | PASS |
+|  | Display Checkout form | PASS |
+|  | Attempts to leave require fields empty raise an error | PASS |
+|  | Display Delivery details | PASS |
+|  | Display Payment details | PASS |
+|  | Invalid card details raise an error | PASS |
+|  | Order complete after all field required filled and valid card details provided | PASS |
+|  |  |  |
+| Checkout Success |  |  |
+|  | Order conpleted and redirects to success page | PASS |
+|  | Click Back to profile to navigate to profile page | PASS |
+|  | Click Back to shop to navigate to all products page | PASS |
+|  | Click Home to navigate to Homepage | PASS |
+|  |  |  |
+| Product Management - For Staffs |  |  |
+|  | Navigate to Add product page from the dropdown on the main navbar account icon | PASS |
+|  | Add product forms displays to be filled | PASS |
+|  | Click cancel to return to all products  | PASS |
+|  | Add product and get redirected to product added details  | PASS |
+|  | Click edit link on individual products to edit product details  | PASS |
+|  | Click delete link on individual products to delete product from database  | PASS |
+|  |  |  |
+| Contact Page |  |  |
+|  | Navigate to contact page from support dropdown on manin navbar | PASS |
+|  | All field are required to be filled | PASS |
+|  | Uncompleted forms raise validation error | PASS |
+|  | Successfully sent form raise a success message | PASS |
+|  | Customer recieves a successfully sent form email confirmation | PASS |
+|  |  |  |
+| Authentications and Authorisations |  |  |
+|  |Sign UP  |  |
+|  | Click on Register button under account on nav menu | PASS |
+|  | Enter valid email address | PASS |
+|  | Enter valid password two time, unmatched passwords raise an error | PASS |
+|  | Click Sign Up button on sign up page and receive a verification email to activate account | PASS |
+|  | Click on Register button under account on nav menu | PASS |
+|  |Log In  |  |
+|  | Click on the Login button under account on nav menu | PASS |
+|  | Enter valid email address and password | PASS |
+|  | Click forget password to redirect to password reset | PASS |
+|  | with valid email and password, click on sign in to access user account | PASS |
+|  |Sign out  |  |
+|  | Click on the Logout from the account dropdown on the main navbar | PASS |
+|  | Confirm sign out by clicking sign out on the confirmation page. | PASS |
+|  | Click cancel to return to Homepage | PASS |
+|  |  |  |
+| User Profile |  |  |
+|  | Click on the my profile under account on nav menu | PASS |
+|  | Navigate on the right to display profile details, order history and wishlist | PASS |
