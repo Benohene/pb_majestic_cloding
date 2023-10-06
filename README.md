@@ -1,5 +1,35 @@
 # PB MAJESTIC CLODING - PP5
 
+# Table of content
+
+- [ABOUT SITE](#about-pb-majestic-clothing)
+
+- [PROJECT GOAL](#project-goal)
+
+- [UX EXPERIENCE](#ux)
+
+- [AGILE PLANNING](#agile-planning)
+
+- [USER STORIES](#user-stories)
+
+- [WIREFRAMES](#wireframe)
+
+- [DATABASE](#database-design)
+
+- [FEATURES](#features)
+
+- [TOOLS & TECHNLOGIES](#tools--technologies-used)
+
+- [MARKETING](#marketing-strategy)
+
+- [TESTING](#testing)
+
+- [DEPLOYMENT](#deployment)
+
+- [CREDIT](#credits)
+
+- [ACKNOWLEDGEMENT](#acknowledgements)
+
 ## Overview
 
 Welcome to the official repository of PB Majestic Clothing, your ultimate destination for high-quality Christian custom t-shirts that blend faith and fashion. We're thrilled to have you here and share our passion for spreading the message of Christ through stylish apparel. This is a B2C e-commerce site to sell christian brands.
@@ -369,7 +399,7 @@ I used Wordtracker to discover keywords for my website that possess a favorable 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 
-## Deployment
+# Deployment
 
 The site has been deployed on Heroku. It indicates that the website or web application has been successfully hosted and made accessible to the public using the Heroku platform. Heroku is a cloud platform that allows developers to deploy, manage, and scale web applications with ease. Deploying a site on Heroku often involves uploading code and configuring the necessary settings to run the web application on Heroku's infrastructure. This statement suggests that the deployment process on Heroku has been completed successfully.
 
