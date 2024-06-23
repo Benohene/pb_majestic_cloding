@@ -48,18 +48,18 @@ This is my fifth portfolio project for Code Institute, and I hope to demonstrate
 
 ## UX
 
-As a graphic designer myI intended to make the website quite simple while I was developing it. When trying to convince a user to become a customer, overcomplicating the aesthetic of an online business runs the danger of creating a poor user experience.
-It is a business-to-consumer e-commerce site that tends to supply customers with the best quality customised T-shirts with a lot of messages in the christian faith and also be a piece to guide a man in life because of the words in some of the designs.
-On visiting the site, user's are greeted with a large image that gives a cleatr introduction of all what the site is about.
+As a software/graphic designer, I intended to make the website quite simple while I was developing it. When trying to convince a user to become a customer, overcomplicating the aesthetic of an online business runs the danger of creating a poor user experience.
+It is a business-to-consumer e-commerce site that tends to supply customers with the best quality customised T-shirts with a lot of messages in the Christian faith and also be a piece to guide a man in life because of the words in some of the designs.
+On visiting the site, users are greeted with a large image that gives a clear introduction to all that the site is about.
 All users will be able to browse/sort Products, add to a cart, and checkout. Registered users will be able to add products to their Wishlist, view their Order history, and update/save their delivery information for quicker checkouts. Registered users will also be able to review products and like/comment on Blog posts. Staff will be able to add/edit/delete Products and add/edit/delete Blog Posts without entering admin. Any user reviews can be edited/deleted by Staff if required. When dealing with Products Staff will be able to make a Product a featured Product to be displayed on the Homepage or put a Product on sale. The graphical elements and overall design of the site provide the user with an enjoyable experience with an aesthetically pleasing display.
 
-"Crafting Seamless Shopping Experiences: Our online shop prioritizes user-centric design, seamlessly integrating intuitive 'Add to Cart' and 'Remove' interactions that enhance product exploration. We elevate convenience by streamlining the 'Place Order' process, ensuring a frictionless journey from selection to purchase. Your personalized 'User Profile' area empowers you, putting control at your fingertips, and making every visit a delightful and efficient engagement." The User Profile gives easily access and update your profile information, keep track of your orders, and curate your wishlist for a personalized and convenient shopping journey
+"Crafting Seamless Shopping Experiences: Our online shop prioritizes user-centric design, seamlessly integrating intuitive 'Add to Cart' and 'Remove' interactions that enhance product exploration. We elevate convenience by streamlining the 'Place Order' process, ensuring a frictionless journey from selection to purchase. Your personalized 'User Profile' area empowers you, putting control at your fingertips, and making every visit a delightful and efficient engagement." The User Profile gives easy access and updates your profile information, keep track of your orders, and curate your wishlist for a personalized and convenient shopping journey
 
 "Seamlessly shop a curated collection of products and explore enriching Christian blogs, all in one platform. Experience the convenience of user reviews for informed decisions, while engaging in meaningful discussions through interactive comment sections. Elevate your online journey with us, where shopping meets spirituality."
 
 ## Agile planning
 
-This project was developed using agile methodologies by delivering small features across the duration of the project. All User Stories were assigned to Epics, prioritized under the labels, Must Have, Should Have, and Could Have. They were assigned story points according to complexity. The Fibonacci sequence is employed for the Story points. "Must Have" stories were completed first, "Should Have's" and then finally "Could Have's". It was done this way to ensure that all core requirements were completed first to give the project a complete feel. In some scenarios, certain "Should Have's" were implemented before schedule due to the nature of the implementation i.e. some Product related "Should Have's" were done during Product development with some "Must Have's" - Error templates developed later on. The Kanban board was created using Github projects user/developer stories and also a list of Acceptance criterias and Task
+This project was developed using agile methodologies by delivering small features across the duration of the project. All User Stories were assigned to Epics, prioritized under the labels, Must Have, Should Have, and Could Have. They were assigned story points according to complexity. The Fibonacci sequence is employed for the Story points. "Must Have" stories were completed first, "Should Have's" and then finally "Could Have's". It was done this way to ensure that all core requirements were completed first to give the project a complete feel. In some scenarios, certain "Should Have's" were implemented before schedule due to the nature of the implementation i.e. some Product-related "Should Have's" were done during Product development with some "Must Have's" - Error templates developed later on. The Kanban board was created using GitHub projects user/developer stories and also a list of Acceptance criteria and Task
 
 ![Kanban Board](docs/images/kanban-board.jpg)
 ![Kanban Board](docs/images/user-stories-eg.jpg)
@@ -68,14 +68,14 @@ This project was developed using agile methodologies by delivering small feature
 
 ### EPIC 1: Initial Django Setup
 
-- As a Developer I can set up Django and install the supporting libraries predicted to be needed so that I am ready to start development
-- As a Developer I need to create the env.py and add to .gitignore so that I can securely deploy the site without exposing developer keys/information
+- As a Developer, I can set up Django and install the supporting libraries predicted to be needed so that I am ready to start development
+- As a Developer I need to create the env.py and add it to .gitignore so that I can securely deploy the site without exposing developer keys/information
 
 ### Epic 2: UX/UI Design
 
-- As a Developer I can build a base template so that it can be extended to any templates that may require it.
-- As a Developer I can design an aesthetically pleasing Homepage so that users have a positive experience when visiting the site.
-- As a Developer I can implement message toasts so that the user/customer is alerted when they carry out and action or encounter and error.
+- As a Developer, I can build a base template so that it can be extended to any templates that may require it.
+- As a Developer, I can design an aesthetically pleasing Homepage so that users have a positive experience when visiting the site.
+- As a Developer, I can implement message toasts so that the user/customer is alerted when they carry out an action or encounter an error.
 
 ### EPIC 3: Authorization and Authentication
 
@@ -85,21 +85,21 @@ This project was developed using agile methodologies by delivering small feature
 
 ### Epic 4: Homepage/Site Navigation
 
-- As a first-time site visitor I want to be able to clearly see what the site's purpose is so that I can decide whether or not to continue browsing it.
-- As a user I want to be able to easily navigate the website so that I can find the content I'm looking for.
+- As a first-time site visitor I want to see the site's purpose so that I can decide whether or not to continue browsing it.
+- As a user, I want to easily navigate the website to find the content I'm looking for.
 - As a site user I want to be able to search the website so that I can find specific products and see if the site has them in stock.
 - As a site user I want to be able to contact the site owners so that I can request further information about the site or lodge a complaint.
 
 ### EPIC 5: Products Setup (CRUD)
 
-- As a Developer I can create functional code to apply Products to my site so that the customer has Products to purchase
-- As a User I would like the ability to search for a product so that to see if the site sells it
-- As a User I would like to view a page containing the search results from my Product search so that so that I can find my prefered Product or see similar Products
-- As a User I would like a page that displays All Products the site offers so that I can browse and find products that I may want to purchase
-- As a User I would like the ability to sort products so that I can identity the best priced Products the site offers #31
-- As a Developer I can allow the functionality to edit Products by staff members so that they can reduce/increase prices, change product descriptions/images etc
-- As a Developer I can add functionality for staff members to delete Products so that if they do not sell or there is problems with the Product it can be removed from the storefront
-- As a User I would like to view the details of any Product so that I can see if the Product has the required specifications that I need/want
+- As a Developer, I can create functional code to apply Products to my site so that the customer has Products to purchase
+- As a User, I would like the ability to search for a product so that to see if the site sells it
+- As a User, I would like to view a page containing the search results from my Product search I can find my preferred Product or see similar Products
+- As a User, I would like a page that displays All Products the site offers so that I can browse and find products that I may want to purchase
+- As a User, I would like the ability to sort products so that I can identify the best-priced Products the site offers #31
+- As a Developer, I can allow the functionality to edit Products by staff members so that they can reduce/increase prices, change product descriptions/images etc
+- As a Developer, I can add functionality for staff members to delete Products so that if they do not sell or there are problems with the Product they can be removed from the storefront
+- As a User, I would like to view the details of any Product so that I can see if the Product has the required specifications that I need/want
 
 ### EPIC 6: Purchase / Checkout
 
@@ -111,43 +111,43 @@ This project was developed using agile methodologies by delivering small feature
 
 ### EPIC 7: Stripe Setup - Purchase / Checkout
 
-As a Developer I can implement Stripe so that it can manage payments for the site products at checkout #46
+As a Developer, I can implement Stripe so that it can manage payments for the site products at checkout #46
 
 ### EPIC 8: User Profile (CRUD)
 
-- As a customer I would like the ability to create my own Profile page so that I can save my shipping address for future purchases and track my orders
-- As a Developer I can implement functionality to allow a customer to save information to a personal Profile so that they can save information i.e. shipping address/orders for future review
-- As a customer I would like to add wishlish items to show in my profile so that I can get easy access to view and purchase them.
+- As a customer, I would like the ability to create my Profile page so that I can save my shipping address for future purchases and track my orders
+- As a Developer, I can implement functionality to allow a customer to save information to a personal Profile so that they can save information i.e. shipping address/orders for future review
+- As a customer, I would like to add wishlist items to show in my profile so that I can get easy access to view and purchase them.
 
 ### EPIC 9: Blog
 
-- As a site user I want to be able to view blog posts on the website so that I can read any posts I feel are relevant to me.
-- As a site user I want to be able to add, edit and delete comments on blog so that I can share my view on the blog post.
-- As a site admin I want to be able to create blog posts from the front end so that I can share information with site visitors.
-- As a site admin I want to be able to edit existing blog posts so that I can ensure that posts are up to date and relevant without having to create them from scratch in case of error.
-  As a site admin I want to be able to delete existing blog posts so that I can remove any unwanted posts from the site.
+- As a site user, I want to be able to view blog posts on the website so that I can read any posts I feel are relevant to me.
+- As a site user, I want to be able to add, edit and delete comments on the blog so that I can share my views on the blog post.
+- As a site admin, I want to be able to create blog posts from the front end so that I can share information with site visitors.
+- As a site admin, I want to be able to edit existing blog posts so that I can ensure that posts are up to-date and relevant without having to create them from scratch in case of error.
+  As a site admin, I want to be able to delete existing blog posts so that I can remove any unwanted posts from the site.
 
 ### EPIC 10: Review Products (CRUD)
 
-- As a Customer I would like to leave a review on a Product so that my fellow shoppers can benefit from my feedback and make informed purchasing decisions.
-- As a Developer I can build a page to display the Review form so that customer has the ability to write their review and submit it.
+- As a Customer, I would like to leave a review on a Product so that my fellow shoppers can benefit from my feedback and make informed purchasing decisions.
+- As a Developer, I can build a page to display the Review form so that customer can write their review and submit it.
 
 ### EPIC 11: Contact Us #15
 
-- As a Developer I can add functionality to allow the customer to contact the site owner so that any issue they encounter can be logged and resolved
-- As a user/customer I should be able to contact the site owner so that I have a comminucation if any issue arises
+- As a Developer, I can add functionality to allow the customer to contact the site owner so that any issue they encounter can be logged and resolved
+- As a user/customer I should be able to contact the site owner so that I have communication if any issue arises
 
 ### EPIC 12: SEO & Web Marketing #13
 
-- As a Developer I can create a Facebook business page for my site so that I can market my website on the social platform #60
-- As a Developer I can implement a newsletter on my site so that customers can subscribe for future updates and deals which should bring them back to the site for future purchases.
-- As a Developer I can add helpful description and keywords so that my site can reach a wider audience
+- As a Developer, I can create a Facebook business page for my site so that I can market my website on the social platform #60
+- As a Developer, I can implement a newsletter on my site so that customers can subscribe for future updates and deals which should bring them back to the site for future purchases.
+- As a Developer, I can add helpful descriptions and keywords so that my site can reach a wider audience
 
 ### EPIC 13: Error Notification
 
-- As a Developer I can implement a 403 error page to redirect unauthorised users so that I can secure my views.
-- As a Developer I can implement a 404 error page so that I can alert users when they have accessed a page that doesn't exist.
-- As a Developer I can implement a 500 error page so that I can alert users when an internal server error occurs.
+- As a Developer, I can implement a 403 error page to redirect unauthorised users so that I can secure my views.
+- As a Developer, I can implement a 404 error page so that I can alert users when they have accessed a page that doesn't exist.
+- As a Developer, I can implement a 500 error page so that I can alert users when an internal server error occurs.
 
 ### EPIC 14:
 
@@ -160,7 +160,7 @@ As a User, I must be able to be notified with messages, so that I would know if 
 
 ## Wireframe
 
-To help with the design of the site, I created wireframes for each page. To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes. I've used Balsamiq to design my site wireframes.
+To help with the design of the site, I created wireframes for each page. To follow best practices, wireframes were developed for mobile, tablet, and desktop sizes. I've used Balsamiq to design my site wireframes.
 
 ### Sketches
 
@@ -210,7 +210,7 @@ I created an entity relationship diagram using [sqldbm](https://app.sqldbm.com/C
 ## Features
 
 ### Home Page
-The Homepage is the landing page o fthe site which welcomes the user with an overview of the website. It consist of the Navbar, Shop now button and Footer
+The Homepage is the landing page of the site which welcomes the user with an overview of the website. It consists of the Navbar, Shop Now button and Footer
 
 ![features](docs/features_images/home.jpg)
 
@@ -219,18 +219,18 @@ The Navbar consist of the search field and menu that navigates to the entire pag
 
 ![features](docs/features_images/navbar.jpg)
 
-### Footer with Newletter
-The Footer consist of the some details of the websites and some links including the facebook link of the website. 
+### Footer with Newsletter
+The Footer consists of some details of the websites and some links including the Facebook link of the website. 
 
 ![features](docs/features_images/footer.jpg)
 
 ### All Products
-The All Product page display all products with sort field that allows uses to sort products according specific preferences like price, rating, names and others
+The All Product page displays all products with a sort field that allows users to sort products according to specific preferences like price, rating, names and others
 
 ![features](docs/features_images/all-product.jpg)
 
 ### All Products Details
-The Product Detail pages gives description to the product and also allows user to Add product to cart by selecting the size and quantity.
+The Product Detail page describes the product and also allows the user to Add the product to the cart by selecting the size and quantity.
 
 ![features](docs/features_images/prod-view.jpg)
 
@@ -238,7 +238,7 @@ The Product Detail pages gives description to the product and also allows user t
 
 ![features](docs/features_images/review.jpg)
 
-- No review on product page
+- No review on the product page
   ![features](docs/features_images/no-review.jpg)
 
 - Add product review forms
@@ -313,11 +313,11 @@ The Product Detail pages gives description to the product and also allows user t
 
 ### Status Error Templates
 
-As a Developer I can implement a 403 error page to redirect unauthorised users so that I can secure my views
+As a Developer, I can implement a 403 error page to redirect unauthorised users so that I can secure my views
 
-As a Developer I can implement a 404 error page so that I can alert users when they have accessed a page that doesn't exist
+As a Developer, I can implement a 404 error page so that I can alert users when they have accessed a page that doesn't exist
 
-As a Developer I can implement a 500 error page so that I can alert users when an internal server error occurs
+As a Developer, I can implement a 500-error page so that I can alert users when an internal server error occurs
 
 A 403 error page has been implemented to provide feedback to the user when they try to access unauthorized content. Users will be directed to this page if they alter the URLs and attempt to edit, delete, or access pages that are restricted.
 
@@ -331,25 +331,25 @@ A 500 error page has been displayed to alert users when an internal server error
 
 ### User Sign Up
 
-Users without an account can register for one through the register link in the main nav menu. This will present them with a form to add their details and created a profile for that user on completion.
-Users are sent a confirmation email to complete their account sign up to help avoid people from creating spam accounts on the site.
+Users without an account can register for one through the register link in the main nav menu. This will present them with a form to add their details and create a profile for that user on completion.
+Users are sent a confirmation email to complete their account sign-up to help prevent people from creating spam accounts on the site.
 ![features](docs/features_images/sign-up.jpg)
 
 ### User Sign In
 
-If a user isn't signed in to the site but has a profile, they can follow the sign in link where they're presented with a log in page. They must input their username or email address and correct password to do so. There's also a checkbox to let the user be remembered on their current device to avoid having to log in every time they visit the site.
+If a user isn't signed in to the site but has a profile, they can follow the sign-in link where they're presented with a login page. They must input their username or email address and correct password to do so. There's also a checkbox to let the user be remembered on their current device to avoid having to log in every time they visit the site.
 There's a link for users who have forgotten their password.
 ![features](docs/features_images/sign-in.jpg)
 
 ### User Sign Out
 
-If a user wants to end their logged in session, they can click logout under the account dropdown in the nav menu.
+If a user wants to end their logged-in session, they can click logout under the account dropdown in the nav menu.
 This will bring them to a page confirming they want to log out.
 ![features](docs/features_images/sign-out.jpg)
 
 ### Password Reset
 
-If a user is trying to log in and has forgotten their password they can visit the password reset page. Here a user must enter their email address they used to sign up with and an email will be sent to them with further instructions on resetting their password to regain access to their account.
+If a user is trying to log in and has forgotten their password they can visit the password reset page. Here a user must enter the email address they used to sign up with and an email will be sent to them with further instructions on resetting their password to regain access to their account.
 ![features](docs/features_images/pass-reset.jpg)
 
 ## Tools & Technologies Used
@@ -358,21 +358,21 @@ This site needed a lot of tools and technologies to make it possible. Therefore 
 
 - HTML used for the main site structure content.
 - CSS used for the main site styling, designing and layout.
-- CSS :root variables used for reusable styles throughout the site especially the colors.
-- CSS Flexbox used for an enhanced responsive layout.
+- CSS: root variables used for reusable styles throughout the site, especially the colors.
+- CSS Flexbox is used for an enhanced responsive layout.
 - JavaScript used for user interaction on the site.
-- Python used as the back-end programming language.
-- Git used for version control. (git add, git commit, git push)
-- GitHub used for secure online code storage.
-- Gitpod used as a cloud-based IDE for development.
-- Bootstrap used as the front-end CSS framework for modern responsiveness and pre-built components.
-- Django used as the Python framework for the site.
-- PostgreSQL used as the relational database management.
-- ElephantSQL used as the Postgres database.
-- Heroku used for hosting the deployed back-end site.
-- Stripe used for online secure payments of ecommerce products/services.
-- AWS S3 used for online static file storage.
-- Django Summernote used for the body field for blog posts.
+- Python is used as the back-end programming language.
+- Git is used for version control. (git add, git commit, git push)
+- GitHub is used for secure online code storage.
+- Gitpod is used as a cloud-based IDE for development.
+- Bootstrap is used as the front-end CSS framework for modern responsiveness and pre-built components.
+- Django is used as the Python framework for the site.
+- PostgreSQL is used for relational database management.
+- ElephantSQL is used as the Postgres database.
+- Heroku is used for hosting the deployed back-end site.
+- Stripe is used for online secure payments of eCommerce products/services.
+- AWS S3 is used for online static file storage.
+- Django Summernote is used for the body field for blog posts.
 - Pillow used for handling images.
 
 ## Marketing Strategy
@@ -390,7 +390,7 @@ I employed Mailchimp to establish a website-embedded newsletter sign-up form, en
 ## Search Engine Optimization (SEO)
 
 ### Keywords
-I used Wordtracker to discover keywords for my website that possess a favorable combination of high search volume and low competition, making use of the KEI (Keyword Effectiveness Index) metric on Wordtracker to guide my keyword selection.
+I used Wordtracker to discover keywords for my website that possess a favourable combination of high search volume and low competition, making use of the KEI (Keyword Effectiveness Index) metric on Wordtracker to guide my keyword selection.
 
 ![features](docs/features_images/seo.jpg)
 
@@ -417,7 +417,7 @@ This project employs ElephantSQL as the backend database using PostgreSQL. To se
 
 ### Amazon AWS
 
-This project utilizes AWS for the storage of online media and static files because Heroku lacks the ability to retain such data.
+This project utilizes AWS for the storage of online media and static files because Heroku cannot retain such data.
 
 After setting up an AWS account and signing in, proceed with the following sequence of actions to establish the connection for your project. Ensure that you are currently on the AWS Management Console page.
 
@@ -434,7 +434,7 @@ After setting up an AWS account and signing in, proceed with the following seque
 - Within the Properties tab, activate static website hosting and specify "index.html" and "error.html" in their respective fields, then save your changes.
 
 - In the Permissions tab, paste the provided CORS configuration.
-	```shell
+	``` shell
 	[
 		{
 			"AllowedHeaders": [
@@ -496,7 +496,7 @@ Navigate back to the AWS Services Menu and locate IAM (Identity and Access Manag
 
 1. Within User Groups, select the option to Create a New Group.
 2. Suggested Name: Create a name that combines "group" with the project's name, like "group-pb-majestic-cloding."
-3. Tags are not mandatory, but you should select it to proceed to the policy review page.
+3. Tags are not mandatory, but you should select them to proceed to the policy review page.
 4. In the User Groups section, choose your newly created group, and go to the Permissions tab.
 5. Access the Add Permissions dropdown and choose Attach Policies.
 6. Pick the desired policy, and then click Add Permissions at the bottom once you're finished.
@@ -507,7 +507,7 @@ Navigate back to the AWS Services Menu and locate IAM (Identity and Access Manag
 
 Suggested Name for the policy: Consider naming it by combining "policy" with the project's name, like "policy-pb-majestic-cloding."
 
-Provide a description for the policy: "This policy grants access to the S3 Bucket for pb-majestic-cloding static files." Click on Create Policy.
+Describe the policy: "This policy grants access to the S3 Bucket for pb-majestic-cloding static files." Click on Create Policy.
 
 11. In the User Groups section, click on your "group-pb-majestic-cloding."
 12. Choose Attach Policy.
@@ -516,7 +516,7 @@ Provide a description for the policy: "This policy grants access to the S3 Bucke
 15. Suggested Name: Suggest a name by combining "user" with the project's name, like "user-pb-majestic-cloding."
 16. For the "Select AWS Access Type," choose Programmatic Access.
 17. Select the group to add your new user to, which should be "group-pb-majestic-cloding."
-18. Tags are not mandatory, but you should select it to proceed to the user review page.
+18. Tags are not mandatory, but you should select them to proceed to the user review page.
 19. Click Create User when you're finished.
 20. You should see a button to Download a .csv file; click it to save a copy on your system.
 21. It's important to note that once you leave this page, you won't be able to return to download it again, so be sure to do it immediately.
@@ -528,13 +528,13 @@ Provide a description for the policy: "This policy grants access to the S3 Bucke
 
 - You can now safely eliminate the DISABLE_COLLECTSTATIC variable from Heroku Config Vars, allowing AWS to take over the responsibility of handling static files.
 - Within the S3 interface, establish a fresh directory named "media."
-- Pick any preexisting media images from your project for the purpose of preparing them for placement in the newly created folder.
+- Pick any preexisting media images from your project to prepare them for placement in the newly created folder.
 - In the "Manage Public Permissions" section, opt for granting public read access to these objects.
 - There is no need for any additional configurations; simply proceed by clicking the "Upload" button.
 
 ### Stripe API
 
-This project utilizes Stripe for managing ecommerce payments.
+This project utilizes Stripe for managing e-commerce payments.
 
 After setting up your Stripe account and logging in, follow these steps to establish the connection for your project.
 
@@ -601,7 +601,7 @@ Option 1:
 
 Option 2:
 - In your Terminal/CLI, connect to Heroku using this command: heroku login -i
-- Set the remote for Heroku: heroku git:remote -a app_name (replace "app_name" with your app's name)
+- Set the remote for Heroku: heroku git: remote -a app_name (replace "app_name" with your app's name)
 - After performing the standard Git commands (add, commit, and push) to your GitHub repository, execute:
 - git push heroku main
 - Your project should now be successfully connected and deployed to Heroku!
@@ -618,7 +618,7 @@ To clone the repository, follow these steps:
 6. Within your IDE Terminal, enter the following command to clone my repository:
    - Use the command: "git clone https://github.com/Benohene/pb_majestic_cloding.git"
 7. Hit Enter to initiate the creation of your local clone.
-   Alternatively, if you're using Gitpod, you can simply click below to generate your own workspace with this repository.
+   Alternatively, if you're using Gitpod, you can simply click below to generate your workspace with this repository.
 
 Please keep in mind that to directly open the project in Gitpod, you must have the browser extension installed. You can find a tutorial on how to install it here.
 
@@ -633,7 +633,7 @@ Please keep in mind that to directly open the project in Gitpod, you must have t
 ## Credits
 
 1. Code Institute Template
-   This repository was created using the template provided by Code Institute. Also, without the knowledge gained through the coursework, I would not be able to create this site so thank you Code Institute.
+   This repository was created using the template provided by Code Institute. Also, without the knowledge gained through the coursework, I would not have been able to create this site so thank you Code Institute.
 
 2. Django Documentation
    Thanks to the Django docs which were also used as a step-by-step while going through the project to ensure everything was set up correctly.
@@ -651,4 +651,4 @@ Please keep in mind that to directly open the project in Gitpod, you must have t
 
 - To my mentor Daisy Mc Girr, Daisy always goes above and beyond. Even outside of project planning she is great for advice and is a great help to the Slack community too. Daisy became my Mentor midway through P2 and has been amazing to deal with, she is a great credit to CI and the whole community.
 
-- Also a big one goes to my wife for the support and helping the kids throughout eventhough it was not an easy journey
+- Also a big one goes to my wife for the support and for helping the kids throughout even though it was not an easy journey
